@@ -1,0 +1,15 @@
+parameters:
+	database:
+		driver: mysql
+		host: localhost
+		dbname: mvc_dbc
+		user: root
+		password: 
+
+
+database:
+	dsn: '%database.driver%:host=%database.host%;dbname=%database.dbname%'
+	user: %database.user%
+	password: %database.password%
+	options:
+		lazy: yes

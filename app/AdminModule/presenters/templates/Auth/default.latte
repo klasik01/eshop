@@ -1,0 +1,19 @@
+<link href="{$basePath}/css/Login-Form-Clean.css" rel="stylesheet" />
+<link href="{$basePath}/css/bootstrap.min.css" rel="stylesheet" />
+
+<div class="login-clean">
+    {form loginForm, role=>'form'}
+        <h2 class="text-center">Přihlačovací formulář</h2>
+        <div class="illustration"><i class="icon icon-feature"></i></div>
+        <div class="p">
+            {input email, class=>'form-control', placeholder=>'Email'}
+        </div>
+        <div class="">
+            {input password class=>'form-control', placeholder=>'Heslo'}
+        </div>
+        <div class="col-xs-12">
+            {input submit class=>'btn btn-primary btn-block' }
+        </div><div class="clearfix"></div>     
+    {/form}
+</div>
+

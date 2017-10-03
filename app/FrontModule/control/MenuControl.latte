@@ -1,0 +1,37 @@
+<div class="col-lg-3 col-lg-pull-9 col-md-3 col-md-pull-9 levy_menu">                
+    <div class="panel-group">
+        <div class="panel panel-heading mystylePanelHeading subMenuItem  {ifCurrent Product:Default} subMenuItemActive {/ifCurrent}" data-href="{plink Product:Default}">
+            <h1 class="panel-title">Truhlářská výroba</h1></div>
+        <div class="panel-collapse collapse in">
+            <div class="panel-body">
+                <div class="table">
+                    <table class="table table-hover table-condensed">
+                        <tbody class="left-menu">
+                            {foreach $menuItems as $item }
+                                {if $item->id != 13}
+                                <tr>
+                                    <td class="subMenuItem" data-href='{plink Product:Category $item->id}'><a href="{plink Product:Category $item->id}">{$item->nazev}</a></td>
+                                </tr>
+                                {/if}
+                            {/foreach}
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="panel-group">
+            <div class="panel panel-heading mystylePanelHeading subMenuItem">
+                <h1 class="panel-title"><a> Včelí oddělky + matky</a></h1></div>
+        </div>
+        <div class="panel-group">
+            <div class="panel panel-heading mystylePanelHeading subMenuItem {ifCurrent Product:Category 13} subMenuItemActive {/ifCurrent}" data-href="{plink Product:Category 13}">
+                <h1 class="panel-title">Med</h1></div>
+        </div>
+        <div class="panel-group">
+            <div class="panel panel-heading mystylePanelHeading subMenuItem">
+                <h1 class="panel-title"><a>Vybavení medárny</a></h1></div>
+        </div>
+    </div>
+    <div></div>
+</div>

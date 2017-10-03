@@ -1,0 +1,202 @@
+{* Latte template *}
+
+{block content}
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h1 class="text-nowrap panel-title">Objednávka č. {$order->id_objednavky}</h1></div>
+    <div class="panel-body">
+        <div class="col-lg-4 col-lg-offset-0 col-md-4 col-md-offset-0">
+            <div class="well">
+                <div class="table-responsive">
+                    <table class="table table-hover table-condensed">
+                        <thead>
+                            <tr><th colspan="2">Adresát </th></tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Jméno </td>
+                                <td>{$order->adresat->jmeno}&nbsp;{$order->adresat->prijmeni}</td>
+                            </tr>
+                            <tr>
+                                <td>email </td>
+                                <td>{$order->adresat->email}</td>
+                            </tr>
+                            <tr>
+                                <td>tel: </td>
+                                <td>{$order->adresat->tel}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="well">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th colspan="2">Objednávka na firmu</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Název firmy </td>
+                                <td>{$order->adresat->nazev_firmy}</td>
+                            </tr>
+                            <tr>
+                                <td>DIČ </td>
+                                <td>{$order->adresat->dic}</td>
+                            </tr>
+                            <tr>
+                                <td>IČ</td>
+                                <td>{$order->adresat->ic}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-lg-offset-0 col-md-4">
+            <div class="well">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th colspan="2">Fakturační adresa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Ulice: </td>
+                                <td>{$order->ref('adresa', 'id_fakturacni')->ulice}</td>
+                            </tr>
+                            <tr>
+                                <td>Město: </td>
+                                <td>{$order->ref('adresa', 'id_fakturacni')->mesto}</td>
+                            </tr>
+                            <tr>
+                                <td>PSČ: </td>
+                                <td>{$order->ref('adresa', 'id_fakturacni')->psc}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="well">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th colspan="2">Dodací adresa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Ulice: </td>
+                                <td>{$order->ref('adresa', 'id_dodaci')->ulice}</td>
+                            </tr>
+                            <tr>
+                                <td>Město: </td>
+                                <td>{$order->ref('adresa', 'id_dodaci')->mesto} </td>
+                            </tr>
+                            <tr>
+                                <td>PSČ: </td>
+                                <td>{$order->ref('adresa', 'id_dodaci')->psc}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-lg-offset-0 col-md-4">
+            <div class="well">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Doprava </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>{$order->doprava->nazev}</td>
+                                <td>{$order->doprava->cena}&nbsp;Kč</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Platba </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>{$order->platba->nazev} </td>
+                                <td>{$order->platba->cena}&nbsp;Kč</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="well">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Výrobek </th>
+                                <th>Materiál </th>
+                                <th>Typ úlu </th>
+                                <th># </th>
+                                <th>Cena 1 za kus</th>
+                                <th>Sleva </th>
+                                <th>Celkem cena</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr n:if="$bascet !== NULL" n:foreach="$bascet as $item">
+                                <td>{$item->ref('produkty', 'id_vyrobku')->nazev}</td>
+                                <td>{$item->ref('produkty', 'id_vyrobku')->material}</td>
+                                <td>{$item->ref('produkty', 'id_vyrobku')->typ_ulu}</td>
+                                <td>{$item->mnozstvi}x</td>
+                                <td>{$item->ref('produkty', 'id_vyrobku')->cena} Kč</td>
+                                <td>{$item->ref('produkty', 'id_vyrobku')->sleva} Kč</td>
+                                <td><strong>{$item->cena} Kč</strong></td>                              
+                            </tr>
+                            <tr>
+                                <td colspan='6'><h4 class='pull-right'>Cena celkem:</h4></td>
+                                <td colspan=""><h4 class="text-center" style='color:red;'>{$order->celkova_cena} Kč</h4></td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <div class="well">
+                <h4>Poznámka k objednávce</h4>
+                <p> {$order->poznamka}</p>
+            </div>
+        </div>
+        <div class="col-xs-6">
+            <a href="{$basePath}/{$order->faktura}" class="btn btn-danger btn-block" >Zobrazit Fakturu</a>
+        </div>
+        <div class="col-xs-6">
+            {form statusForm}
+                <h4 class='info'>Produk je {if $order->status == 0} ve výrobě{else} dokončen{/if}</h4>
+                <input type="hidden" name="id" value="{$order->id_objednavky}" />
+                {input status }
+                <div class="btn-group pull-right" role="group">
+                    {input save }
+                    <button type="button" onclick="window.history.back()" class='btn btn-info btn-lg'>Vrátit se zpět</button>
+                </div>
+            {/form}
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>

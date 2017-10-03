@@ -1,0 +1,53 @@
+
+{block content}
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Články</h3></div>
+    <div class="panel-body">
+        <div>
+            <form method="get">
+                <div class="input-group">
+                    <input class="form-control" type="text" name="q" required="" placeholder="Hledej..." autocomplete="on" id="system-search"><span class="input-group-btn"> <button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"> </span></button>
+                    </span>
+                </div>
+            </form>
+        </div>
+        <div class="clearfix"></div>
+        <div class="table-container">
+            <div class="table-responsive table-filter table-list-search">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Název</th>                           
+                            <th>Akce</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr n:foreach="$pages as $item">
+                            <td><a n:href="Page:Detail $item->article_id">{$item->title}</a></td>
+
+                            <td class="">
+                                <a n:href="Page:Update $item->article_id" class="btn btn-info"> <span class="glyphicon glyphicon-edit"> </span></a>
+                                <a
+                                    data-confirm="Opravdu chcete článek ' {$item->title} ' smazat?"
+                                    data-confirm-title="Confirm"
+                                    data-confirm-text="Opravdu chcete článek ' {$item->title} ' smazat?"
+                                    data-confirm-ok-class="btn-danger"
+                                    data-confirm-ok-text="Delete"
+                                    data-confirm-cancel-class="btn-success"
+                                    data-confirm-cancel-text="Cancel"
+                                    class="btn btn-danger btn-mini"
+                                    data-ajax="on"
+                                    n:href="delete! $item->article_id"><span class="glyphicon glyphicon-remove" data-confirm="Opravdu chcete vybraný produkt odstranit?"> </span></a>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

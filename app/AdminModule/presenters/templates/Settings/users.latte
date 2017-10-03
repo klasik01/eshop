@@ -1,0 +1,62 @@
+
+{block content}
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Uživatelé</h3></div>
+    <div class="panel-body">
+        <div>
+            <form method="get">
+                <div class="input-group">
+                    <input class="form-control" type="text" name="q" required="" placeholder="Hledej..." autocomplete="on" id="system-search"><span class="input-group-btn"> <button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"> </span></button>
+                    </span>
+                </div>
+            </form>
+        </div>
+        <div class="clearfix"></div>
+        <div class="table-container">
+            <div class="table-responsive table-filter table-list-search">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Jméno:</th>                           
+                            <th>Role:</th>                           
+                            <th>Email:</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr n:foreach="$users as $item">
+                            <td>{$item->name}</td>
+                            <td>{$item->role}</td>
+                            <td>{$item->email}</td>
+
+                            <td class="">
+                                <a n:href="Settings:Updateuser $item->id" class="btn btn-info"> <span class="glyphicon glyphicon-edit"> </span></a>
+                                {if $user->isInRole('admin')}
+                                    <a
+                                        data-confirm="Opravdu chcete uživatele ' {$item->name} ' smazat?"
+                                        data-confirm-title="Confirm"
+                                        data-confirm-text="Opravdu chcete uživatele ' {$item->name} ' smazat?"
+                                        data-confirm-ok-class="btn-danger"
+                                        data-confirm-ok-text="Delete"
+                                        data-confirm-cancel-class="btn-success"
+                                        data-confirm-cancel-text="Cancel"
+                                        class="btn btn-danger btn-mini"
+                                        data-ajax="on"
+                                        n:href="deleteuser! $item->id"><span class="glyphicon glyphicon-remove"> </span></a>
+
+                                {/if}
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfood>
+                        <a n:href="Settings:createuser" class="pull-right btn btn-primary btn-lg">vytvořit nového uživatele</a>
+                    </tfood>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+

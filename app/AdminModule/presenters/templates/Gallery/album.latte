@@ -1,0 +1,34 @@
+{* Latte template *}
+
+{block content}
+
+<div class="photo-gallery">
+    <div class="">
+        <div class="intro">
+            <h2 class="text-center">{$albums->nazev}</h2>
+        </div>
+        <div class="row photos">
+            <div class="col-lg-3 col-md-4 col-sm-6 item">
+                <a n:href="Gallery:create" ><img class="img-responsive" width="150" src="{$basePath}/img/newimage.png"></a>
+            </div>              
+            <div class="col-lg-3 col-md-4 col-sm-6 item" n:foreach="$images as $item">
+                <a href="{$basePath}/{$item->url}" data-lightbox="photos"><img class="img-responsive" src="{$basePath}/{$item->url}"></a>
+                <h5 class='text-center'>
+                    <a n:href='Gallery:edit $item->id'><span class='fa fa-pencil'> Editovat</span></a>
+                    <a
+                        data-confirm="Opravdu chcete obrázek ' {$item->nazev} ' smazat?"
+                        data-confirm-title="Confirm"
+                        data-confirm-text="Opravdu chcete obrázek ' {$item->nazev} ' smazat?"
+                        data-confirm-ok-class="btn-danger"
+                        data-confirm-ok-text="Delete"
+                        data-confirm-cancel-class="btn-success"
+                        data-confirm-cancel-text="Cancel"                      
+                        data-ajax="on"
+                        n:href="removeimage! $item->id"><span class="fa fa-trash-o" data-confirm="Opravdu chcete vybrané album odstranit?"> Smazat Album</span></a>
+               <br /> <br />
+                    <input type="checkbox" {if $item->aktivni === 1} checked{/if} data-toggle="toggle" class="activation-product ajax" rel="{$item->id}" data-href="{link activeimage! $item->id}">
+                </h5>
+            </div>              
+        </div>
+    </div>
+</div>

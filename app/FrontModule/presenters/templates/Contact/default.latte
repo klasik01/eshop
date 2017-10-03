@@ -1,0 +1,38 @@
+{* Latte template *}
+
+{block content}
+{*$context->content|noescape*}
+<table class="table table-condensed table-responsive">
+    <tr>
+    <th>Jméno a Příjemní:</th>
+    <td>{$data->jmeno} {$data->prijmeni}</td>
+    </tr>
+    <tr>
+    <th>IČO</th>
+    <td>{$data->ic}</td>
+    </tr>
+    <tr>
+    <th>Email:</th>
+    <td>{$data->email}</td>
+    </tr>
+    <tr>
+    <th>Tel:</th>
+    <td>{$data->tel}</td>
+    </tr>
+    <tr>
+    <th>Adresa</th>
+    <td>{$data->ulice}, {$data->mesto} {$data->psc}</td>
+    </tr>
+</table>
+
+
+{form contactForm}
+<div class="col-md-6">{label name /}{input name }</div>
+<div class="col-md-6">{label surname /}{input surname}</div>
+<div class="col-md-12">{label subject /}{input subject }</div>
+<div class="col-md-12">{label email /}{input email }</div>
+<div class="col-md-12">{label content /}{input content }</div>
+<div class='clearfix'></div>
+<div class="col-md-4 col-md-offset-8">{input send }</div>
+
+{/form}

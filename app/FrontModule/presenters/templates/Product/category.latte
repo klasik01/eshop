@@ -1,0 +1,41 @@
+{block content}
+<div class="panel panel-brown">
+    <div class="panel-heading">
+        <div class="panel-title">
+
+        </div>
+    </div>
+    <div class="panel-body">
+        <h1 class="header-styl" n:block="title">{$category->nazev}</h1>
+        {if $category->id != 13}
+            <div class=" btn-group">
+                <button class="btn btn-mystyle btn_filter btn-success" data-target="vsechny" type="button">Všechny výrobky</button>
+                <button class="btn btn-mystyle   btn_filter btn-warning" data-type="42x17"  type="button">Velikost úlu 42 x 17</button>
+                <button class="btn btn-mystyle  btn_filter btn-info" data-type="39x24" type="button">Velikost úlu 39 x 24</button>
+            </div> 
+            <div class=" btn-group pull-right">
+                <button class="btn btn-mystyle btn_filter btn-primary" data-target="DTD" type="button">DTD </button>
+                <button class="btn  btn-mystyle  btn_filter btn-danger" data-target="masiv" type="button">Masiv </button>
+            </div>
+        {/if}
+        <div class="clearfix"></div>
+
+        <div n:foreach="$products as $product" class="col-lg-3 col-md-3 col-sm-4 polozka" style='margin-top: 10px;' data-status='{$product->material}' data-typ='{$product->typ_ulu}'>
+            <div class="nadpis-produkt" style='height: 50px;'>
+                <a n:href='Product:Product $product->id' ><h5>{$product->nazev}</h5></a>
+            </div>
+            <div>
+                <label class="label {if $product->typ_ulu == '42x17'}label-success{else}label-primary{/if}">
+                    Pro úl {$product->typ_ulu}
+                </label>
+            </div>
+            <a class="text-center" n:href='Product:Product $product->id'><img src="{$basePath}/{$product->fotografie}" width="100%"  class="img-responsive product-image"/></a>
+            <div>
+                <div>
+                    <h5 class="text-center">{$product->cena} Kč</h5></div>
+            </div>
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,14 @@
+{block content}
+<div class="photo-gallery">
+    <div class="">
+        <div class="intro">
+            <h2 class="text-center">Alba v Galerii</h2>
+        </div>
+        <div class="row photos">
+            <div class="col-lg-3 col-md-4 col-sm-6 item" n:foreach='$categories as $item'>
+                <a n:href="Gallery:Album $item->id" ><img class="img-responsive" src="{$basePath}/{$item->url}"></a>
+                <h4 class="text-center">{$item->nazev}</h4>
+            </div>                
+        </div>
+    </div>
+</div>

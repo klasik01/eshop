@@ -1,0 +1,74 @@
+{block content}
+<div class="row">
+    <div class="col-lg-12 col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Výrobky </h3></div>
+            <div class="panel-body">
+                <div>
+                    <form method="get">
+                        <div class="input-group">
+                            <input class="form-control" type="text" name="q" required="" placeholder="Hledej..." autocomplete="on" id="system-search"><span class="input-group-btn"> <button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"> </span></button>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+                <div class="btn-group" role="group">
+                    <a n:href="Product:Create" class="btn btn-warning" role="button"> <span class="glyphicon glyphicon-plus"> Vytvořit nový produkt</span></a>
+                </div>
+                <div class="pull-right">
+                    <div class="btn-group" role="group">
+                        <button class="btn btn-success btn-filter" type="button" data-target="aktivni">Aktivní </button>
+                        <button class="btn btn-danger btn-filter" type="button" data-target="neaktivni">Neaktivni </button>
+                        <button class="btn btn-default btn-filter" type="button" data-target="all">Všechny produtky</button>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="table-container">
+                    <div class="table-responsive table-filter table-list-search table-condensed">
+                        <form method="POST" action="javascript:void(0)" >
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th colspan="2">Název produktu</th>
+                                        <th>Kategorie </th>
+                                        <th class="text-center">Cena </th>
+                                        <th class="text-center">Sleva </th>
+                                        <th class="text-right">Akce</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr n:foreach="$product as $item" data-status="{if $item->aktivni === 0}neaktivni{else}aktivni{/if}">
+                                        <td><img class="img-responsive thumbnail" style="height: 50px;" src="{$basePath}/{$item->fotografie}" alt="{$item->nazev}" /></td>
+                                        <td><a n:href="Product:Detail $item->id"><strong>{$item->nazev}</strong><br /><label class="label-danger">{$item->typ_ulu}</label>&nbsp;<label class="label-primary">{$item->material}</label> </a></td>
+                                        <td>{$item->kategorie->nazev}</td>
+                                        <td class="text-center"><strong>{$item->cena}&nbsp;Kč</strong></td>
+                                        <td class="text-center"><strong>{$item->sleva}&nbsp;Kč</strong></td>
+                                        <td class="pull-right">
+                                            <a n:href="Product:Update $item->id" class="btn btn-info"> <span class="glyphicon glyphicon-edit"> </span></a>
+                                            <a
+                                                data-confirm="Opravdu chcete produkt ' {$item->nazev} ' smazat?"
+                                                data-confirm-title="Confirm"
+                                                data-confirm-text="Opravdu chcete produkt ' {$item->nazev} ' smazat?"
+                                                data-confirm-ok-class="btn-danger"
+                                                data-confirm-ok-text="Delete"
+                                                data-confirm-cancel-class="btn-success"
+                                                data-confirm-cancel-text="Cancel"
+                                                class="btn btn-danger btn-mini"
+                                                data-ajax="on"
+                                                n:href="delete! $item->id"><span class="glyphicon glyphicon-remove" data-confirm="Opravdu chcete vybraný produkt odstranit?"> </span></a>
+                                            <input type="checkbox" {if $item->aktivni === 1} checked{/if} data-toggle="toggle" class="activation-product ajax" rel="{$item->id}" data-href="{link active! $item->id}">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

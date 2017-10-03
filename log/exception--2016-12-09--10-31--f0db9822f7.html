@@ -1,0 +1,1940 @@
+<!DOCTYPE html><!-- "' --></script></style></pre></xmp></table></a></abbr></address></article></aside></audio></b></bdi></bdo></blockquote></button></canvas></caption></cite></code></datalist></del></details></dfn></div></dl></em></fieldset></figcaption></figure></footer></form></h1></h2></h3></h4></h5></h6></header></hgroup></i></iframe></ins></kbd></label></legend></map></mark></menu></meter></nav></noscript></object></ol></optgroup></output></progress></q></rp></rt></ruby></s></samp></section></select></small></span></strong></sub></summary></sup></textarea></time></title></tr></u></ul></var></video>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="noindex">
+	<meta name="generator" content="Tracy by Nette Framework">
+
+	<title>Nette\InvalidStateException: Cannot send header after HTTP headers have been sent (output started at C:\xampp\htdocs\Pesek\vendor\Kasika\VlastniExport\mpdf60\mpdf.php:8331).</title>
+	
+	<style type="text/css" class="tracy-debug">
+	/** * This file is part of the Tracy (https://tracy.nette.org) */ #tracy-bs { font: 9pt/1.5 Verdana, sans-serif; background: white; color: #333; position: absolute; z-index: 20000; left: 0; top: 0; width: 100%; text-align: left; } #tracy-bs * { font: inherit; color: inherit; background: transparent; border: none; margin: 0; padding: 0; text-align: inherit; text-indent: 0; } #tracy-bs b { font-weight: bold; } #tracy-bs i { font-style: italic; } #tracy-bs a { text-decoration: none; color: #328ADC; padding: 2px 4px; margin: -2px -4px; } #tracy-bs a:hover, #tracy-bs a:active, #tracy-bs a:focus { color: #085AA3; } #tracy-bs-toggle { position: absolute; right: .5em; top: .5em; text-decoration: none; background: #CD1818; color: white !important; padding: 3px; } #tracy-bs-error { background: #CD1818; color: white; font: 13pt/1.5 Verdana, sans-serif !important; } #tracy-bs-error a { color: white !important; opacity: 0; font-size: .7em; } #tracy-bs-error:hover a { opacity: .6; } #tracy-bs-error a:hover { opacity: 1; } #tracy-bs-ie-warning { background: black; margin: 1em; padding: .5em; text-align: center; } #tracy-bs h1 { font-size: 15pt; font-weight: normal; text-shadow: 1px 1px 2px rgba(0, 0, 0, .3); margin: .7em 0; } #tracy-bs h1 span { white-space: pre-wrap; } #tracy-bs h2 { font: 14pt/1.5 sans-serif !important; margin: .6em 0; } #tracy-bs h3 { font: bold 10pt/1.5 Verdana, sans-serif !important; margin: 1em 0; padding: 0; } #tracy-bs p, #tracy-bs pre { margin: .8em 0 } #tracy-bs pre, #tracy-bs code, #tracy-bs table { font: 9pt/1.5 Consolas, monospace !important; } #tracy-bs pre, #tracy-bs table { background: #FDF5CE; padding: .4em .7em; border: 1px dotted silver; overflow: auto; } #tracy-bs table pre { padding: 0; margin: 0; border: none; } #tracy-bs table { border-collapse: collapse; width: 100%; } #tracy-bs td, #tracy-bs th { vertical-align: top; text-align: left; padding: 2px 6px; border: 1px solid #e6dfbf; } #tracy-bs th { font-weight: bold; } #tracy-bs tr > :first-child { width: 20%; } #tracy-bs tr:nth-child(2n), #tracy-bs tr:nth-child(2n) pre { background-color: #F7F0CB; } #tracy-bs ol { margin: 1em 0; padding-left: 2.5em; } #tracy-bs ul { font: 7pt/1.5 Verdana, sans-serif !important; padding: 2em 4em; margin: 1em 0 0; color: #777; background: #F6F5F3; border-top: 1px solid #DDD; } #tracy-bs-logo a { position: absolute; bottom: 0; right: 0; width: 100px; height: 50px; background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAAAUBAMAAAD/1DctAAAAMFBMVEWupZzj39rEvbTy8O3X0sz9/PvGwLu8tavQysHq6OS0rKP5+Pbd2dT29fPMxbzPx8DKErMJAAAACXBIWXMAAAsTAAALEwEAmpwYAAACGUlEQVQoFX3TQWgTQRQA0MWLIJJDYehBTykhG5ERTx56K1u8eEhCYtomE7x5L4iLh0ViF7egewuFFqSIYE6hIHsIYQ6CQSg9CDKn4QsNCRlB59C74J/ZNHW1+An5+bOPyf6/s46oz2P+A0yIeZZ2ieEHi6TOnLKTxvWq+b52mxlVO3xnM1s7xLX1504XQH65OnW2dBqn7cCkYsFsfYsWpyY/2salmFTpEyzeR8zosYqMdiPDXdyU52K1wgEa/SjGpdEwUAxqvRfckQCDOyFearsEHe2grvkh/cFAHKvdtI3lcVceKQIOFpv+FOZaNPQBwJZLPp+hfrvT5JZXaUFsR8zqQc9qSgAharkfS5M/5F6nGJJAtXq/eLr3ucZpHccSxOOIPaQhtHohpCH2Xu6rLmQ0djnr4/+J3C6v+AW8/XWYxwYNdlhWj/P5fPSTQwVr0T9lGxdaBCqErNZaqYnEwbkjEB3NasGF3lPdrHa1nnxNOMgj0+neePUPjd2v/qVvUv29ifvc19huQ48qwXShy/9o8o3OSk0cs37mOFd0Ydgvsf/oZEnPVtggfd66lORn9mDyyzXU13SRtH2L6aR5T/snGAcZPfAXz5J1YlJWBEuxdMYqQecpBrlM49xAbmqyHA+xlA1FxBtqT2xmJoNXZlIt74ZBLeJ9ZGDqByNI7p543idzJ23vXEv7IgnsxiS+eNtwNbFdLq7+Bi4wQ0I4SVb9AAAAAElFTkSuQmCC') no-repeat; opacity: .6; padding: 0; margin: 0; } #tracy-bs-logo a:hover, #tracy-bs-logo a:active, #tracy-bs-logo a:focus { opacity: 1; transition: opacity 0.1s; } #tracy-bs div.panel { padding: 1px 25px; } #tracy-bs div.inner { background: #F4F3F1; padding: .1em 1em 1em; border-radius: 8px; } #tracy-bs .outer { overflow: auto; } /* source code */ #tracy-bs pre.code > div { min-width: 100%; float: left; white-space: pre; } #tracy-bs .highlight { background: #CD1818; color: white; font-weight: bold; font-style: normal; display: block; padding: 0 .4em; margin: 0 -.4em; } #tracy-bs .line { color: #9F9C7F; font-weight: normal; font-style: normal; } #tracy-bs pre:hover span[title] { border-bottom: 1px solid rgba(0, 0, 0, 0.2); } #tracy-bs a[href^=editor\:] { color: inherit; border-bottom: 1px dotted rgba(0, 0, 0, .3); } #tracy-bs span[data-tracy-href] { border-bottom: 1px dotted rgba(0, 0, 0, .3); } /* toggle */ html.tracy-js #tracy-bs .tracy-collapsed { display: none; } html.tracy-js #tracy-bs .tracy-toggle.tracy-collapsed { display: inline; } #tracy-bs .tracy-toggle { cursor: pointer; } #tracy-bs .tracy-toggle:after { content: " ▼"; opacity: .4; } #tracy-bs .tracy-toggle.tracy-collapsed:after { content: " ►"; opacity: .4; } /* dump */ #tracy-bs .tracy-dump-array, #tracy-bs .tracy-dump-object { color: #C22; } #tracy-bs .tracy-dump-string { color: #35D; } #tracy-bs .tracy-dump-number { color: #090; } #tracy-bs .tracy-dump-null, #tracy-bs .tracy-dump-bool { color: #850; } #tracy-bs .tracy-dump-visibility, #tracy-bs .tracy-dump-hash { font-size: 85%; color: #998; } #tracy-bs .tracy-dump-indent { display: none; } #tracy-bs pre.tracy-dump div { padding-left: 3ex; } #tracy-bs pre.tracy-dump div div { border-left: 1px solid rgba(0, 0, 0, .1); margin-left: .5ex; } #tracy-bs .caused { float: right; padding: .3em .6em; background: #df8075; border-radius: 0 0 0 8px; white-space: nowrap; } #tracy-bs .caused a { color: white; } 	</style>
+	<script>document.documentElement.className+=' tracy-js'</script>
+</head>
+
+
+<body>
+<div id="tracy-bs">
+	<a id="tracy-bs-toggle" href="#" class="tracy-toggle"></a>
+	<div>
+		<div id="tracy-bs-error" class="panel">
+			<p>Nette\InvalidStateException</p>
+
+			<h1><span>Cannot send header after HTTP headers have been sent (output started at C:\xampp\htdocs\Pesek\vendor\Kasika\VlastniExport\mpdf60\mpdf.php:8331).</span>
+			<a href="https://www.google.com/search?sourceid=tracy&amp;q=Nette%5CInvalidStateException+Cannot+send+header+after+HTTP+headers+have+been+sent+%28output+started+at+C%3A%5Cxampp%5Chtdocs%5CPesek%5Cvendor%5CKasika%5CVlastniExport%5Cmpdf60%5Cmpdf.php%3A8331%29." target="_blank" rel="noreferrer noopener">search&#x25ba;</a>
+			</h1>
+		</div>
+
+		
+
+				
+			
+
+			
+
+						
+			<div class="panel">
+			<h2><a data-tracy-ref="^+" class="tracy-toggle tracy-collapsed">Source file</a></h2>
+
+			<div class="tracy-collapsed inner">
+				<p><b>File:</b> <a href="editor://open/?file=C%3A%5Cxampp%5Chtdocs%5CPesek%5Cvendor%5Cnette%5Chttp%5Csrc%5CHttp%5CResponse.php&amp;line=293" title="...\Pesek\vendor\nette\http\src\Http\Response.php:293">...\Pesek\vendor\nette\http\src\Http\<b>Response.php</b>:293</a></p>
+				<pre data-tracy-href="editor://open/?file=C%3A%5Cxampp%5Chtdocs%5CPesek%5Cvendor%5Cnette%5Chttp%5Csrc%5CHttp%5CResponse.php&amp;line=293" class='code'><div><code><span style="color: #06B"><span style="color: #D24; font-weight: bold"><span class='line'>283:</span>        {
+<span class='line'>284:</span>            </span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">setCookie</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$name</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #000">FALSE</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #000">0</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #000">$path</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #000">$domain</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #000">$secure</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>285:</span>        }
+<span class='line'>286:</span>    
+<span class='line'>287:</span>    
+<span class='line'>288:</span>        private function </span><span style="color: #000">checkHeaders</span><span style="color: #D24; font-weight: bold">()
+<span class='line'>289:</span>        {
+<span class='line'>290:</span>            if (</span><span style="color: #000">PHP_SAPI </span><span style="color: #D24; font-weight: bold">=== </span><span style="color: #080">'cli'</span><span style="color: #D24; font-weight: bold">) {
+<span class='line'>291:</span>    
+<span class='line'>292:</span>            } elseif (</span><span style="color: #000">headers_sent</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$file</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #000">$line</span><span style="color: #D24; font-weight: bold">)) {
+<span class='highlight'>293:                throw new Nette\InvalidStateException('Cannot send header after HTTP headers have been sent' . ($file ? " (output started at $file:$line)." : '.'));
+</span></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #080"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #080"></span><span style="color: #000"></span><span style="color: #080"></span><span style="color: #000"></span><span style="color: #080"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #080"></span><span style="color: #D24; font-weight: bold"><span class='line'>294:</span>    
+<span class='line'>295:</span>            } elseif (</span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">warnOnBuffer </span><span style="color: #D24; font-weight: bold">&amp;&amp; </span><span style="color: #000">ob_get_length</span><span style="color: #D24; font-weight: bold">() &amp;&amp; !</span><span style="color: #000">array_filter</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">ob_get_status</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">TRUE</span><span style="color: #D24; font-weight: bold">), function (</span><span style="color: #000">$i</span><span style="color: #D24; font-weight: bold">) { return !</span><span style="color: #000">$i</span><span style="color: #D24; font-weight: bold">[</span><span style="color: #080">'chunk_size'</span><span style="color: #D24; font-weight: bold">]; })) {
+<span class='line'>296:</span>                </span><span style="color: #000">trigger_error</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #080">'Possible problem: you are sending a HTTP header while already having some data in output buffer. Try Tracy\OutputDebugger or start session earlier.'</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>297:</span>            }
+</span></span></code></div></pre>			</div></div>
+
+
+									<div class="panel">
+				<h2><a data-tracy-ref="^+" class="tracy-toggle">Call stack</a></h2>
+
+				<div class="inner">
+				<ol>
+										<li><p>
+
+											<a href="editor://open/?file=C%3A%5Cxampp%5Chtdocs%5CPesek%5Cvendor%5Cnette%5Chttp%5Csrc%5CHttp%5CResponse.php&amp;line=67" title="...\Pesek\vendor\nette\http\src\Http\Response.php:67">...\Pesek\vendor\nette\http\src\Http\<b>Response.php</b>:67</a>					
+					<a data-tracy-ref="^p + .file" class="tracy-toggle tracy-collapsed">source</a>&nbsp; 
+					Nette\Http\Response-&gt;checkHeaders()
+					</p>
+
+											<div class="tracy-collapsed file"><pre data-tracy-href="editor://open/?file=C%3A%5Cxampp%5Chtdocs%5CPesek%5Cvendor%5Cnette%5Chttp%5Csrc%5CHttp%5CResponse.php&amp;line=67" class='code'><div><code><span style="color: #06B"><span style="color: #998; font-style: italic"><span class='line'>57:</span>         * @return self
+<span class='line'>58:</span>         * @throws Nette\InvalidArgumentException  if code is invalid
+<span class='line'>59:</span>         * @throws Nette\InvalidStateException  if HTTP headers have been sent
+<span class='line'>60:</span>         */
+<span class='line'>61:</span>        </span><span style="color: #D24; font-weight: bold">public function </span><span style="color: #000">setCode</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$code</span><span style="color: #D24; font-weight: bold">)
+<span class='line'>62:</span>        {
+<span class='line'>63:</span>            </span><span style="color: #000">$code </span><span style="color: #D24; font-weight: bold">= (int) </span><span style="color: #000">$code</span><span style="color: #D24; font-weight: bold">;
+<span class='line'>64:</span>            if (</span><span style="color: #000">$code </span><span style="color: #D24; font-weight: bold">&lt; </span><span style="color: #000">100 </span><span style="color: #D24; font-weight: bold">|| </span><span style="color: #000">$code </span><span style="color: #D24; font-weight: bold">&gt; </span><span style="color: #000">599</span><span style="color: #D24; font-weight: bold">) {
+<span class='line'>65:</span>                throw new </span><span style="color: #000">Nette</span><span style="color: #D24; font-weight: bold">\</span><span style="color: #000">InvalidArgumentException</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #080">"Bad HTTP response '</span><span style="color: #000">$code</span><span style="color: #080">'."</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>66:</span>            }
+<span class='highlight'>67:            self::checkHeaders();
+</span></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"><span class='line'>68:</span>            </span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">code </span><span style="color: #D24; font-weight: bold">= </span><span style="color: #000">$code</span><span style="color: #D24; font-weight: bold">;
+<span class='line'>69:</span>            </span><span style="color: #000">$protocol </span><span style="color: #D24; font-weight: bold">= isset(</span><span style="color: #000">$_SERVER</span><span style="color: #D24; font-weight: bold">[</span><span style="color: #080">'SERVER_PROTOCOL'</span><span style="color: #D24; font-weight: bold">]) ? </span><span style="color: #000">$_SERVER</span><span style="color: #D24; font-weight: bold">[</span><span style="color: #080">'SERVER_PROTOCOL'</span><span style="color: #D24; font-weight: bold">] : </span><span style="color: #080">'HTTP/1.1'</span><span style="color: #D24; font-weight: bold">;
+<span class='line'>70:</span>            </span><span style="color: #000">header</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$protocol </span><span style="color: #D24; font-weight: bold">. </span><span style="color: #080">' ' </span><span style="color: #D24; font-weight: bold">. </span><span style="color: #000">$code</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #000">TRUE</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #000">$code</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>71:</span>            return </span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">;
+</span></span></code></div></pre></div>
+					
+					
+										</li>
+										<li><p>
+
+											<a href="editor://open/?file=C%3A%5Cxampp%5Chtdocs%5CPesek%5Cvendor%5Cnette%5Chttp%5Csrc%5CHttp%5CResponse.php&amp;line=144" title="...\Pesek\vendor\nette\http\src\Http\Response.php:144">...\Pesek\vendor\nette\http\src\Http\<b>Response.php</b>:144</a>					
+					<a data-tracy-ref="^p + .file" class="tracy-toggle tracy-collapsed">source</a>&nbsp; 
+					Nette\Http\Response-&gt;setCode(<a data-tracy-ref="^p + .args" class="tracy-toggle tracy-collapsed">arguments</a>)
+					</p>
+
+											<div class="tracy-collapsed file"><pre data-tracy-href="editor://open/?file=C%3A%5Cxampp%5Chtdocs%5CPesek%5Cvendor%5Cnette%5Chttp%5Csrc%5CHttp%5CResponse.php&amp;line=144" class='code'><div><code><span style="color: #06B"><span style="color: #D24; font-weight: bold"><span class='line'>134:</span>    
+<span class='line'>135:</span>        </span><span style="color: #998; font-style: italic">/**
+<span class='line'>136:</span>         * Redirects to a new URL. Note: call exit() after it.
+<span class='line'>137:</span>         * @param  string  URL
+<span class='line'>138:</span>         * @param  int     HTTP code
+<span class='line'>139:</span>         * @return void
+<span class='line'>140:</span>         * @throws Nette\InvalidStateException  if HTTP headers have been sent
+<span class='line'>141:</span>         */
+<span class='line'>142:</span>        </span><span style="color: #D24; font-weight: bold">public function </span><span style="color: #000">redirect</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$url</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #000">$code </span><span style="color: #D24; font-weight: bold">= </span><span style="color: #000">self</span><span style="color: #D24; font-weight: bold">::</span><span style="color: #000">S302_FOUND</span><span style="color: #D24; font-weight: bold">)
+<span class='line'>143:</span>        {
+<span class='highlight'>144:            $this-&gt;setCode($code);
+</span></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"><span class='line'>145:</span>            </span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">setHeader</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #080">'Location'</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #000">$url</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>146:</span>            if (</span><span style="color: #000">preg_match</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #080">'#^https?:|^\s*+[a-z0-9+.-]*+[^:]#i'</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #000">$url</span><span style="color: #D24; font-weight: bold">)) {
+<span class='line'>147:</span>                </span><span style="color: #000">$escapedUrl </span><span style="color: #D24; font-weight: bold">= </span><span style="color: #000">htmlSpecialChars</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$url</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #000">ENT_IGNORE </span><span style="color: #D24; font-weight: bold">| </span><span style="color: #000">ENT_QUOTES</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #080">'UTF-8'</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>148:</span>                echo </span><span style="color: #080">"&lt;h1&gt;Redirect&lt;/h1&gt;\n\n&lt;p&gt;&lt;a href=\"</span><span style="color: #000">$escapedUrl</span><span style="color: #080">\"&gt;Please click here to continue&lt;/a&gt;.&lt;/p&gt;"</span><span style="color: #D24; font-weight: bold">;
+</span></span></code></div></pre></div>
+					
+					
+											<div class="tracy-collapsed outer args">
+						<table>
+						<tr><th>$code</th><td><pre class="tracy-dump"><span class="tracy-dump-number">303</span>
+</pre>
+</td></tr>
+						</table>
+						</div>
+										</li>
+										<li><p>
+
+											<a href="editor://open/?file=C%3A%5Cxampp%5Chtdocs%5CPesek%5Cvendor%5Cnette%5Capplication%5Csrc%5CApplication%5CResponses%5CRedirectResponse.php&amp;line=63" title="...\src\Application\Responses\RedirectResponse.php:63">...\src\Application\Responses\<b>RedirectResponse.php</b>:63</a>					
+					<a data-tracy-ref="^p + .file" class="tracy-toggle tracy-collapsed">source</a>&nbsp; 
+					Nette\Http\Response-&gt;redirect(<a data-tracy-ref="^p + .args" class="tracy-toggle tracy-collapsed">arguments</a>)
+					</p>
+
+											<div class="tracy-collapsed file"><pre data-tracy-href="editor://open/?file=C%3A%5Cxampp%5Chtdocs%5CPesek%5Cvendor%5Cnette%5Capplication%5Csrc%5CApplication%5CResponses%5CRedirectResponse.php&amp;line=63" class='code'><div><code><span style="color: #06B"><span style="color: #D24; font-weight: bold"><span class='line'>53:</span>            return </span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">code</span><span style="color: #D24; font-weight: bold">;
+<span class='line'>54:</span>        }
+<span class='line'>55:</span>    
+<span class='line'>56:</span>    
+<span class='line'>57:</span>        </span><span style="color: #998; font-style: italic">/**
+<span class='line'>58:</span>         * Sends response to output.
+<span class='line'>59:</span>         * @return void
+<span class='line'>60:</span>         */
+<span class='line'>61:</span>        </span><span style="color: #D24; font-weight: bold">public function </span><span style="color: #000">send</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">Http</span><span style="color: #D24; font-weight: bold">\</span><span style="color: #000">IRequest $httpRequest</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #000">Http</span><span style="color: #D24; font-weight: bold">\</span><span style="color: #000">IResponse $httpResponse</span><span style="color: #D24; font-weight: bold">)
+<span class='line'>62:</span>        {
+<span class='highlight'>63:            $httpResponse-&gt;redirect($this-&gt;url, $this-&gt;code);
+</span></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"><span class='line'>64:</span>        }
+<span class='line'>65:</span>    
+<span class='line'>66:</span>    }
+<span class='line'>67:</span>    </span>
+</span></code></div></pre></div>
+					
+					
+											<div class="tracy-collapsed outer args">
+						<table>
+						<tr><th>$url</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"http://localhost/pesek/www/?_fid=8qh4"</span> (37)
+</pre>
+</td></tr>
+<tr><th>$code</th><td><pre class="tracy-dump"><span class="tracy-dump-number">303</span>
+</pre>
+</td></tr>
+						</table>
+						</div>
+										</li>
+										<li><p>
+
+											<a href="editor://open/?file=C%3A%5Cxampp%5Chtdocs%5CPesek%5Cvendor%5Cnette%5Capplication%5Csrc%5CApplication%5CApplication.php&amp;line=157" title="...\nette\application\src\Application\Application.php:157">...\nette\application\src\Application\<b>Application.php</b>:157</a>					
+					<a data-tracy-ref="^p + .file" class="tracy-toggle tracy-collapsed">source</a>&nbsp; 
+					Nette\Application\Responses\RedirectResponse-&gt;send(<a data-tracy-ref="^p + .args" class="tracy-toggle tracy-collapsed">arguments</a>)
+					</p>
+
+											<div class="tracy-collapsed file"><pre data-tracy-href="editor://open/?file=C%3A%5Cxampp%5Chtdocs%5CPesek%5Cvendor%5Cnette%5Capplication%5Csrc%5CApplication%5CApplication.php&amp;line=157" class='code'><div><code><span style="color: #06B"><span style="color: #D24; font-weight: bold"><span class='line'>147:</span>            </span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">presenter </span><span style="color: #D24; font-weight: bold">= </span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">presenterFactory</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">createPresenter</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$request</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">getPresenterName</span><span style="color: #D24; font-weight: bold">());
+<span class='line'>148:</span>            </span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">onPresenter</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">presenter</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>149:</span>            </span><span style="color: #000">$response </span><span style="color: #D24; font-weight: bold">= </span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">presenter</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">run</span><span style="color: #D24; font-weight: bold">(clone </span><span style="color: #000">$request</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>150:</span>    
+<span class='line'>151:</span>            if (</span><span style="color: #000">$response </span><span style="color: #D24; font-weight: bold">instanceof </span><span style="color: #000">Responses</span><span style="color: #D24; font-weight: bold">\</span><span style="color: #000">ForwardResponse</span><span style="color: #D24; font-weight: bold">) {
+<span class='line'>152:</span>                </span><span style="color: #000">$request </span><span style="color: #D24; font-weight: bold">= </span><span style="color: #000">$response</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">getRequest</span><span style="color: #D24; font-weight: bold">();
+<span class='line'>153:</span>                goto </span><span style="color: #000">process</span><span style="color: #D24; font-weight: bold">;
+<span class='line'>154:</span>    
+<span class='line'>155:</span>            } elseif (</span><span style="color: #000">$response</span><span style="color: #D24; font-weight: bold">) {
+<span class='line'>156:</span>                </span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">onResponse</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #000">$response</span><span style="color: #D24; font-weight: bold">);
+<span class='highlight'>157:                $response-&gt;send($this-&gt;httpRequest, $this-&gt;httpResponse);
+</span></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"><span class='line'>158:</span>            }
+<span class='line'>159:</span>        }
+<span class='line'>160:</span>    
+<span class='line'>161:</span>    
+</span></span></code></div></pre></div>
+					
+					
+											<div class="tracy-collapsed outer args">
+						<table>
+						<tr><th>$httpRequest</th><td><pre class="tracy-dump" data-tracy-dump='{"object":"01"}'></pre>
+</td></tr>
+<tr><th>$httpResponse</th><td><pre class="tracy-dump" data-tracy-dump='{"object":"04"}'></pre>
+</td></tr>
+						</table>
+						</div>
+										</li>
+										<li><p>
+
+											<a href="editor://open/?file=C%3A%5Cxampp%5Chtdocs%5CPesek%5Cvendor%5Cnette%5Capplication%5Csrc%5CApplication%5CApplication.php&amp;line=83" title="...\nette\application\src\Application\Application.php:83">...\nette\application\src\Application\<b>Application.php</b>:83</a>					
+					<a data-tracy-ref="^p + .file" class="tracy-toggle tracy-collapsed">source</a>&nbsp; 
+					Nette\Application\Application-&gt;processRequest(<a data-tracy-ref="^p + .args" class="tracy-toggle tracy-collapsed">arguments</a>)
+					</p>
+
+											<div class="tracy-collapsed file"><pre data-tracy-href="editor://open/?file=C%3A%5Cxampp%5Chtdocs%5CPesek%5Cvendor%5Cnette%5Capplication%5Csrc%5CApplication%5CApplication.php&amp;line=83" class='code'><div><code><span style="color: #06B"><span style="color: #D24; font-weight: bold"><span class='line'>73:</span>    
+<span class='line'>74:</span>    
+<span class='line'>75:</span>        </span><span style="color: #998; font-style: italic">/**
+<span class='line'>76:</span>         * Dispatch a HTTP request to a front controller.
+<span class='line'>77:</span>         * @return void
+<span class='line'>78:</span>         */
+<span class='line'>79:</span>        </span><span style="color: #D24; font-weight: bold">public function </span><span style="color: #000">run</span><span style="color: #D24; font-weight: bold">()
+<span class='line'>80:</span>        {
+<span class='line'>81:</span>            try {
+<span class='line'>82:</span>                </span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">onStartup</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">);
+<span class='highlight'>83:                $this-&gt;processRequest($this-&gt;createInitialRequest());
+</span></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"><span class='line'>84:</span>                </span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">onShutdown</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>85:</span>    
+<span class='line'>86:</span>            } catch (\</span><span style="color: #000">Throwable $e</span><span style="color: #D24; font-weight: bold">) {
+<span class='line'>87:</span>            } catch (\</span><span style="color: #000">Exception $e</span><span style="color: #D24; font-weight: bold">) {
+</span></span></code></div></pre></div>
+					
+					
+											<div class="tracy-collapsed outer args">
+						<table>
+						<tr><th>$request</th><td><pre class="tracy-dump" data-tracy-dump='{"object":"05"}'></pre>
+</td></tr>
+						</table>
+						</div>
+										</li>
+										<li><p>
+
+											<a href="editor://open/?file=C%3A%5Cxampp%5Chtdocs%5CPesek%5Cwww%5Cindex.php&amp;line=8" title="C:\xampp\htdocs\Pesek\www\index.php:8">C:\xampp\htdocs\Pesek\www\<b>index.php</b>:8</a>					
+					<a data-tracy-ref="^p + .file" class="tracy-toggle">source</a>&nbsp; 
+					Nette\Application\Application-&gt;run()
+					</p>
+
+											<div class="file"><pre data-tracy-href="editor://open/?file=C%3A%5Cxampp%5Chtdocs%5CPesek%5Cwww%5Cindex.php&amp;line=8" class='code'><div><code><span style="color: #06B"><span class='line'>1:</span>    <span style="color: #000">&lt;?php
+<span class='line'>2:</span>    
+<span class='line'>3:</span>    </span><span style="color: #998; font-style: italic">// Uncomment this line if you must temporarily take down your site for maintenance.
+<span class='line'>4:</span>    // require __DIR__ . '/.maintenance.php';
+<span class='line'>5:</span>    
+<span class='line'>6:</span>    </span><span style="color: #000">$container </span><span style="color: #D24; font-weight: bold">= require </span><span style="color: #000">__DIR__ </span><span style="color: #D24; font-weight: bold">. </span><span style="color: #080">'/../app/bootstrap.php'</span><span style="color: #D24; font-weight: bold">;
+<span class='line'>7:</span>    
+<span class='highlight'>8:    $container-&gt;getByType(Nette\Application\Application::class)-&gt;run();
+</span></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"><span class='line'>9:</span>    </span>
+</span></code></div></pre></div>
+					
+					
+										</li>
+									</ol>
+			</div></div>
+			
+
+			
+				
+
+		
+
+				<div class="panel">
+		<h2><a data-tracy-ref="^+" class="tracy-toggle tracy-collapsed">Last muted error</a></h2>
+		<div class="tracy-collapsed inner">
+
+		<h3>Notice: Undefined offset: 1</h3>
+					<p><a href="editor://open/?file=C%3A%5Cxampp%5Chtdocs%5CPesek%5Cvendor%5CKasika%5CVlastniExport%5Cmpdf60%5Cmpdf.php&amp;line=21193" title="...\Pesek\vendor\Kasika\VlastniExport\mpdf60\mpdf.php:21193">...\Pesek\vendor\Kasika\VlastniExport\mpdf60\<b>mpdf.php</b>:21193</a></p>
+			<div><pre data-tracy-href="editor://open/?file=C%3A%5Cxampp%5Chtdocs%5CPesek%5Cvendor%5CKasika%5CVlastniExport%5Cmpdf60%5Cmpdf.php&amp;line=21193" class='code'><div><code><span style="color: #06B"><span style="color: #D24; font-weight: bold"><span class='line'>21183:</span>            else {
+<span class='line'>21184:</span>                if (isset(</span><span style="color: #000">$arrayaux</span><span style="color: #D24; font-weight: bold">[</span><span style="color: #000">$i</span><span style="color: #D24; font-weight: bold">][</span><span style="color: #000">16</span><span style="color: #D24; font-weight: bold">][</span><span style="color: #080">'R'</span><span style="color: #D24; font-weight: bold">])) { </span><span style="color: #000">$lastspanborder </span><span style="color: #D24; font-weight: bold">= </span><span style="color: #000">$arrayaux</span><span style="color: #D24; font-weight: bold">[</span><span style="color: #000">$i</span><span style="color: #D24; font-weight: bold">][</span><span style="color: #000">16</span><span style="color: #D24; font-weight: bold">]; }
+<span class='line'>21185:</span>                else { </span><span style="color: #000">$lastspanborder </span><span style="color: #D24; font-weight: bold">= </span><span style="color: #000">false</span><span style="color: #D24; font-weight: bold">; }
+<span class='line'>21186:</span>            }
+<span class='line'>21187:</span>        }
+<span class='line'>21188:</span>    
+<span class='line'>21189:</span>        for(</span><span style="color: #000">$i</span><span style="color: #D24; font-weight: bold">=</span><span style="color: #000">0</span><span style="color: #D24; font-weight: bold">;</span><span style="color: #000">$i </span><span style="color: #D24; font-weight: bold">&lt; </span><span style="color: #000">$array_size</span><span style="color: #D24; font-weight: bold">; </span><span style="color: #000">$i</span><span style="color: #D24; font-weight: bold">++)
+<span class='line'>21190:</span>        {
+<span class='line'>21191:</span>        </span><span style="color: #998; font-style: italic">// COLS
+<span class='line'>21192:</span>        </span><span style="color: #000">$oldcolumn </span><span style="color: #D24; font-weight: bold">= </span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">CurrCol</span><span style="color: #D24; font-weight: bold">;
+<span class='highlight'>21193:        $vetor = $arrayaux[$i];
+</span></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"><span class='line'>21194:</span>        if (</span><span style="color: #000">$i </span><span style="color: #D24; font-weight: bold">== </span><span style="color: #000">0 </span><span style="color: #D24; font-weight: bold">and </span><span style="color: #000">$vetor</span><span style="color: #D24; font-weight: bold">[</span><span style="color: #000">0</span><span style="color: #D24; font-weight: bold">] != </span><span style="color: #080">"\n" </span><span style="color: #D24; font-weight: bold">and !</span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">ispre</span><span style="color: #D24; font-weight: bold">) {
+<span class='line'>21195:</span>            </span><span style="color: #000">$vetor</span><span style="color: #D24; font-weight: bold">[</span><span style="color: #000">0</span><span style="color: #D24; font-weight: bold">] = </span><span style="color: #000">ltrim</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$vetor</span><span style="color: #D24; font-weight: bold">[</span><span style="color: #000">0</span><span style="color: #D24; font-weight: bold">]);
+<span class='line'>21196:</span>            if (!empty(</span><span style="color: #000">$vetor</span><span style="color: #D24; font-weight: bold">[</span><span style="color: #000">18</span><span style="color: #D24; font-weight: bold">])) { </span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">otl</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">trimOTLdata</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$vetor</span><span style="color: #D24; font-weight: bold">[</span><span style="color: #000">18</span><span style="color: #D24; font-weight: bold">], </span><span style="color: #000">true</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #000">false</span><span style="color: #D24; font-weight: bold">); }    </span><span style="color: #998; font-style: italic">// *OTL*
+<span class='line'>21197:</span>        </span><span style="color: #D24; font-weight: bold">}
+</span></span></code></div></pre></div>
+		
+		</div></div>
+		
+
+								<div class="panel">
+			<h2><a data-tracy-ref="^+" class="tracy-toggle tracy-collapsed">Nette Application</a></h2>
+
+			<div class="tracy-collapsed inner">
+			<h3>Requests</h3><pre class="tracy-dump" data-tracy-dump='[[0,{"object":"05"}]]'></pre>
+<h3>Presenter</h3><pre class="tracy-dump" data-tracy-dump='{"object":"06"}'></pre>
+		</div></div>
+		
+
+		<div class="panel">
+		<h2><a data-tracy-ref="^+" class="tracy-toggle tracy-collapsed">Environment</a></h2>
+
+		<div class="tracy-collapsed inner">
+			<h3><a data-tracy-ref="^+" class="tracy-toggle">$_SERVER</a></h3>
+			<div class="outer">
+			<table>
+			<tr><th>REDIRECT_MIBDIRS</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"C:/xampp/php/extras/mibs"</span> (24)
+</pre>
+</td></tr>
+<tr><th>REDIRECT_MYSQL_HOME</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"\xampp\mysql\bin"</span> (16)
+</pre>
+</td></tr>
+<tr><th>REDIRECT_OPENSSL_CONF</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"C:/xampp/apache/bin/openssl.cnf"</span> (31)
+</pre>
+</td></tr>
+<tr><th>REDIRECT_PHP_PEAR_SYSCONF_DIR</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"\xampp\php"</span> (10)
+</pre>
+</td></tr>
+<tr><th>REDIRECT_PHPRC</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"\xampp\php"</span> (10)
+</pre>
+</td></tr>
+<tr><th>REDIRECT_TMP</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"\xampp\tmp"</span> (10)
+</pre>
+</td></tr>
+<tr><th>REDIRECT_STATUS</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"200"</span> (3)
+</pre>
+</td></tr>
+<tr><th>MIBDIRS</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"C:/xampp/php/extras/mibs"</span> (24)
+</pre>
+</td></tr>
+<tr><th>MYSQL_HOME</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"\xampp\mysql\bin"</span> (16)
+</pre>
+</td></tr>
+<tr><th>OPENSSL_CONF</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"C:/xampp/apache/bin/openssl.cnf"</span> (31)
+</pre>
+</td></tr>
+<tr><th>PHP_PEAR_SYSCONF_DIR</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"\xampp\php"</span> (10)
+</pre>
+</td></tr>
+<tr><th>PHPRC</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"\xampp\php"</span> (10)
+</pre>
+</td></tr>
+<tr><th>TMP</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"\xampp\tmp"</span> (10)
+</pre>
+</td></tr>
+<tr><th>HTTP_HOST</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"localhost"</span> (9)
+</pre>
+</td></tr>
+<tr><th>HTTP_CONNECTION</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"keep-alive"</span> (10)
+</pre>
+</td></tr>
+<tr><th>CONTENT_LENGTH</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"60"</span> (2)
+</pre>
+</td></tr>
+<tr><th>HTTP_CACHE_CONTROL</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"max-age=0"</span> (9)
+</pre>
+</td></tr>
+<tr><th>HTTP_ORIGIN</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"http://localhost"</span> (16)
+</pre>
+</td></tr>
+<tr><th>HTTP_UPGRADE_INSECURE_REQUESTS</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"1"</span>
+</pre>
+</td></tr>
+<tr><th>HTTP_USER_AGENT</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36"</span> (109)
+</pre>
+</td></tr>
+<tr><th>CONTENT_TYPE</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"application/x-www-form-urlencoded"</span> (33)
+</pre>
+</td></tr>
+<tr><th>HTTP_ACCEPT</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"</span> (74)
+</pre>
+</td></tr>
+<tr><th>HTTP_REFERER</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"http://localhost/pesek/www/order/summary"</span> (40)
+</pre>
+</td></tr>
+<tr><th>HTTP_ACCEPT_ENCODING</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"gzip, deflate, br"</span> (17)
+</pre>
+</td></tr>
+<tr><th>HTTP_ACCEPT_LANGUAGE</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"cs-CZ,cs;q=0.8"</span> (14)
+</pre>
+</td></tr>
+<tr><th>HTTP_COOKIE</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"_ga=GA1.1.1648047881.1480599282; PHPSESSID=mi111pual7ce5uve22cikrgj82; nette-browser=06k5c00vyz"</span> (95)
+</pre>
+</td></tr>
+<tr><th>PATH</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files (x86)\NVIDIA Corpor ... "</span> (891)
+</pre>
+</td></tr>
+<tr><th>SystemRoot</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"C:\WINDOWS"</span> (10)
+</pre>
+</td></tr>
+<tr><th>COMSPEC</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"C:\WINDOWS\system32\cmd.exe"</span> (27)
+</pre>
+</td></tr>
+<tr><th>PATHEXT</th><td><pre class="tracy-dump"><span class="tracy-dump-string">".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC"</span> (53)
+</pre>
+</td></tr>
+<tr><th>WINDIR</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"C:\WINDOWS"</span> (10)
+</pre>
+</td></tr>
+<tr><th>SERVER_SIGNATURE</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"&lt;address&gt;Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.21 Server at localhost Port 80&lt;/address&gt;
+"</span> (95)
+</pre>
+</td></tr>
+<tr><th>SERVER_SOFTWARE</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.21"</span> (47)
+</pre>
+</td></tr>
+<tr><th>SERVER_NAME</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"localhost"</span> (9)
+</pre>
+</td></tr>
+<tr><th>SERVER_ADDR</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"::1"</span> (3)
+</pre>
+</td></tr>
+<tr><th>SERVER_PORT</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"80"</span> (2)
+</pre>
+</td></tr>
+<tr><th>REMOTE_ADDR</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"::1"</span> (3)
+</pre>
+</td></tr>
+<tr><th>DOCUMENT_ROOT</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"C:/xampp/htdocs"</span> (15)
+</pre>
+</td></tr>
+<tr><th>REQUEST_SCHEME</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"http"</span> (4)
+</pre>
+</td></tr>
+<tr><th>CONTEXT_PREFIX</th><td><pre class="tracy-dump"><span class="tracy-dump-string">""</span>
+</pre>
+</td></tr>
+<tr><th>CONTEXT_DOCUMENT_ROOT</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"C:/xampp/htdocs"</span> (15)
+</pre>
+</td></tr>
+<tr><th>SERVER_ADMIN</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"postmaster@localhost"</span> (20)
+</pre>
+</td></tr>
+<tr><th>SCRIPT_FILENAME</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"C:/xampp/htdocs/Pesek/www/index.php"</span> (35)
+</pre>
+</td></tr>
+<tr><th>REMOTE_PORT</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"55720"</span> (5)
+</pre>
+</td></tr>
+<tr><th>REDIRECT_URL</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"http://localhost/pesek/www/order/summary"</span> (40)
+</pre>
+</td></tr>
+<tr><th>GATEWAY_INTERFACE</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"CGI/1.1"</span> (7)
+</pre>
+</td></tr>
+<tr><th>SERVER_PROTOCOL</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"HTTP/1.1"</span> (8)
+</pre>
+</td></tr>
+<tr><th>REQUEST_METHOD</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"POST"</span> (4)
+</pre>
+</td></tr>
+<tr><th>QUERY_STRING</th><td><pre class="tracy-dump"><span class="tracy-dump-string">""</span>
+</pre>
+</td></tr>
+<tr><th>REQUEST_URI</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"/pesek/www/order/summary"</span> (24)
+</pre>
+</td></tr>
+<tr><th>SCRIPT_NAME</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"/Pesek/www/index.php"</span> (20)
+</pre>
+</td></tr>
+<tr><th>PHP_SELF</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"/Pesek/www/index.php"</span> (20)
+</pre>
+</td></tr>
+<tr><th>REQUEST_TIME_FLOAT</th><td><pre class="tracy-dump"><span class="tracy-dump-number">1481275886.926</span>
+</pre>
+</td></tr>
+<tr><th>REQUEST_TIME</th><td><pre class="tracy-dump"><span class="tracy-dump-number">1481275886</span>
+</pre>
+</td></tr>
+			</table>
+			</div>
+
+
+			<h3><a data-tracy-ref="^+" class="tracy-toggle">$_SESSION</a></h3>
+			<div class="outer">
+						<table>
+			<tr><th>__NF</th><td><i>Nette Session</i></td></tr>
+<tr><th>_tracy</th><td><pre class="tracy-dump" data-tracy-dump='[["redirect",null],["bar",[["65d55cd79f",[["content","\t\t<div class=\"tracy-panel \" id=\"tracy-debug-panel-Tracy-info\" data-tracy-content=\"\u0026lt;style class=\u0026quot;tracy-debug\u0026quot;\u0026gt;\n\t#tracy-debug .tracy-Inf ... "],["dumps",[null]]]],["ab154f318f",[["content","\t\t<div class=\"tracy-panel \" id=\"tracy-debug-panel-Tracy-info\" data-tracy-content=\"\u0026lt;style class=\u0026quot;tracy-debug\u0026quot;\u0026gt;\n\t#tracy-debug .tracy-Inf ... "],["dumps",[null]]]],["d99174f2a2",[["content","\t\t<div class=\"tracy-panel \" id=\"tracy-debug-panel-Tracy-info\" data-tracy-content=\"\u0026lt;style class=\u0026quot;tracy-debug\u0026quot;\u0026gt;\n\t#tracy-debug .tracy-Inf ... "],["dumps",[null]]]],["7d035c3213",[["content","\t\t<div class=\"tracy-panel \" id=\"tracy-debug-panel-Tracy-info\" data-tracy-content=\"\u0026lt;style class=\u0026quot;tracy-debug\u0026quot;\u0026gt;\n\t#tracy-debug .tracy-Inf ... "],["dumps",[null]]]],["1b02930fcf",[["content","\t\t<div class=\"tracy-panel \" id=\"tracy-debug-panel-Tracy-info\" data-tracy-content=\"\u0026lt;style class=\u0026quot;tracy-debug\u0026quot;\u0026gt;\n\t#tracy-debug .tracy-Inf ... "],["dumps",[null]]]],["2380cf27c0",null]]],["bluescreen",[["86a5470716",null],["415e8f8470",null],["02d486b108",null],["b1d17170a4",null],["93424bb159",null],["b166eb63a4",null],["dcf72af9cf",null],["b5e7cf3684",null],["1d71089969",null],["5b59f2aa74",null],["853bf9570e",null],["bf233a95c8",null],["fc09092d49",null],["5ae5f41b1b",null],["f4481f60f7",null],["9b295d6b6c",null],["965c06e637",null],["7f67281770",null],["5336cf3e2f",null],["9abadc528a",null],["8e7486d978",null],["bbd055ca85",null],["bdd8cac98b",null],["6752a1eddf",null],["e74780cc32",null],["b63e4d24c1",null],["c5d4b4f70d",null],["f187629f37",null],["30a244a47f",null],["f772da6020",null],["bd99a37306",null],["b727c534cf",null],["d39e052fc8",null],["739cc1c20f",null],["50b7abea9f",null],["9336199318",null],["9c918eb2d8",null],["a93c0f5a1c",null],["465d091201",null],["b159a21ad0",null],["040c4b866a",null],["32a6a15ba5",null],["fa8f34dd55",null],["8d80ad878f",null],["8c9995d4d2",null],["c5b95cdc33",null],["30dfca0b5e",null],["3db2c5bafd",null],["06771b4d33",null],["3645d9e416",null],["83fc4449b4",null],["b7059d4bbc",null],["e83fbf7408",null],["9c1f1f3deb",null],["5b92ae3ef7",null],["bcdc4e7d4b",null],["e95a79d03b",null],["99268497f8",null],["c291593a24",null],["5b9cc370c1",null],["4e28b719bc",null],["9904b9288c",null],["f2963047f8",null],["c8eeef1689",null],["5e2af0e6ff",null],["43771c9ee3",null],["2698aecb82",null],["65e881bd36",null],["1a466c26df",null],["87ff0290f5",null],["7140fee8c9",null],["35ea59b677",null],["b4c6e0df60",null],["68de264e4f",null],["8ab83dec05",null],["5040d04b7e",null],["5bb895f242",null],["a213aec704",null],["008d2a79f8",null],["c283f21451",null],["3de74ad85f",null],["f029f872ae",null],["291a394ed1",null],["5456b5e413",null],["97af5c15e4",null],["f67aa8b57d",null],["c91124e024",null],["c71d93c1a7",null],["bc75b39219",null],["8cb44173cd",null],["3af5ca5079",null],["1224b0ce19",null],["64afc8627a",null],["8ae98adf65",null],["f94ef24ca8",null],["67d9380dda",null],["366e0e0758",null],["55d87452f5",null],["4f23aee328",null],["dc7b4211ac",null],["1ea2a361c9",null],["7d6a03e025",null],["22830598ae",null],["b297b4e5ad",null],["1119be89fd",null],["24501d0fc9",null],["bf283fde35",null],["412b927e66",null],["c964861c95",null],["585fbfcb06",null],["ac2e7f0bb4",null],["5251e52361",null],["daa46046f1",null],["3037294f94",null],["a2ede08ae7",null],["0eeded130d",null],["2d04031279",null],["03afce2077",null],["aa42a1bd3c",null],["6ff8473910",null],["4bfaa77e99",null],["783140a679",null],["cf7f3876af",null],["bb251fd636",null],["45ca018737",null],["259bbba6be",null],["4770c8f0c5",null],["f37c7cb0b9",null],["aa73a00457",null],["0caa332806",null],["84caa145ee",null],["3ba6961272",null],["b48b107620",null],["023e7252dd",null],["cc1a265e6f",null],["72be8bbc3e",null],["f3b60ff436",null],["ea308d3533",null],["24265dfe76",null],["b9cda35250",null],["d4d800c144",null],["a416d3729f",null],["44abdc7e24",null],["c9473004b6",null],["ec1270810a",null],["56b783cdd2",null],["2a37a218ba",null],["f28ed69738",null],["990517662c",null],["3126dcc056",null],["732c5d81fd",null],["5f64d9fda2",null],["c08966eaa4",null],["55a68e32d0",null],["b045491494",null],["7632186199",null],["130fcc329c",null],["9275e0d455",null],["685a0a4b56",null],["721b27b1c9",null],["1f09e16734",null],["157b872806",null],["436e834aaf",null],["0dadf9a5b3",null],["67e37a15f8",null],["171d479573",null],["04f06db1b0",null],["3cc3c64186",null],["9aac9ed7fe",null],["9adc74bac6",null],["76680e459b",null],["8e97554501",null],["e4c0e55ea4",null],["153f5a1e5d",null],["3472025af5",null],["fd20ff551b",null],["84a00856fc",null],["bd41ab4e61",null],["4bb58dd7cc",null],["113cd55363",null],["3dea9545d0",null],["dfdb15955d",null],["4af1fad3fe",null],["64e553104d",null],["1e390830d1",null],["b9a5c5a5f7",null],["904940d0df",null],["a77d5de700",null],["a3afc43862",null],["e392d96cfb",null],["22817a3b4b",null],["e5a2a01e9f",null],["25cea7b9c8",null],["85995ad1a1",null],["98b6123d56",null],["8e0ba9acb4",null],["91d2052fb7",null],["537025b700",null],["448996585d",null],["051e8fa4dd",null],["6f87563cd1",null],["f3b9f5de25",null],["663257475e",null],["5adc5bfed5",null],["dc8382b28a",null],["1c1859a981",null],["ff99dfa6bf",null],["2c1350defd",null],["04441ec480",null],["7e62f183fe",null],["5aad24362d",null],["a94db4844f",null],["d4595667a1",null],["dd128e3d9a",null],["7b8b31a895",null],["442edda77f",null],["bb41550bd8",null],["bea565dd32",null],["6c3437bdd4",null],["77da3cf926",null],["6f3e7d61eb",null],["73908372dd",null],["04c6e51bb5",null],["65ea1b5558",null],["ecc250ca16",null],["016c36fbfc",null],["5e91e0cd05",null],["03b96bd36d",null],["0e90c593b6",null],["c35f3db958",null],["943ea3c370",null],["8006ef4685",null],["362144d340",null],["7bd8971970",null],["b5ff7431c5",null],["7484548148",null],["1b0c5d343e",null],["d7ebabe317",null],["816299b602",null],["3099131cd1",null],["8dd7092e71",null],["ab7fdfb471",null],["ed80a15e86",null],["6e28868c2a",null],["04b1c7d81f",null],["37b3c06eb0",null],["44bf20031d",null],["f5e0cabe17",null],["b34d506b90",null],["10e83e9bb4",null],["cf83953e29",null],["fdfd3bf966",null],["8b98c1d785",null],["017586d8f1",null],["252b4a5912",null],["b0e132f393",null],["4cb44ffc48",null],["3078387d24",null],["7a24fae91a",null],["1794e876ce",null],["643b3cf2a2",null],["92e7ad8828",null],["98e1cf1751",null],["74d95c5558",null],["8db6c56be2",null],["5f74c1743c",null],["4e96c4cfb8",null],["06ef092beb",null],["204c3826f1",null],["3b367778b1",null],["01e363b4e9",null],["12d18fa7c8",null],["9f20586bb8",null],["d60a8ecdf0",null],["80fa3f3ada",null],["e3f9157f1d",null],["c6562a483a",null],["16b89ab0d3",null],["ac9acb214e",null],["e84a257619",null],["395928fa69",null],["52eeff071c",null],["014884a2c6",null],["0382671ffd",null],["6f9a259310",null],["6f56888344",null],["4e320cbc36",null],["7f3d8662b0",null],["27d36772c5",null],["8b398c6061",null],["3f45fcd4d7",null],["7794cab76d",null],["f20a7b555b",null],["3bf03f3e27",null],["69ea201400",null],["df08ff7c79",null],["2375bffab5",null],["946083b5e5",null],["1c63285a6b",null],["e5db8a4c6d",null],["ac622057b4",null],["1530887d13",null],["685350b2f6",null],["6c03414461",null],["10e33002de",null],["a163039381",null],["5e75008fea",null],["5308badb79",null],["eea198db40",null],["33ab60b9d4",null],["c4510276b6",null],["5677ffe716",null],["7df277c3c2",null],["cf849243e4",null],["f2aac40fe3",null],["4bb3c8b688",null],["b097cdca20",null],["aba722c648",null],["9421dba86e",null],["12865e957d",null],["5bae239bf7",null],["ce90248c41",null],["20fd724847",null],["d0e07463af",null],["b2363dae82",null],["85bf6f0f89",null],["ea1e0f0e1f",null],["4173e4f49e",null],["5d78fe2902",null],["310348b091",null],["9b722c9ef4",null],["53d0568de9",null],["ec70725329",null],["65ba6a787c",null],["fe950ec796",null],["9b15450e68",null],["7c1646f377",null],["4851d66b18",null],["060b077854",null],["4898b19a15",null],["ab4533b27f",null],["7e98ec78d1",null],["4999693d78",null],["d45a84285a",null],["e29702d5d8",null],["89d5a68126",null],["f5d3c1f5cb",null],["c85b28ff07",null],["3782dcd1ac",null],["c711b9f6f8",null],["0cd02fdfa8",null],["4d67f1d89e",null],["b9eadaaa30",null],["36cc8ca229",null],["ab20b80c88",null],["0734c20e45",null],["740e0e4783",null],["b4f559917c",null],["12f0692c5a",null],["f9febe47d6",null],["110e3d8ce2",null],["cf650e8cf5",null],["b394625790",null],["fa2b7c55fa",null],["adc5668d9d",null],["5c3982a773",null],["3df57527a2",null],["4258ae1d46",null],["31a5135d9d",null],["0003287e7e",null],["bf49c5e196",null],["936e3b8176",null],["39ce6a5192",null],["714925eadf",null],["5897e6bc2b",null],["079ea68fab",null],["d78266f6a4",null],["f769c63ea3",null],["ad853f78af",null],["b60821c1e1",null],["3165e5172d",null],["5ef0b7aab6",null],["1ed7ab40f5",null],["4f8f92d26f",null],["2568c72221",null],["28ac91f9da",null],["4eb0dd72f0",null],["c732a37f9b",null],["8008f5dec7",null],["322c41d2a2",null],["8ed23670de",null],["a8d7d51ff2",null],["6d4a1d1384",null],["87a5ddd7ea",null],["4c15281895",null],["f183f26c44",null],["55f4507c88",null],["2dce0301e0",null],["24181d24fc",null],["04964eb409",null],["d4e40d1394",null],["2b0531ab14",null],["8ff780252b",null],["32d3f9b89c",null],["0a9c1bc977",null],["d7b77f28f2",null],["e1fda6f482",null],["9bad633081",null],["a361ecef75",null],["f4f7de4e1c",null],["27ed3e67d3",null],["2c9fdab4b1",null],["125cbba777",null],["a95de3f8df",null],["7577ed0104",null],["c1b7cb8448",null],["ad12850aea",null],["f34aa8b2db",null],["34c2465d62",null],["bf26b38208",null],["21159f6c4c",null],["9809845490",null],["c0545689b2",null],["0f029e28ff",null],["ee117aea2f",null],["849c5ab507",null],["2c01b4808c",null],["eb23f43aee",null],["bb4f65dc7b",null],["39a66bcee0",null],["4083932cfd",null],["825b5d4753",null],["0d88ced7a4",null],["6d3a63619b",null],["9faf7e4dde",null],["96b5396d60",null],["59fa2a4142",null],["f432509321",null],["c5479805df",null],["6b14949551",null],["0e8ebc778f",null],["d5dc209750",null],["36f8d70513",null],["3220efc080",null],["a36741444f",null],["f41146a442",null],["4ae57418b5",null],["f6e993a84a",null],["a38f19fde6",null],["265f0a47c4",null],["6e2c277458",null],["a448044408",null],["971fe458b9",null],["e7b94394e3",null],["890858881c",null],["1d6074d8e6",null],["3c8403f083",null],["acf6250f18",null],["56d4e835d8",null],["03ab138cb6",null],["62e41c41dd",null],["45c7fd3b4b",null],["75cd3de031",null],["a1d2c371a1",null],["484715becc",null],["60f5575cb0",null],["55fdedbe6e",null],["5f4093dd41",null],["f78fa9c646",null],["89483b47be",null],["2c7e219843",null],["a98f65adf2",null],["d5db962ee5",null],["d51939af1f",null],["a22ea166d4",null],["3aac6892cf",null],["1c1bd576c8",null],["9f7266ab50",null],["800060cb23",null],["f0e489e43f",null],["b8b5bd869b",null],["7d3cd33837",null],["970ce0c2ab",null],["e92b7e453d",null],["60011aa42f",null],["2709e53ae3",null],["e9c5f72457",null],["6c53df8b67",null],["0d417cf8fe",null],["831efff5a1",null],["4d985b968f",null],["1b7acc55e5",null],["c74973818b",null],["599476bee4",null],["7a367fd6f2",null],["de26ef0dc6",null],["c5a36ab9f8",null],["2d18e450cc",null],["8b62654067",null],["f3a6a71cf5",null],["fdce2a8452",null],["c0c057babd",null],["6b0dfab6a7",null],["7d9c10a02c",null],["cd5e20ea74",null],["2ba4659c0a",null],["a34ce1452c",null],["ecaa3af296",null],["57dd2aa775",null],["16ed87a863",null],["54e1e81138",null],["19d4c2b86c",null],["4c2c87f35c",null],["b44d02140d",null],["85b2610311",null],["b8a925f286",null],["bcc38cf74b",null],["16abb58451",null],["39f233b263",null],["a766cff636",null],["f90a291722",null],["fd1de160b7",null],["36011912c5",null],["31bf3247c5",null],["3eb09e4e3d",null],["ea15a555c4",null],["b2febe00bc",null],["1e48f5dc2f",null],["eb73ea1247",null],["916ff57ada",null],["f00108dc55",null],["3d77a58562",null],["ef8605b89a",null],["882c1cfee8",null],["74382da5cd",null],["064cbfb2eb",null],["05000c1c9b",null],["38e9db6505",null],["28e68c996b",null],["f993f73843",null],["4d191d0c9c",null],["4c99127723",null],["5c36afa419",null],["e6963bbe68",null],["dda92f4cbb",null],["816277b514",null],["3e7a0f49e7",null],["fbe5c1f8c0",null],["8bfe7c06f4",null],["198867a4f3",null],["4e7f642c07",null],["b5ba553916",null],["7d0862be0e",null],["8f6409cbf7",null],["d82b33a7cb",null],["3241712efb",null],["d9db497450",null],["1f35d2ae41",null],["5dc786ee0d",null],["ad887eca56",null],["2e000e7cfe",null],["6c3da380b6",null],["4d09f8196f",null],["1427705f84",null],["c8c6bece79",null],["ea578bf17c",null],["6e88c73e7f",null],["f867748a8e",null],["19961fc5be",null],["b420cb600d",null],["70f5e4a243",null],["188de294a4",null],["55f0dff465",null],["21fcd55d54",null],["f96c7bf83c",null],["76f05e87ca",null],["4453115bd5",null],["cfa0b8ecb4",null],["a8b87637ae",null],["e77fadbd72",null],["ec756c33fb",null],["e32b43fb6a",null],["80a328b16e",null],["9bc4c85d15",null],["d8d7983d0b",null],["c98d841187",null],["aa91187c7f",null],["135e976016",null],["7dae6c27e9",null],["ed5e5d0d85",null],["2ec01cfab6",null],["c8f8fece84",null],["d9c09f4eab",null],["2be6be04d2",null],["7338ff6f2f",null],["f76b9c7b76",null],["fd2b180bfc",null],["1f53992063",null],["6625e893c5",null],["15c45798f6",null],["c0c374474c",null],["3e1850fcbd",null],["633cc5163c",null],["62e9a34430",null],["83c59a2384",null],["ff4cfabbfe",null],["f7e1c123e6",null],["8465297697",null],["1cd3374257",null],["30e01be930",null],["0e934f7157",null],["b70a402ccf",null],["f0198f32c6",null],["98da58b181",null],["37872bebd0",null],["0c6d047fbb",null],["58005ad437",null],["93090ef4b0",null],["ab0270e26c",null],["1e4772c00f",null],["6c8594d5ff",null],["05fe22a316",null],["e806486e99",null],["5274633f2f",null],["092cca7d9f",null],["75be020a03",null],["6ec029126d",null],["40dca40c7d",null],["3e7043ba2c",null],["fe198899db",null],["6cb0c1d42d",null],["d65a0cc012",null],["d589ff2e06",null],["a7261154fd",null],["eaa5a3a72a",null],["0e8292f9a2",null],["1972be9f11",null],["9c831c06a3",null],["ed88a2e074",null],["8f39b3a4da",null],["97988b4f87",null],["da9feedbdb",null],["a32553b20c",null],["f11a7986d4",null],["ce1e976320",null],["c138e97563",null],["f8a783b60a",null],["44ba029b8f",null],["8d9bb7004f",null],["0051d5f730",null],["06e7430304",null],["943f3e4bc7",null],["4add496a46",null],["112d40a629",null],["0c5a385ec2",null],["d82176bf4b",null],["c14e00adf5",null],["db2134112c",null],["0912949f92",null],["b7408e0771",null],["b44ac29bc2",null],["2380cf27c0",null]]]]'></pre>
+</td></tr>
+<tr><th>cart</th><td><pre class="tracy-dump" data-tracy-dump='[[42,[["id","42"],["mnozstvi",5],["cena","100"]]],["\"\"",[["id",""],["quantity",4],["cost",""]]],[41,[["id","41"],["mnozstvi","1"],["cena","5"]]]]'></pre>
+</td></tr>
+<tr><th>kosik</th><td><pre class="tracy-dump" data-tracy-dump='[[42,[["id",42],["nazev","Kv\u011btov\u00fd med 0,5Kg"],["kratky_popis","Kv\u011btov\u00fd med 0,5Kg"],["cena",100],["mnozstvi",5],["sleva",0],["material","Kv\u011btov\u00fd"],["typ_ulu","0,5Kg"]]],[41,[["id",41],["nazev","N\u00e1stavek DTD p\u0159\u00ed\u0159ezy"],["kratky_popis","N\u00e1stavek DTD p\u0159\u00ed\u0159ezy"],["cena",5],["mnozstvi","1"],["sleva",0],["material","DTD"],["typ_ulu","39x24"]]]]'></pre>
+</td></tr>
+<tr><th>prubeh_objednavky</th><td><pre class="tracy-dump" data-tracy-dump='[["jedna","1"],["dva","2"]]'></pre>
+</td></tr>
+<tr><th>doprava</th><td><pre class="tracy-dump" data-tracy-dump='[["id","2"],["nazev","Vlastn\u00ed rozvoz po \u010cR"],["cena",0]]'></pre>
+</td></tr>
+<tr><th>platba</th><td><pre class="tracy-dump" data-tracy-dump='[["id","1"],["nazev","Hotov\u011b"],["cena",0]]'></pre>
+</td></tr>
+<tr><th>objednatNaFirmu</th><td><pre class="tracy-dump"><span class="tracy-dump-number">0</span>
+</pre>
+</td></tr>
+<tr><th>poslatNaJinouAdresu</th><td><pre class="tracy-dump"><span class="tracy-dump-number">0</span>
+</pre>
+</td></tr>
+			</table>
+						</div>
+
+
+						<h3><a data-tracy-ref="^+" class="tracy-toggle">Nette Session</a></h3>
+			<div class="outer">
+			<table>
+			<tr><th>Nette.Http.UserStorage/</th><td><pre class="tracy-dump" data-tracy-dump='[["authenticated",true],["identity",{"object":"064"}],["reason",null],["expireTime",1481277580],["expireDelta",1800],["expireIdentity",false],["expireBrowser",true],["browserCheck",true],["authTime",1481275652]]'></pre>
+</td></tr>
+<tr><th>cart</th><td><pre class="tracy-dump" data-tracy-dump='[["id",null]]'></pre>
+</td></tr>
+<tr><th>Nette.Application/requests</th><td><pre class="tracy-dump"><span class="tracy-dump-array">array</span> ()
+</pre>
+</td></tr>
+<tr><th>Nette.Application.Flash/yea8</th><td><pre class="tracy-dump" data-tracy-dump='[["flash",[[0,{"object":"065"}]]]]'></pre>
+</td></tr>
+<tr><th>Nette.Application.Flash/a4gf</th><td><pre class="tracy-dump" data-tracy-dump='[["flash",[[0,{"object":"066"}]]]]'></pre>
+</td></tr>
+<tr><th>Nette.Application.Flash/ocdx</th><td><pre class="tracy-dump" data-tracy-dump='[["flash",[[0,{"object":"067"}]]]]'></pre>
+</td></tr>
+<tr><th>Kasika\ShopCart\DI\Extension</th><td><pre class="tracy-dump"><span class="tracy-dump-array">array</span> ()
+</pre>
+</td></tr>
+<tr><th>Admin:Product:grid</th><td><pre class="tracy-dump" data-tracy-dump='[["params",null]]'></pre>
+</td></tr>
+<tr><th>Nette.Application.Flash/lq5n</th><td><pre class="tracy-dump" data-tracy-dump='[["flash",[[0,{"object":"068"}]]]]'></pre>
+</td></tr>
+<tr><th>Nette.Application.Flash/5utr</th><td><pre class="tracy-dump" data-tracy-dump='[["flash",[[0,{"object":"069"}]]]]'></pre>
+</td></tr>
+<tr><th>Nette.Application.Flash/137a</th><td><pre class="tracy-dump" data-tracy-dump='[["flash",[[0,{"object":"070"}]]]]'></pre>
+</td></tr>
+<tr><th>Nette.Application.Flash/mkd7</th><td><pre class="tracy-dump" data-tracy-dump='[["flash",[[0,{"object":"071"}]]]]'></pre>
+</td></tr>
+<tr><th>Nette.Application.Flash/rbpl</th><td><pre class="tracy-dump" data-tracy-dump='[["flash",[[0,{"object":"072"}]]]]'></pre>
+</td></tr>
+<tr><th>Nette.Application.Flash/96pc</th><td><pre class="tracy-dump" data-tracy-dump='[["flash",[[0,{"object":"073"}]]]]'></pre>
+</td></tr>
+<tr><th>Nette.Application.Flash/xjom</th><td><pre class="tracy-dump" data-tracy-dump='[["flash",[[0,{"object":"074"}]]]]'></pre>
+</td></tr>
+<tr><th>Nette.Application.Flash/f8yu</th><td><pre class="tracy-dump" data-tracy-dump='[["flash",[[0,{"object":"075"}]]]]'></pre>
+</td></tr>
+<tr><th>Nette.Application.Flash/gbc0</th><td><pre class="tracy-dump" data-tracy-dump='[["flash",[[0,{"object":"076"}]]]]'></pre>
+</td></tr>
+<tr><th>Nette.Application.Flash/99ql</th><td><pre class="tracy-dump" data-tracy-dump='[["flash",[[0,{"object":"077"}]]]]'></pre>
+</td></tr>
+<tr><th>Nette.Application.Flash/8qh4</th><td><pre class="tracy-dump" data-tracy-dump='[["flash",[[0,{"object":"052"}]]]]'></pre>
+</td></tr>
+			</table>
+			</div>
+			
+
+						<h3><a data-tracy-ref="^+" class="tracy-toggle tracy-collapsed">Constants</a></h3>
+			<div class="outer tracy-collapsed">
+			<table>
+			<tr><th>RANDOM_COMPAT_READ_BUFFER</th><td><pre class="tracy-dump"><span class="tracy-dump-number">8</span>
+</pre>
+</td></tr>
+<tr><th>mPDF_VERSION</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"6.0"</span> (3)
+</pre>
+</td></tr>
+<tr><th>_MPDFK</th><td><pre class="tracy-dump"><span class="tracy-dump-number">2.8346456692913</span>
+</pre>
+</td></tr>
+<tr><th>_FONT_DESCRIPTOR</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"win"</span> (3)
+</pre>
+</td></tr>
+<tr><th>_BORDER_ALL</th><td><pre class="tracy-dump"><span class="tracy-dump-number">15</span>
+</pre>
+</td></tr>
+<tr><th>_BORDER_TOP</th><td><pre class="tracy-dump"><span class="tracy-dump-number">8</span>
+</pre>
+</td></tr>
+<tr><th>_BORDER_RIGHT</th><td><pre class="tracy-dump"><span class="tracy-dump-number">4</span>
+</pre>
+</td></tr>
+<tr><th>_BORDER_BOTTOM</th><td><pre class="tracy-dump"><span class="tracy-dump-number">2</span>
+</pre>
+</td></tr>
+<tr><th>_BORDER_LEFT</th><td><pre class="tracy-dump"><span class="tracy-dump-number">1</span>
+</pre>
+</td></tr>
+<tr><th>FD_UNDERLINE</th><td><pre class="tracy-dump"><span class="tracy-dump-number">1</span>
+</pre>
+</td></tr>
+<tr><th>FD_LINETHROUGH</th><td><pre class="tracy-dump"><span class="tracy-dump-number">2</span>
+</pre>
+</td></tr>
+<tr><th>FD_OVERLINE</th><td><pre class="tracy-dump"><span class="tracy-dump-number">4</span>
+</pre>
+</td></tr>
+<tr><th>FA_SUPERSCRIPT</th><td><pre class="tracy-dump"><span class="tracy-dump-number">8</span>
+</pre>
+</td></tr>
+<tr><th>FA_SUBSCRIPT</th><td><pre class="tracy-dump"><span class="tracy-dump-number">16</span>
+</pre>
+</td></tr>
+<tr><th>FT_UPPERCASE</th><td><pre class="tracy-dump"><span class="tracy-dump-number">32</span>
+</pre>
+</td></tr>
+<tr><th>FT_LOWERCASE</th><td><pre class="tracy-dump"><span class="tracy-dump-number">64</span>
+</pre>
+</td></tr>
+<tr><th>FT_CAPITALIZE</th><td><pre class="tracy-dump"><span class="tracy-dump-number">128</span>
+</pre>
+</td></tr>
+<tr><th>FC_KERNING</th><td><pre class="tracy-dump"><span class="tracy-dump-number">256</span>
+</pre>
+</td></tr>
+<tr><th>FC_SMALLCAPS</th><td><pre class="tracy-dump"><span class="tracy-dump-number">512</span>
+</pre>
+</td></tr>
+<tr><th>_MPDF_PATH</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"C:/xampp/htdocs/Pesek/vendor/Kasika/VlastniExport/mpdf60/"</span> (57)
+</pre>
+</td></tr>
+<tr><th>_MPDF_URI</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"C:/xampp/htdocs/Pesek/vendor/Kasika/VlastniExport/mpdf60/"</span> (57)
+</pre>
+</td></tr>
+<tr><th>_JPGRAPH_PATH</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"C:/xampp/htdocs/Pesek/vendor/Kasika/VlastniExport/mpdf60/jpgraph/"</span> (65)
+</pre>
+</td></tr>
+<tr><th>_MPDF_TEMP_PATH</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"C:/xampp/htdocs/Pesek/vendor/Kasika/VlastniExport/mpdf60/tmp/"</span> (61)
+</pre>
+</td></tr>
+<tr><th>_MPDF_TTFONTPATH</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"C:/xampp/htdocs/Pesek/vendor/Kasika/VlastniExport/mpdf60/ttfonts/"</span> (65)
+</pre>
+</td></tr>
+<tr><th>_MPDF_TTFONTDATAPATH</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"C:/xampp/htdocs/Pesek/vendor/Kasika/VlastniExport/mpdf60/ttfontdata/"</span> (68)
+</pre>
+</td></tr>
+<tr><th>_OTL_OLD_SPEC_COMPAT_2</th><td><pre class="tracy-dump"><span class="tracy-dump-bool">TRUE</span>
+</pre>
+</td></tr>
+<tr><th>_TTF_MAC_HEADER</th><td><pre class="tracy-dump"><span class="tracy-dump-bool">FALSE</span>
+</pre>
+</td></tr>
+<tr><th>_RECALC_PROFILE</th><td><pre class="tracy-dump"><span class="tracy-dump-bool">FALSE</span>
+</pre>
+</td></tr>
+<tr><th>GF_WORDS</th><td><pre class="tracy-dump"><span class="tracy-dump-number">1</span>
+</pre>
+</td></tr>
+<tr><th>GF_SCALE</th><td><pre class="tracy-dump"><span class="tracy-dump-number">8</span>
+</pre>
+</td></tr>
+<tr><th>GF_MORE</th><td><pre class="tracy-dump"><span class="tracy-dump-number">32</span>
+</pre>
+</td></tr>
+<tr><th>GF_XYSCALE</th><td><pre class="tracy-dump"><span class="tracy-dump-number">64</span>
+</pre>
+</td></tr>
+<tr><th>GF_TWOBYTWO</th><td><pre class="tracy-dump"><span class="tracy-dump-number">128</span>
+</pre>
+</td></tr>
+<tr><th>_OTL_OLD_SPEC_COMPAT_1</th><td><pre class="tracy-dump"><span class="tracy-dump-bool">TRUE</span>
+</pre>
+</td></tr>
+<tr><th>_DICT_NODE_TYPE_SPLIT</th><td><pre class="tracy-dump"><span class="tracy-dump-number">1</span>
+</pre>
+</td></tr>
+<tr><th>_DICT_NODE_TYPE_LINEAR</th><td><pre class="tracy-dump"><span class="tracy-dump-number">2</span>
+</pre>
+</td></tr>
+<tr><th>_DICT_INTERMEDIATE_MATCH</th><td><pre class="tracy-dump"><span class="tracy-dump-number">3</span>
+</pre>
+</td></tr>
+<tr><th>_DICT_FINAL_MATCH</th><td><pre class="tracy-dump"><span class="tracy-dump-number">4</span>
+</pre>
+</td></tr>
+			</table>
+			</div>
+			
+
+			<h3><a data-tracy-ref="^+" class="tracy-toggle tracy-collapsed">Configuration options</a></h3>
+			<div class="outer tracy-collapsed">
+			<div class="center">
+<hr />
+<h1>Configuration</h1>
+<h2><a name="module_apache2handler">apache2handler</a></h2>
+<table>
+<tr><td class="e">Apache Version </td><td class="v">Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.21 </td></tr>
+<tr><td class="e">Apache API Version </td><td class="v">20120211 </td></tr>
+<tr><td class="e">Server Administrator </td><td class="v">postmaster@localhost </td></tr>
+<tr><td class="e">Hostname:Port </td><td class="v">localhost:80 </td></tr>
+<tr><td class="e">Max Requests </td><td class="v">Per Child: 0 - Keep Alive: on - Max Per Connection: 100 </td></tr>
+<tr><td class="e">Timeouts </td><td class="v">Connection: 300 - Keep-Alive: 5 </td></tr>
+<tr><td class="e">Virtual Server </td><td class="v">No </td></tr>
+<tr><td class="e">Server Root </td><td class="v">C:/xampp/apache </td></tr>
+<tr><td class="e">Loaded Modules </td><td class="v">core mod_win32 mpm_winnt http_core mod_so mod_access_compat mod_actions mod_alias mod_allowmethods mod_asis mod_auth_basic mod_authn_core mod_authn_file mod_authz_core mod_authz_groupfile mod_authz_host mod_authz_user mod_autoindex mod_cgi mod_dav_lock mod_dir mod_env mod_headers mod_include mod_info mod_isapi mod_log_config mod_cache_disk mod_mime mod_negotiation mod_proxy mod_proxy_ajp mod_rewrite mod_setenvif mod_socache_shmcb mod_ssl mod_status mod_version mod_php5 </td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">engine</td><td class="v">1</td><td class="v">1</td></tr>
+<tr><td class="e">last_modified</td><td class="v">0</td><td class="v">0</td></tr>
+<tr><td class="e">xbithack</td><td class="v">0</td><td class="v">0</td></tr>
+</table>
+<h2>Apache Environment</h2>
+<table>
+<tr class="h"><th>Variable</th><th>Value</th></tr>
+<tr><td class="e">REDIRECT_MIBDIRS </td><td class="v">C:/xampp/php/extras/mibs </td></tr>
+<tr><td class="e">REDIRECT_MYSQL_HOME </td><td class="v">\xampp\mysql\bin </td></tr>
+<tr><td class="e">REDIRECT_OPENSSL_CONF </td><td class="v">C:/xampp/apache/bin/openssl.cnf </td></tr>
+<tr><td class="e">REDIRECT_PHP_PEAR_SYSCONF_DIR </td><td class="v">\xampp\php </td></tr>
+<tr><td class="e">REDIRECT_PHPRC </td><td class="v">\xampp\php </td></tr>
+<tr><td class="e">REDIRECT_TMP </td><td class="v">\xampp\tmp </td></tr>
+<tr><td class="e">REDIRECT_STATUS </td><td class="v">200 </td></tr>
+<tr><td class="e">MIBDIRS </td><td class="v">C:/xampp/php/extras/mibs </td></tr>
+<tr><td class="e">MYSQL_HOME </td><td class="v">\xampp\mysql\bin </td></tr>
+<tr><td class="e">OPENSSL_CONF </td><td class="v">C:/xampp/apache/bin/openssl.cnf </td></tr>
+<tr><td class="e">PHP_PEAR_SYSCONF_DIR </td><td class="v">\xampp\php </td></tr>
+<tr><td class="e">PHPRC </td><td class="v">\xampp\php </td></tr>
+<tr><td class="e">TMP </td><td class="v">\xampp\tmp </td></tr>
+<tr><td class="e">HTTP_HOST </td><td class="v">localhost </td></tr>
+<tr><td class="e">HTTP_CONNECTION </td><td class="v">keep-alive </td></tr>
+<tr><td class="e">CONTENT_LENGTH </td><td class="v">60 </td></tr>
+<tr><td class="e">HTTP_CACHE_CONTROL </td><td class="v">max-age=0 </td></tr>
+<tr><td class="e">HTTP_ORIGIN </td><td class="v">http://localhost </td></tr>
+<tr><td class="e">HTTP_UPGRADE_INSECURE_REQUESTS </td><td class="v">1 </td></tr>
+<tr><td class="e">HTTP_USER_AGENT </td><td class="v">Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36 </td></tr>
+<tr><td class="e">CONTENT_TYPE </td><td class="v">application/x-www-form-urlencoded </td></tr>
+<tr><td class="e">HTTP_ACCEPT </td><td class="v">text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8 </td></tr>
+<tr><td class="e">HTTP_REFERER </td><td class="v">http://localhost/pesek/www/order/summary </td></tr>
+<tr><td class="e">HTTP_ACCEPT_ENCODING </td><td class="v">gzip, deflate, br </td></tr>
+<tr><td class="e">HTTP_ACCEPT_LANGUAGE </td><td class="v">cs-CZ,cs;q=0.8 </td></tr>
+<tr><td class="e">HTTP_COOKIE </td><td class="v">_ga=GA1.1.1648047881.1480599282; PHPSESSID=mi111pual7ce5uve22cikrgj82; nette-browser=06k5c00vyz </td></tr>
+<tr><td class="e">PATH </td><td class="v">C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\nodejs\;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Users\Stanislav\AppData\Roaming\npm;C:\Users\Stanislav\AppData\Local\Microsoft\WindowsApps;;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Users\Stanislav\AppData\Roaming\Composer\vendor\bin </td></tr>
+<tr><td class="e">SystemRoot </td><td class="v">C:\WINDOWS </td></tr>
+<tr><td class="e">COMSPEC </td><td class="v">C:\WINDOWS\system32\cmd.exe </td></tr>
+<tr><td class="e">PATHEXT </td><td class="v">.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC </td></tr>
+<tr><td class="e">WINDIR </td><td class="v">C:\WINDOWS </td></tr>
+<tr><td class="e">SERVER_SIGNATURE </td><td class="v">&lt;address&gt;Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.21 Server at localhost Port 80&lt;/address&gt;
+ </td></tr>
+<tr><td class="e">SERVER_SOFTWARE </td><td class="v">Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.21 </td></tr>
+<tr><td class="e">SERVER_NAME </td><td class="v">localhost </td></tr>
+<tr><td class="e">SERVER_ADDR </td><td class="v">::1 </td></tr>
+<tr><td class="e">SERVER_PORT </td><td class="v">80 </td></tr>
+<tr><td class="e">REMOTE_ADDR </td><td class="v">::1 </td></tr>
+<tr><td class="e">DOCUMENT_ROOT </td><td class="v">C:/xampp/htdocs </td></tr>
+<tr><td class="e">REQUEST_SCHEME </td><td class="v">http </td></tr>
+<tr><td class="e">CONTEXT_PREFIX </td><td class="v"><i>no value</i> </td></tr>
+<tr><td class="e">CONTEXT_DOCUMENT_ROOT </td><td class="v">C:/xampp/htdocs </td></tr>
+<tr><td class="e">SERVER_ADMIN </td><td class="v">postmaster@localhost </td></tr>
+<tr><td class="e">SCRIPT_FILENAME </td><td class="v">C:/xampp/htdocs/Pesek/www/index.php </td></tr>
+<tr><td class="e">REMOTE_PORT </td><td class="v">55720 </td></tr>
+<tr><td class="e">REDIRECT_URL </td><td class="v">http://localhost/pesek/www/order/summary </td></tr>
+<tr><td class="e">GATEWAY_INTERFACE </td><td class="v">CGI/1.1 </td></tr>
+<tr><td class="e">SERVER_PROTOCOL </td><td class="v">HTTP/1.1 </td></tr>
+<tr><td class="e">REQUEST_METHOD </td><td class="v">POST </td></tr>
+<tr><td class="e">QUERY_STRING </td><td class="v"><i>no value</i> </td></tr>
+<tr><td class="e">REQUEST_URI </td><td class="v">/pesek/www/order/summary </td></tr>
+<tr><td class="e">SCRIPT_NAME </td><td class="v">/Pesek/www/index.php </td></tr>
+</table>
+<h2>HTTP Headers Information</h2>
+<table>
+<tr class="h"><th colspan="2">HTTP Request Headers</th></tr>
+<tr><td class="e">HTTP Request </td><td class="v">POST /pesek/www/order/summary HTTP/1.1 </td></tr>
+<tr><td class="e">Host </td><td class="v">localhost </td></tr>
+<tr><td class="e">Connection </td><td class="v">keep-alive </td></tr>
+<tr><td class="e">Content-Length </td><td class="v">60 </td></tr>
+<tr><td class="e">Cache-Control </td><td class="v">max-age=0 </td></tr>
+<tr><td class="e">Origin </td><td class="v">http://localhost </td></tr>
+<tr><td class="e">Upgrade-Insecure-Requests </td><td class="v">1 </td></tr>
+<tr><td class="e">User-Agent </td><td class="v">Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36 </td></tr>
+<tr><td class="e">Content-Type </td><td class="v">application/x-www-form-urlencoded </td></tr>
+<tr><td class="e">Accept </td><td class="v">text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8 </td></tr>
+<tr><td class="e">Referer </td><td class="v">http://localhost/pesek/www/order/summary </td></tr>
+<tr><td class="e">Accept-Encoding </td><td class="v">gzip, deflate, br </td></tr>
+<tr><td class="e">Accept-Language </td><td class="v">cs-CZ,cs;q=0.8 </td></tr>
+<tr><td class="e">Cookie </td><td class="v">_ga=GA1.1.1648047881.1480599282; PHPSESSID=mi111pual7ce5uve22cikrgj82; nette-browser=06k5c00vyz </td></tr>
+<tr class="h"><th colspan="2">HTTP Response Headers</th></tr>
+<tr><td class="e">X-Powered-By </td><td class="v">Nette Framework </td></tr>
+<tr><td class="e">X-Frame-Options </td><td class="v">SAMEORIGIN </td></tr>
+<tr><td class="e">Expires </td><td class="v">Sat, 26 Jul 1997 05:00:00 GMT </td></tr>
+<tr><td class="e">Cache-Control </td><td class="v">public, must-revalidate, max-age=0 </td></tr>
+<tr><td class="e">Pragma </td><td class="v">public </td></tr>
+<tr><td class="e">Set-Cookie </td><td class="v">PHPSESSID=mi111pual7ce5uve22cikrgj82; expires=Fri, 23-Dec-2016 09:31:27 GMT; Max-Age=1209600; path=/; httponly </td></tr>
+<tr><td class="e">Set-Cookie </td><td class="v">nette-browser=06k5c00vyz; path=/; httponly </td></tr>
+<tr><td class="e">Vary </td><td class="v">X-Requested-With </td></tr>
+<tr><td class="e">Content-Description </td><td class="v">File Transfer </td></tr>
+<tr><td class="e">Content-Transfer-Encoding </td><td class="v">binary </td></tr>
+<tr><td class="e">Last-Modified </td><td class="v">Fri, 09 Dec 2016 09:31:27 GMT </td></tr>
+<tr><td class="e">Content-disposition </td><td class="v">attachment; filename=&quot;Faktura-143_09-12-2016.pdf&quot; </td></tr>
+<tr><td class="e">Keep-Alive </td><td class="v">timeout=5, max=100 </td></tr>
+<tr><td class="e">Connection </td><td class="v">Keep-Alive </td></tr>
+<tr><td class="e">Transfer-Encoding </td><td class="v">chunked </td></tr>
+<tr><td class="e">Content-Type </td><td class="v">application/pdf </td></tr>
+</table>
+<h2><a name="module_bcmath">bcmath</a></h2>
+<table>
+<tr><td class="e">BCMath support </td><td class="v">enabled </td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">bcmath.scale</td><td class="v">0</td><td class="v">0</td></tr>
+</table>
+<h2><a name="module_bz2">bz2</a></h2>
+<table>
+<tr><td class="e">BZip2 Support </td><td class="v">Enabled </td></tr>
+<tr><td class="e">Stream Wrapper support </td><td class="v">compress.bzip2:// </td></tr>
+<tr><td class="e">Stream Filter support </td><td class="v">bzip2.decompress, bzip2.compress </td></tr>
+<tr><td class="e">BZip2 Version </td><td class="v">1.0.6, 6-Sept-2010 </td></tr>
+</table>
+<h2><a name="module_calendar">calendar</a></h2>
+<table>
+<tr><td class="e">Calendar support </td><td class="v">enabled </td></tr>
+</table>
+<h2><a name="module_Core">Core</a></h2>
+<table>
+<tr><td class="e">PHP Version </td><td class="v">5.6.21 </td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">allow_url_fopen</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">allow_url_include</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">always_populate_raw_post_data</td><td class="v">0</td><td class="v">0</td></tr>
+<tr><td class="e">arg_separator.input</td><td class="v">&amp;</td><td class="v">&amp;</td></tr>
+<tr><td class="e">arg_separator.output</td><td class="v">&amp;</td><td class="v">&amp;</td></tr>
+<tr><td class="e">asp_tags</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">auto_append_file</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">auto_globals_jit</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">auto_prepend_file</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">browscap</td><td class="v">C:\xampp\php\extras\browscap.ini</td><td class="v">C:\xampp\php\extras\browscap.ini</td></tr>
+<tr><td class="e">default_charset</td><td class="v">UTF-8</td><td class="v">UTF-8</td></tr>
+<tr><td class="e">default_mimetype</td><td class="v">text/html</td><td class="v">text/html</td></tr>
+<tr><td class="e">disable_classes</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">disable_functions</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">display_errors</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">display_startup_errors</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">doc_root</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">docref_ext</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">docref_root</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">enable_dl</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">enable_post_data_reading</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">error_append_string</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">error_log</td><td class="v">C:\xampp\php\logs\php_error_log</td><td class="v">C:\xampp\php\logs\php_error_log</td></tr>
+<tr><td class="e">error_prepend_string</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">error_reporting</td><td class="v">0</td><td class="v">22527</td></tr>
+<tr><td class="e">exit_on_timeout</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">expose_php</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">extension_dir</td><td class="v">C:\xampp\php\ext</td><td class="v">C:\xampp\php\ext</td></tr>
+<tr><td class="e">file_uploads</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">highlight.comment</td><td class="v"><font style="color: #998; font-style: italic">#998; font-style: italic</font></td><td class="v"><font style="color: #FF8000">#FF8000</font></td></tr>
+<tr><td class="e">highlight.default</td><td class="v"><font style="color: #000">#000</font></td><td class="v"><font style="color: #0000BB">#0000BB</font></td></tr>
+<tr><td class="e">highlight.html</td><td class="v"><font style="color: #06B">#06B</font></td><td class="v"><font style="color: #000000">#000000</font></td></tr>
+<tr><td class="e">highlight.keyword</td><td class="v"><font style="color: #D24; font-weight: bold">#D24; font-weight: bold</font></td><td class="v"><font style="color: #007700">#007700</font></td></tr>
+<tr><td class="e">highlight.string</td><td class="v"><font style="color: #080">#080</font></td><td class="v"><font style="color: #DD0000">#DD0000</font></td></tr>
+<tr><td class="e">html_errors</td><td class="v">Off</td><td class="v">On</td></tr>
+<tr><td class="e">ignore_repeated_errors</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">ignore_repeated_source</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">ignore_user_abort</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">implicit_flush</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">include_path</td><td class="v">C:\xampp\php\PEAR</td><td class="v">C:\xampp\php\PEAR</td></tr>
+<tr><td class="e">input_encoding</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">internal_encoding</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">log_errors</td><td class="v">Off</td><td class="v">On</td></tr>
+<tr><td class="e">log_errors_max_len</td><td class="v">1024</td><td class="v">1024</td></tr>
+<tr><td class="e">mail.add_x_header</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">mail.force_extra_parameters</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">mail.log</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">max_execution_time</td><td class="v">30</td><td class="v">30</td></tr>
+<tr><td class="e">max_file_uploads</td><td class="v">20</td><td class="v">20</td></tr>
+<tr><td class="e">max_input_nesting_level</td><td class="v">64</td><td class="v">64</td></tr>
+<tr><td class="e">max_input_time</td><td class="v">60</td><td class="v">60</td></tr>
+<tr><td class="e">max_input_vars</td><td class="v">1000</td><td class="v">1000</td></tr>
+<tr><td class="e">memory_limit</td><td class="v">128M</td><td class="v">128M</td></tr>
+<tr><td class="e">open_basedir</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">output_buffering</td><td class="v">4096</td><td class="v">4096</td></tr>
+<tr><td class="e">output_encoding</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">output_handler</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">post_max_size</td><td class="v">8M</td><td class="v">8M</td></tr>
+<tr><td class="e">precision</td><td class="v">14</td><td class="v">14</td></tr>
+<tr><td class="e">realpath_cache_size</td><td class="v">16K</td><td class="v">16K</td></tr>
+<tr><td class="e">realpath_cache_ttl</td><td class="v">120</td><td class="v">120</td></tr>
+<tr><td class="e">register_argc_argv</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">report_memleaks</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">report_zend_debug</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">request_order</td><td class="v">GP</td><td class="v">GP</td></tr>
+<tr><td class="e">sendmail_from</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">sendmail_path</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">serialize_precision</td><td class="v">17</td><td class="v">17</td></tr>
+<tr><td class="e">short_open_tag</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">SMTP</td><td class="v">localhost</td><td class="v">localhost</td></tr>
+<tr><td class="e">smtp_port</td><td class="v">25</td><td class="v">25</td></tr>
+<tr><td class="e">sql.safe_mode</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">sys_temp_dir</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">track_errors</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">unserialize_callback_func</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">upload_max_filesize</td><td class="v">2M</td><td class="v">2M</td></tr>
+<tr><td class="e">upload_tmp_dir</td><td class="v">C:\xampp\tmp</td><td class="v">C:\xampp\tmp</td></tr>
+<tr><td class="e">user_dir</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">user_ini.cache_ttl</td><td class="v">300</td><td class="v">300</td></tr>
+<tr><td class="e">user_ini.filename</td><td class="v">.user.ini</td><td class="v">.user.ini</td></tr>
+<tr><td class="e">variables_order</td><td class="v">GPCS</td><td class="v">GPCS</td></tr>
+<tr><td class="e">windows.show_crt_warning</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">xmlrpc_error_number</td><td class="v">0</td><td class="v">0</td></tr>
+<tr><td class="e">xmlrpc_errors</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">zend.detect_unicode</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">zend.enable_gc</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">zend.multibyte</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">zend.script_encoding</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+</table>
+<h2><a name="module_ctype">ctype</a></h2>
+<table>
+<tr><td class="e">ctype functions </td><td class="v">enabled </td></tr>
+</table>
+<h2><a name="module_curl">curl</a></h2>
+<table>
+<tr><td class="e">cURL support </td><td class="v">enabled </td></tr>
+<tr><td class="e">cURL Information </td><td class="v">7.47.1 </td></tr>
+<tr><td class="e">Age </td><td class="v">3 </td></tr>
+<tr><td class="e">Features </td></tr>
+<tr><td class="e">AsynchDNS </td><td class="v">Yes </td></tr>
+<tr><td class="e">CharConv </td><td class="v">No </td></tr>
+<tr><td class="e">Debug </td><td class="v">No </td></tr>
+<tr><td class="e">GSS-Negotiate </td><td class="v">No </td></tr>
+<tr><td class="e">IDN </td><td class="v">Yes </td></tr>
+<tr><td class="e">IPv6 </td><td class="v">Yes </td></tr>
+<tr><td class="e">krb4 </td><td class="v">No </td></tr>
+<tr><td class="e">Largefile </td><td class="v">Yes </td></tr>
+<tr><td class="e">libz </td><td class="v">Yes </td></tr>
+<tr><td class="e">NTLM </td><td class="v">Yes </td></tr>
+<tr><td class="e">NTLMWB </td><td class="v">No </td></tr>
+<tr><td class="e">SPNEGO </td><td class="v">Yes </td></tr>
+<tr><td class="e">SSL </td><td class="v">Yes </td></tr>
+<tr><td class="e">SSPI </td><td class="v">Yes </td></tr>
+<tr><td class="e">TLS-SRP </td><td class="v">No </td></tr>
+<tr><td class="e">Protocols </td><td class="v">dict, file, ftp, ftps, gopher, http, https, imap, imaps, ldap, pop3, pop3s, rtsp, scp, sftp, smtp, smtps, telnet, tftp </td></tr>
+<tr><td class="e">Host </td><td class="v">i386-pc-win32 </td></tr>
+<tr><td class="e">SSL Version </td><td class="v">OpenSSL/1.0.2d </td></tr>
+<tr><td class="e">ZLib Version </td><td class="v">1.2.7.3 </td></tr>
+<tr><td class="e">libSSH Version </td><td class="v">libssh2/1.7.0 </td></tr>
+</table>
+<h2><a name="module_date">date</a></h2>
+<table>
+<tr><td class="e">date/time support </td><td class="v">enabled </td></tr>
+<tr><td class="e">&quot;Olson&quot; Timezone Database Version </td><td class="v">2016.3 </td></tr>
+<tr><td class="e">Timezone Database </td><td class="v">internal </td></tr>
+<tr><td class="e">Default timezone </td><td class="v">Europe/Prague </td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">date.default_latitude</td><td class="v">31.7667</td><td class="v">31.7667</td></tr>
+<tr><td class="e">date.default_longitude</td><td class="v">35.2333</td><td class="v">35.2333</td></tr>
+<tr><td class="e">date.sunrise_zenith</td><td class="v">90.583333</td><td class="v">90.583333</td></tr>
+<tr><td class="e">date.sunset_zenith</td><td class="v">90.583333</td><td class="v">90.583333</td></tr>
+<tr><td class="e">date.timezone</td><td class="v">Europe/Prague</td><td class="v">Europe/Berlin</td></tr>
+</table>
+<h2><a name="module_dom">dom</a></h2>
+<table>
+<tr><td class="e">DOM/XML </td><td class="v">enabled </td></tr>
+<tr><td class="e">DOM/XML API Version </td><td class="v">20031129 </td></tr>
+<tr><td class="e">libxml Version </td><td class="v">2.9.3 </td></tr>
+<tr><td class="e">HTML Support </td><td class="v">enabled </td></tr>
+<tr><td class="e">XPath Support </td><td class="v">enabled </td></tr>
+<tr><td class="e">XPointer Support </td><td class="v">enabled </td></tr>
+<tr><td class="e">Schema Support </td><td class="v">enabled </td></tr>
+<tr><td class="e">RelaxNG Support </td><td class="v">enabled </td></tr>
+</table>
+<h2><a name="module_ereg">ereg</a></h2>
+<table>
+<tr><td class="e">Regex Library </td><td class="v">Bundled library enabled </td></tr>
+</table>
+<h2><a name="module_exif">exif</a></h2>
+<table>
+<tr><td class="e">EXIF Support </td><td class="v">enabled </td></tr>
+<tr><td class="e">EXIF Version </td><td class="v">1.4 $Id: db007ca2e6d0b4513ae77990972997fad8bfe9c9 $ </td></tr>
+<tr><td class="e">Supported EXIF Version </td><td class="v">0220 </td></tr>
+<tr><td class="e">Supported filetypes </td><td class="v">JPEG,TIFF </td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">exif.decode_jis_intel</td><td class="v">JIS</td><td class="v">JIS</td></tr>
+<tr><td class="e">exif.decode_jis_motorola</td><td class="v">JIS</td><td class="v">JIS</td></tr>
+<tr><td class="e">exif.decode_unicode_intel</td><td class="v">UCS-2LE</td><td class="v">UCS-2LE</td></tr>
+<tr><td class="e">exif.decode_unicode_motorola</td><td class="v">UCS-2BE</td><td class="v">UCS-2BE</td></tr>
+<tr><td class="e">exif.encode_jis</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">exif.encode_unicode</td><td class="v">ISO-8859-15</td><td class="v">ISO-8859-15</td></tr>
+</table>
+<h2><a name="module_fileinfo">fileinfo</a></h2>
+<table>
+<tr><td class="e">fileinfo support </td><td class="v">enabled </td></tr>
+<tr><td class="e">version </td><td class="v">1.0.5 </td></tr>
+<tr><td class="e">libmagic </td><td class="v">517 </td></tr>
+</table>
+<h2><a name="module_filter">filter</a></h2>
+<table>
+<tr><td class="e">Input Validation and Filtering </td><td class="v">enabled </td></tr>
+<tr><td class="e">Revision </td><td class="v">$Id: 0a967738ca580e8bfdacb06853749743fc79b969 $ </td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">filter.default</td><td class="v">unsafe_raw</td><td class="v">unsafe_raw</td></tr>
+<tr><td class="e">filter.default_flags</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+</table>
+<h2><a name="module_ftp">ftp</a></h2>
+<table>
+<tr><td class="e">FTP support </td><td class="v">enabled </td></tr>
+</table>
+<h2><a name="module_gd">gd</a></h2>
+<table>
+<tr><td class="e">GD Support </td><td class="v">enabled </td></tr>
+<tr><td class="e">GD Version </td><td class="v">bundled (2.1.0 compatible) </td></tr>
+<tr><td class="e">FreeType Support </td><td class="v">enabled </td></tr>
+<tr><td class="e">FreeType Linkage </td><td class="v">with freetype </td></tr>
+<tr><td class="e">FreeType Version </td><td class="v">2.6.2 </td></tr>
+<tr><td class="e">GIF Read Support </td><td class="v">enabled </td></tr>
+<tr><td class="e">GIF Create Support </td><td class="v">enabled </td></tr>
+<tr><td class="e">JPEG Support </td><td class="v">enabled </td></tr>
+<tr><td class="e">libJPEG Version </td><td class="v">9 compatible </td></tr>
+<tr><td class="e">PNG Support </td><td class="v">enabled </td></tr>
+<tr><td class="e">libPNG Version </td><td class="v">1.5.26 </td></tr>
+<tr><td class="e">WBMP Support </td><td class="v">enabled </td></tr>
+<tr><td class="e">XPM Support </td><td class="v">enabled </td></tr>
+<tr><td class="e">libXpm Version </td><td class="v">30411 </td></tr>
+<tr><td class="e">XBM Support </td><td class="v">enabled </td></tr>
+<tr><td class="e">WebP Support </td><td class="v">enabled </td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">gd.jpeg_ignore_warning</td><td class="v">0</td><td class="v">0</td></tr>
+</table>
+<h2><a name="module_gettext">gettext</a></h2>
+<table>
+<tr><td class="e">GetText Support </td><td class="v">enabled </td></tr>
+</table>
+<h2><a name="module_hash">hash</a></h2>
+<table>
+<tr><td class="e">hash support </td><td class="v">enabled </td></tr>
+<tr><td class="e">Hashing Engines </td><td class="v">md2 md4 md5 sha1 sha224 sha256 sha384 sha512 ripemd128 ripemd160 ripemd256 ripemd320 whirlpool tiger128,3 tiger160,3 tiger192,3 tiger128,4 tiger160,4 tiger192,4 snefru snefru256 gost gost-crypto adler32 crc32 crc32b fnv132 fnv1a32 fnv164 fnv1a64 joaat haval128,3 haval160,3 haval192,3 haval224,3 haval256,3 haval128,4 haval160,4 haval192,4 haval224,4 haval256,4 haval128,5 haval160,5 haval192,5 haval224,5 haval256,5  </td></tr>
+</table>
+<h2><a name="module_iconv">iconv</a></h2>
+<table>
+<tr><td class="e">iconv support </td><td class="v">enabled </td></tr>
+<tr><td class="e">iconv implementation </td><td class="v">&quot;libiconv&quot; </td></tr>
+<tr><td class="e">iconv library version </td><td class="v">1.14 </td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">iconv.input_encoding</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">iconv.internal_encoding</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">iconv.output_encoding</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+</table>
+<h2><a name="module_json">json</a></h2>
+<table>
+<tr><td class="e">json support </td><td class="v">enabled </td></tr>
+<tr><td class="e">json version </td><td class="v">1.2.1 </td></tr>
+</table>
+<h2><a name="module_libxml">libxml</a></h2>
+<table>
+<tr><td class="e">libXML support </td><td class="v">active </td></tr>
+<tr><td class="e">libXML Compiled Version </td><td class="v">2.9.3 </td></tr>
+<tr><td class="e">libXML Loaded Version </td><td class="v">20903 </td></tr>
+<tr><td class="e">libXML streams </td><td class="v">enabled </td></tr>
+</table>
+<h2><a name="module_mbstring">mbstring</a></h2>
+<table>
+<tr><td class="e">Multibyte Support </td><td class="v">enabled </td></tr>
+<tr><td class="e">Multibyte string engine </td><td class="v">libmbfl </td></tr>
+<tr><td class="e">HTTP input encoding translation </td><td class="v">disabled </td></tr>
+<tr><td class="e">libmbfl version </td><td class="v">1.3.2 </td></tr>
+</table>
+<table>
+<tr class="h"><th>mbstring extension makes use of "streamable kanji code filter and converter", which is distributed under the GNU Lesser General Public License version 2.1.</th></tr>
+</table>
+<table>
+<tr><td class="e">Multibyte (japanese) regex support </td><td class="v">enabled </td></tr>
+<tr><td class="e">Multibyte regex (oniguruma) version </td><td class="v">5.9.5 </td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">mbstring.detect_order</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">mbstring.encoding_translation</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">mbstring.func_overload</td><td class="v">0</td><td class="v">0</td></tr>
+<tr><td class="e">mbstring.http_input</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">mbstring.http_output</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">mbstring.http_output_conv_mimetypes</td><td class="v">^(text/|application/xhtml\+xml)</td><td class="v">^(text/|application/xhtml\+xml)</td></tr>
+<tr><td class="e">mbstring.internal_encoding</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">mbstring.language</td><td class="v">neutral</td><td class="v">neutral</td></tr>
+<tr><td class="e">mbstring.strict_detection</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">mbstring.substitute_character</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+</table>
+<h2><a name="module_mcrypt">mcrypt</a></h2>
+<table>
+<tr class="h"><th>mcrypt support</th><th>enabled</th></tr>
+<tr class="h"><th>mcrypt_filter support</th><th>enabled</th></tr>
+<tr><td class="e">Version </td><td class="v">2.5.8 </td></tr>
+<tr><td class="e">Api No </td><td class="v">20021217 </td></tr>
+<tr><td class="e">Supported ciphers </td><td class="v">cast-128 gost rijndael-128 twofish cast-256 loki97 rijndael-192 saferplus wake blowfish-compat des rijndael-256 serpent xtea blowfish enigma rc2 tripledes arcfour  </td></tr>
+<tr><td class="e">Supported modes </td><td class="v">cbc cfb ctr ecb ncfb nofb ofb stream  </td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">mcrypt.algorithms_dir</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">mcrypt.modes_dir</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+</table>
+<h2><a name="module_mhash">mhash</a></h2>
+<table>
+<tr><td class="e">MHASH support </td><td class="v">Enabled </td></tr>
+<tr><td class="e">MHASH API Version </td><td class="v">Emulated Support </td></tr>
+</table>
+<h2><a name="module_mysql">mysql</a></h2>
+<table>
+<tr class="h"><th>MySQL Support</th><th>enabled</th></tr>
+<tr><td class="e">Active Persistent Links </td><td class="v">0 </td></tr>
+<tr><td class="e">Active Links </td><td class="v">0 </td></tr>
+<tr><td class="e">Client API version </td><td class="v">mysqlnd 5.0.11-dev - 20120503 - $Id: 76b08b24596e12d4553bd41fc93cccd5bac2fe7a $ </td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">mysql.allow_local_infile</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">mysql.allow_persistent</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">mysql.connect_timeout</td><td class="v">3</td><td class="v">3</td></tr>
+<tr><td class="e">mysql.default_host</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">mysql.default_password</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">mysql.default_port</td><td class="v">3306</td><td class="v">3306</td></tr>
+<tr><td class="e">mysql.default_socket</td><td class="v">MySQL</td><td class="v">MySQL</td></tr>
+<tr><td class="e">mysql.default_user</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">mysql.max_links</td><td class="v">Unlimited</td><td class="v">Unlimited</td></tr>
+<tr><td class="e">mysql.max_persistent</td><td class="v">Unlimited</td><td class="v">Unlimited</td></tr>
+<tr><td class="e">mysql.trace_mode</td><td class="v">Off</td><td class="v">Off</td></tr>
+</table>
+<h2><a name="module_mysqli">mysqli</a></h2>
+<table>
+<tr class="h"><th>MysqlI Support</th><th>enabled</th></tr>
+<tr><td class="e">Client API library version </td><td class="v">mysqlnd 5.0.11-dev - 20120503 - $Id: 76b08b24596e12d4553bd41fc93cccd5bac2fe7a $ </td></tr>
+<tr><td class="e">Active Persistent Links </td><td class="v">0 </td></tr>
+<tr><td class="e">Inactive Persistent Links </td><td class="v">0 </td></tr>
+<tr><td class="e">Active Links </td><td class="v">0 </td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">mysqli.allow_local_infile</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">mysqli.allow_persistent</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">mysqli.default_host</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">mysqli.default_port</td><td class="v">3306</td><td class="v">3306</td></tr>
+<tr><td class="e">mysqli.default_pw</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">mysqli.default_socket</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">mysqli.default_user</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">mysqli.max_links</td><td class="v">Unlimited</td><td class="v">Unlimited</td></tr>
+<tr><td class="e">mysqli.max_persistent</td><td class="v">Unlimited</td><td class="v">Unlimited</td></tr>
+<tr><td class="e">mysqli.reconnect</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">mysqli.rollback_on_cached_plink</td><td class="v">Off</td><td class="v">Off</td></tr>
+</table>
+<h2><a name="module_mysqlnd">mysqlnd</a></h2>
+<table>
+<tr class="h"><th>mysqlnd</th><th>enabled</th></tr>
+<tr><td class="e">Version </td><td class="v">mysqlnd 5.0.11-dev - 20120503 - $Id: 76b08b24596e12d4553bd41fc93cccd5bac2fe7a $ </td></tr>
+<tr><td class="e">Compression </td><td class="v">supported </td></tr>
+<tr><td class="e">core SSL </td><td class="v">supported </td></tr>
+<tr><td class="e">extended SSL </td><td class="v">not supported </td></tr>
+<tr><td class="e">Command buffer size </td><td class="v">4096 </td></tr>
+<tr><td class="e">Read buffer size </td><td class="v">32768 </td></tr>
+<tr><td class="e">Read timeout </td><td class="v">31536000 </td></tr>
+<tr><td class="e">Collecting statistics </td><td class="v">Yes </td></tr>
+<tr><td class="e">Collecting memory statistics </td><td class="v">Yes </td></tr>
+<tr><td class="e">Tracing </td><td class="v">n/a </td></tr>
+<tr><td class="e">Loaded plugins </td><td class="v">mysqlnd,debug_trace,auth_plugin_mysql_native_password,auth_plugin_mysql_clear_password </td></tr>
+<tr><td class="e">API Extensions </td><td class="v">mysql,mysqli,pdo_mysql </td></tr>
+</table>
+<table>
+<tr class="h"><th>mysqlnd statistics</th><th> </th></tr>
+<tr><td class="e">bytes_sent </td><td class="v">36326 </td></tr>
+<tr><td class="e">bytes_received </td><td class="v">163574 </td></tr>
+<tr><td class="e">packets_sent </td><td class="v">938 </td></tr>
+<tr><td class="e">packets_received </td><td class="v">3938 </td></tr>
+<tr><td class="e">protocol_overhead_in </td><td class="v">15752 </td></tr>
+<tr><td class="e">protocol_overhead_out </td><td class="v">3752 </td></tr>
+<tr><td class="e">bytes_received_ok_packet </td><td class="v">0 </td></tr>
+<tr><td class="e">bytes_received_eof_packet </td><td class="v">0 </td></tr>
+<tr><td class="e">bytes_received_rset_header_packet </td><td class="v">2466 </td></tr>
+<tr><td class="e">bytes_received_rset_field_meta_packet </td><td class="v">0 </td></tr>
+<tr><td class="e">bytes_received_rset_row_packet </td><td class="v">2313 </td></tr>
+<tr><td class="e">bytes_received_prepare_response_packet </td><td class="v">94225 </td></tr>
+<tr><td class="e">bytes_received_change_user_packet </td><td class="v">57272 </td></tr>
+<tr><td class="e">packets_sent_command </td><td class="v">412 </td></tr>
+<tr><td class="e">packets_received_ok </td><td class="v">0 </td></tr>
+<tr><td class="e">packets_received_eof </td><td class="v">0 </td></tr>
+<tr><td class="e">packets_received_rset_header </td><td class="v">274 </td></tr>
+<tr><td class="e">packets_received_rset_field_meta </td><td class="v">0 </td></tr>
+<tr><td class="e">packets_received_rset_row </td><td class="v">356 </td></tr>
+<tr><td class="e">packets_received_prepare_response </td><td class="v">2010 </td></tr>
+<tr><td class="e">packets_received_change_user </td><td class="v">1184 </td></tr>
+<tr><td class="e">result_set_queries </td><td class="v">274 </td></tr>
+<tr><td class="e">non_result_set_queries </td><td class="v">82 </td></tr>
+<tr><td class="e">no_index_used </td><td class="v">84 </td></tr>
+<tr><td class="e">bad_index_used </td><td class="v">0 </td></tr>
+<tr><td class="e">slow_queries </td><td class="v">0 </td></tr>
+<tr><td class="e">buffered_sets </td><td class="v">274 </td></tr>
+<tr><td class="e">unbuffered_sets </td><td class="v">0 </td></tr>
+<tr><td class="e">ps_buffered_sets </td><td class="v">0 </td></tr>
+<tr><td class="e">ps_unbuffered_sets </td><td class="v">0 </td></tr>
+<tr><td class="e">flushed_normal_sets </td><td class="v">0 </td></tr>
+<tr><td class="e">flushed_ps_sets </td><td class="v">0 </td></tr>
+<tr><td class="e">ps_prepared_never_executed </td><td class="v">0 </td></tr>
+<tr><td class="e">ps_prepared_once_executed </td><td class="v">0 </td></tr>
+<tr><td class="e">rows_fetched_from_server_normal </td><td class="v">910 </td></tr>
+<tr><td class="e">rows_fetched_from_server_ps </td><td class="v">0 </td></tr>
+<tr><td class="e">rows_buffered_from_client_normal </td><td class="v">910 </td></tr>
+<tr><td class="e">rows_buffered_from_client_ps </td><td class="v">0 </td></tr>
+<tr><td class="e">rows_fetched_from_client_normal_buffered </td><td class="v">910 </td></tr>
+<tr><td class="e">rows_fetched_from_client_normal_unbuffered </td><td class="v">0 </td></tr>
+<tr><td class="e">rows_fetched_from_client_ps_buffered </td><td class="v">0 </td></tr>
+<tr><td class="e">rows_fetched_from_client_ps_unbuffered </td><td class="v">0 </td></tr>
+<tr><td class="e">rows_fetched_from_client_ps_cursor </td><td class="v">0 </td></tr>
+<tr><td class="e">rows_affected_normal </td><td class="v">23 </td></tr>
+<tr><td class="e">rows_affected_ps </td><td class="v">0 </td></tr>
+<tr><td class="e">rows_skipped_normal </td><td class="v">910 </td></tr>
+<tr><td class="e">rows_skipped_ps </td><td class="v">0 </td></tr>
+<tr><td class="e">copy_on_write_saved </td><td class="v">3935 </td></tr>
+<tr><td class="e">copy_on_write_performed </td><td class="v">1402 </td></tr>
+<tr><td class="e">command_buffer_too_small </td><td class="v">0 </td></tr>
+<tr><td class="e">connect_success </td><td class="v">57 </td></tr>
+<tr><td class="e">connect_failure </td><td class="v">0 </td></tr>
+<tr><td class="e">connection_reused </td><td class="v">0 </td></tr>
+<tr><td class="e">reconnect </td><td class="v">0 </td></tr>
+<tr><td class="e">pconnect_success </td><td class="v">2 </td></tr>
+<tr><td class="e">active_connections </td><td class="v">18446744073709551561 </td></tr>
+<tr><td class="e">active_persistent_connections </td><td class="v">18446744073709551614 </td></tr>
+<tr><td class="e">explicit_close </td><td class="v">56 </td></tr>
+<tr><td class="e">implicit_close </td><td class="v">0 </td></tr>
+<tr><td class="e">disconnect_close </td><td class="v">0 </td></tr>
+<tr><td class="e">in_middle_of_command_close </td><td class="v">0 </td></tr>
+<tr><td class="e">explicit_free_result </td><td class="v">274 </td></tr>
+<tr><td class="e">implicit_free_result </td><td class="v">0 </td></tr>
+<tr><td class="e">explicit_stmt_close </td><td class="v">0 </td></tr>
+<tr><td class="e">implicit_stmt_close </td><td class="v">0 </td></tr>
+<tr><td class="e">mem_emalloc_count </td><td class="v">2731 </td></tr>
+<tr><td class="e">mem_emalloc_amount </td><td class="v">306848 </td></tr>
+<tr><td class="e">mem_ecalloc_count </td><td class="v">3690 </td></tr>
+<tr><td class="e">mem_ecalloc_amount </td><td class="v">1057436 </td></tr>
+<tr><td class="e">mem_erealloc_count </td><td class="v">378 </td></tr>
+<tr><td class="e">mem_erealloc_amount </td><td class="v">60080 </td></tr>
+<tr><td class="e">mem_efree_count </td><td class="v">6956 </td></tr>
+<tr><td class="e">mem_efree_amount </td><td class="v">1368947 </td></tr>
+<tr><td class="e">mem_malloc_count </td><td class="v">2152 </td></tr>
+<tr><td class="e">mem_malloc_amount </td><td class="v">4442063 </td></tr>
+<tr><td class="e">mem_calloc_count </td><td class="v">388 </td></tr>
+<tr><td class="e">mem_calloc_amount </td><td class="v">24052 </td></tr>
+<tr><td class="e">mem_realloc_count </td><td class="v">0 </td></tr>
+<tr><td class="e">mem_realloc_amount </td><td class="v">0 </td></tr>
+<tr><td class="e">mem_free_count </td><td class="v">2558 </td></tr>
+<tr><td class="e">mem_free_amount </td><td class="v">4466331 </td></tr>
+<tr><td class="e">mem_estrndup_count </td><td class="v">166 </td></tr>
+<tr><td class="e">mem_strndup_count </td><td class="v">6 </td></tr>
+<tr><td class="e">mem_estndup_count </td><td class="v">387 </td></tr>
+<tr><td class="e">mem_strdup_count </td><td class="v">12 </td></tr>
+<tr><td class="e">proto_text_fetched_null </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_text_fetched_bit </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_text_fetched_tinyint </td><td class="v">41 </td></tr>
+<tr><td class="e">proto_text_fetched_short </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_text_fetched_int24 </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_text_fetched_int </td><td class="v">670 </td></tr>
+<tr><td class="e">proto_text_fetched_bigint </td><td class="v">668 </td></tr>
+<tr><td class="e">proto_text_fetched_decimal </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_text_fetched_float </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_text_fetched_double </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_text_fetched_date </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_text_fetched_year </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_text_fetched_time </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_text_fetched_datetime </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_text_fetched_timestamp </td><td class="v">10 </td></tr>
+<tr><td class="e">proto_text_fetched_string </td><td class="v">3300 </td></tr>
+<tr><td class="e">proto_text_fetched_blob </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_text_fetched_enum </td><td class="v">225 </td></tr>
+<tr><td class="e">proto_text_fetched_set </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_text_fetched_geometry </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_text_fetched_other </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_null </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_bit </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_tinyint </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_short </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_int24 </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_int </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_bigint </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_decimal </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_float </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_double </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_date </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_year </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_time </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_datetime </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_timestamp </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_string </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_json </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_blob </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_enum </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_set </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_geometry </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_other </td><td class="v">0 </td></tr>
+<tr><td class="e">init_command_executed_count </td><td class="v">0 </td></tr>
+<tr><td class="e">init_command_failed_count </td><td class="v">0 </td></tr>
+<tr><td class="e">com_quit </td><td class="v">56 </td></tr>
+<tr><td class="e">com_init_db </td><td class="v">0 </td></tr>
+<tr><td class="e">com_query </td><td class="v">356 </td></tr>
+<tr><td class="e">com_field_list </td><td class="v">0 </td></tr>
+<tr><td class="e">com_create_db </td><td class="v">0 </td></tr>
+<tr><td class="e">com_drop_db </td><td class="v">0 </td></tr>
+<tr><td class="e">com_refresh </td><td class="v">0 </td></tr>
+<tr><td class="e">com_shutdown </td><td class="v">0 </td></tr>
+<tr><td class="e">com_statistics </td><td class="v">0 </td></tr>
+<tr><td class="e">com_process_info </td><td class="v">0 </td></tr>
+<tr><td class="e">com_connect </td><td class="v">0 </td></tr>
+<tr><td class="e">com_process_kill </td><td class="v">0 </td></tr>
+<tr><td class="e">com_debug </td><td class="v">0 </td></tr>
+<tr><td class="e">com_ping </td><td class="v">0 </td></tr>
+<tr><td class="e">com_time </td><td class="v">0 </td></tr>
+<tr><td class="e">com_delayed_insert </td><td class="v">0 </td></tr>
+<tr><td class="e">com_change_user </td><td class="v">0 </td></tr>
+<tr><td class="e">com_binlog_dump </td><td class="v">0 </td></tr>
+<tr><td class="e">com_table_dump </td><td class="v">0 </td></tr>
+<tr><td class="e">com_connect_out </td><td class="v">0 </td></tr>
+<tr><td class="e">com_register_slave </td><td class="v">0 </td></tr>
+<tr><td class="e">com_stmt_prepare </td><td class="v">0 </td></tr>
+<tr><td class="e">com_stmt_execute </td><td class="v">0 </td></tr>
+<tr><td class="e">com_stmt_send_long_data </td><td class="v">0 </td></tr>
+<tr><td class="e">com_stmt_close </td><td class="v">0 </td></tr>
+<tr><td class="e">com_stmt_reset </td><td class="v">0 </td></tr>
+<tr><td class="e">com_stmt_set_option </td><td class="v">0 </td></tr>
+<tr><td class="e">com_stmt_fetch </td><td class="v">0 </td></tr>
+<tr><td class="e">com_deamon </td><td class="v">0 </td></tr>
+<tr><td class="e">bytes_received_real_data_normal </td><td class="v">47193 </td></tr>
+<tr><td class="e">bytes_received_real_data_ps </td><td class="v">0 </td></tr>
+</table>
+<h2><a name="module_odbc">odbc</a></h2>
+<table>
+<tr class="h"><th>ODBC Support</th><th>enabled</th></tr>
+<tr><td class="e">Active Persistent Links </td><td class="v">0 </td></tr>
+<tr><td class="e">Active Links </td><td class="v">0 </td></tr>
+<tr><td class="e">ODBC library </td><td class="v">Win32 </td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">odbc.allow_persistent</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">odbc.check_persistent</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">odbc.default_cursortype</td><td class="v">Static cursor</td><td class="v">Static cursor</td></tr>
+<tr><td class="e">odbc.default_db</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">odbc.default_pw</td><td class="v">no value</td><td class="v">no value</td></tr>
+<tr><td class="e">odbc.default_user</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">odbc.defaultbinmode</td><td class="v">return as is</td><td class="v">return as is</td></tr>
+<tr><td class="e">odbc.defaultlrl</td><td class="v">return up to 4096 bytes</td><td class="v">return up to 4096 bytes</td></tr>
+<tr><td class="e">odbc.max_links</td><td class="v">Unlimited</td><td class="v">Unlimited</td></tr>
+<tr><td class="e">odbc.max_persistent</td><td class="v">Unlimited</td><td class="v">Unlimited</td></tr>
+</table>
+<h2><a name="module_openssl">openssl</a></h2>
+<table>
+<tr><td class="e">OpenSSL support </td><td class="v">enabled </td></tr>
+<tr><td class="e">OpenSSL Library Version </td><td class="v">OpenSSL 1.0.2d 9 Jul 2015 </td></tr>
+<tr><td class="e">OpenSSL Header Version </td><td class="v">OpenSSL 1.0.1s  1 Mar 2016 </td></tr>
+<tr><td class="e">Openssl default config </td><td class="v">c:/openssl-1.0.2d-win32/ssl/openssl.cnf </td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">openssl.cafile</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">openssl.capath</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+</table>
+<h2><a name="module_pcre">pcre</a></h2>
+<table>
+<tr><td class="e">PCRE (Perl Compatible Regular Expressions) Support </td><td class="v">enabled </td></tr>
+<tr><td class="e">PCRE Library Version </td><td class="v">8.38 2015-11-23 </td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">pcre.backtrack_limit</td><td class="v">1000000</td><td class="v">1000000</td></tr>
+<tr><td class="e">pcre.recursion_limit</td><td class="v">100000</td><td class="v">100000</td></tr>
+</table>
+<h2><a name="module_PDO">PDO</a></h2>
+<table>
+<tr class="h"><th>PDO support</th><th>enabled</th></tr>
+<tr><td class="e">PDO drivers </td><td class="v">mysql, sqlite </td></tr>
+</table>
+<h2><a name="module_pdo_mysql">pdo_mysql</a></h2>
+<table>
+<tr class="h"><th>PDO Driver for MySQL</th><th>enabled</th></tr>
+<tr><td class="e">Client API version </td><td class="v">mysqlnd 5.0.11-dev - 20120503 - $Id: 76b08b24596e12d4553bd41fc93cccd5bac2fe7a $ </td></tr>
+</table>
+<h2><a name="module_pdo_sqlite">pdo_sqlite</a></h2>
+<table>
+<tr class="h"><th>PDO Driver for SQLite 3.x</th><th>enabled</th></tr>
+<tr><td class="e">SQLite Library </td><td class="v">3.8.10.2 </td></tr>
+</table>
+<h2><a name="module_Phar">Phar</a></h2>
+<table>
+<tr class="h"><th>Phar: PHP Archive support</th><th>enabled</th></tr>
+<tr><td class="e">Phar EXT version </td><td class="v">2.0.2 </td></tr>
+<tr><td class="e">Phar API version </td><td class="v">1.1.1 </td></tr>
+<tr><td class="e">SVN revision </td><td class="v">$Id: 14b80e175ed4d5bf11c890e1f30ea8225935b16c $ </td></tr>
+<tr><td class="e">Phar-based phar archives </td><td class="v">enabled </td></tr>
+<tr><td class="e">Tar-based phar archives </td><td class="v">enabled </td></tr>
+<tr><td class="e">ZIP-based phar archives </td><td class="v">enabled </td></tr>
+<tr><td class="e">gzip compression </td><td class="v">enabled </td></tr>
+<tr><td class="e">bzip2 compression </td><td class="v">enabled </td></tr>
+<tr><td class="e">OpenSSL support </td><td class="v">enabled </td></tr>
+</table>
+<table>
+<tr class="v"><td>
+Phar based on pear/PHP_Archive, original concept by Davey Shafik.<br />Phar fully realized by Gregory Beaver and Marcus Boerger.<br />Portions of tar implementation Copyright (c) 2003-2009 Tim Kientzle.</td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">phar.cache_list</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">phar.readonly</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">phar.require_hash</td><td class="v">On</td><td class="v">On</td></tr>
+</table>
+<h2><a name="module_Reflection">Reflection</a></h2>
+<table>
+<tr class="h"><th>Reflection</th><th>enabled</th></tr>
+<tr><td class="e">Version </td><td class="v">$Id: fbcf7a77ca8e3d4cd7501de8025235b947b8240f $ </td></tr>
+</table>
+<h2><a name="module_session">session</a></h2>
+<table>
+<tr><td class="e">Session Support </td><td class="v">enabled </td></tr>
+<tr><td class="e">Registered save handlers </td><td class="v">files user  </td></tr>
+<tr><td class="e">Registered serializer handlers </td><td class="v">php_serialize php php_binary wddx  </td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">session.auto_start</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">session.cache_expire</td><td class="v">180</td><td class="v">180</td></tr>
+<tr><td class="e">session.cache_limiter</td><td class="v">nocache</td><td class="v">nocache</td></tr>
+<tr><td class="e">session.cookie_domain</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">session.cookie_httponly</td><td class="v">On</td><td class="v">Off</td></tr>
+<tr><td class="e">session.cookie_lifetime</td><td class="v">1209600</td><td class="v">0</td></tr>
+<tr><td class="e">session.cookie_path</td><td class="v">/</td><td class="v">/</td></tr>
+<tr><td class="e">session.cookie_secure</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">session.entropy_file</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">session.entropy_length</td><td class="v">0</td><td class="v">0</td></tr>
+<tr><td class="e">session.gc_divisor</td><td class="v">1000</td><td class="v">1000</td></tr>
+<tr><td class="e">session.gc_maxlifetime</td><td class="v">1209600</td><td class="v">1440</td></tr>
+<tr><td class="e">session.gc_probability</td><td class="v">1</td><td class="v">1</td></tr>
+<tr><td class="e">session.hash_bits_per_character</td><td class="v">5</td><td class="v">5</td></tr>
+<tr><td class="e">session.hash_function</td><td class="v">0</td><td class="v">0</td></tr>
+<tr><td class="e">session.name</td><td class="v">PHPSESSID</td><td class="v">PHPSESSID</td></tr>
+<tr><td class="e">session.referer_check</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">session.save_handler</td><td class="v">files</td><td class="v">files</td></tr>
+<tr><td class="e">session.save_path</td><td class="v">C:\xampp\tmp</td><td class="v">C:\xampp\tmp</td></tr>
+<tr><td class="e">session.serialize_handler</td><td class="v">php</td><td class="v">php</td></tr>
+<tr><td class="e">session.upload_progress.cleanup</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">session.upload_progress.enabled</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">session.upload_progress.freq</td><td class="v">1%</td><td class="v">1%</td></tr>
+<tr><td class="e">session.upload_progress.min_freq</td><td class="v">1</td><td class="v">1</td></tr>
+<tr><td class="e">session.upload_progress.name</td><td class="v">PHP_SESSION_UPLOAD_PROGRESS</td><td class="v">PHP_SESSION_UPLOAD_PROGRESS</td></tr>
+<tr><td class="e">session.upload_progress.prefix</td><td class="v">upload_progress_</td><td class="v">upload_progress_</td></tr>
+<tr><td class="e">session.use_cookies</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">session.use_only_cookies</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">session.use_strict_mode</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">session.use_trans_sid</td><td class="v">0</td><td class="v">0</td></tr>
+</table>
+<h2><a name="module_SimpleXML">SimpleXML</a></h2>
+<table>
+<tr class="h"><th>Simplexml support</th><th>enabled</th></tr>
+<tr><td class="e">Revision </td><td class="v">$Id: 07fc6546e896094aed794aea4691f0151774d955 $ </td></tr>
+<tr><td class="e">Schema support </td><td class="v">enabled </td></tr>
+</table>
+<h2><a name="module_SPL">SPL</a></h2>
+<table>
+<tr class="h"><th>SPL support</th><th>enabled</th></tr>
+<tr><td class="e">Interfaces </td><td class="v">Countable, OuterIterator, RecursiveIterator, SeekableIterator, SplObserver, SplSubject </td></tr>
+<tr><td class="e">Classes </td><td class="v">AppendIterator, ArrayIterator, ArrayObject, BadFunctionCallException, BadMethodCallException, CachingIterator, CallbackFilterIterator, DirectoryIterator, DomainException, EmptyIterator, FilesystemIterator, FilterIterator, GlobIterator, InfiniteIterator, InvalidArgumentException, IteratorIterator, LengthException, LimitIterator, LogicException, MultipleIterator, NoRewindIterator, OutOfBoundsException, OutOfRangeException, OverflowException, ParentIterator, RangeException, RecursiveArrayIterator, RecursiveCachingIterator, RecursiveCallbackFilterIterator, RecursiveDirectoryIterator, RecursiveFilterIterator, RecursiveIteratorIterator, RecursiveRegexIterator, RecursiveTreeIterator, RegexIterator, RuntimeException, SplDoublyLinkedList, SplFileInfo, SplFileObject, SplFixedArray, SplHeap, SplMinHeap, SplMaxHeap, SplObjectStorage, SplPriorityQueue, SplQueue, SplStack, SplTempFileObject, UnderflowException, UnexpectedValueException </td></tr>
+</table>
+<h2><a name="module_standard">standard</a></h2>
+<table>
+<tr><td class="e">Dynamic Library Support </td><td class="v">enabled </td></tr>
+<tr><td class="e">Internal Sendmail Support for Windows </td><td class="v">enabled </td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">assert.active</td><td class="v">1</td><td class="v">1</td></tr>
+<tr><td class="e">assert.bail</td><td class="v">0</td><td class="v">0</td></tr>
+<tr><td class="e">assert.callback</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">assert.quiet_eval</td><td class="v">0</td><td class="v">0</td></tr>
+<tr><td class="e">assert.warning</td><td class="v">1</td><td class="v">1</td></tr>
+<tr><td class="e">auto_detect_line_endings</td><td class="v">0</td><td class="v">0</td></tr>
+<tr><td class="e">default_socket_timeout</td><td class="v">60</td><td class="v">60</td></tr>
+<tr><td class="e">from</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">url_rewriter.tags</td><td class="v">a=href,area=href,frame=src,input=src,form=fakeentry</td><td class="v">a=href,area=href,frame=src,input=src,form=fakeentry</td></tr>
+<tr><td class="e">user_agent</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+</table>
+<h2><a name="module_tokenizer">tokenizer</a></h2>
+<table>
+<tr><td class="e">Tokenizer Support </td><td class="v">enabled </td></tr>
+</table>
+<h2><a name="module_wddx">wddx</a></h2>
+<table>
+<tr class="h"><th>WDDX Support</th><th>enabled</th></tr>
+<tr><td class="e">WDDX Session Serializer </td><td class="v">enabled </td></tr>
+</table>
+<h2><a name="module_xml">xml</a></h2>
+<table>
+<tr><td class="e">XML Support </td><td class="v">active </td></tr>
+<tr><td class="e">XML Namespace Support </td><td class="v">active </td></tr>
+<tr><td class="e">libxml2 Version </td><td class="v">2.9.3 </td></tr>
+</table>
+<h2><a name="module_xmlreader">xmlreader</a></h2>
+<table>
+<tr><td class="e">XMLReader </td><td class="v">enabled </td></tr>
+</table>
+<h2><a name="module_xmlwriter">xmlwriter</a></h2>
+<table>
+<tr><td class="e">XMLWriter </td><td class="v">enabled </td></tr>
+</table>
+<h2><a name="module_zip">zip</a></h2>
+<table>
+<tr><td class="e">Zip </td><td class="v">enabled </td></tr>
+<tr><td class="e">Zip version </td><td class="v">1.12.5 </td></tr>
+<tr><td class="e">Libzip version </td><td class="v">0.11.2 </td></tr>
+</table>
+<h2><a name="module_zlib">zlib</a></h2>
+<table>
+<tr class="h"><th>ZLib Support</th><th>enabled</th></tr>
+<tr><td class="e">Stream Wrapper </td><td class="v">compress.zlib:// </td></tr>
+<tr><td class="e">Stream Filter </td><td class="v">zlib.inflate, zlib.deflate </td></tr>
+<tr><td class="e">Compiled Version </td><td class="v">1.2.7.3 </td></tr>
+<tr><td class="e">Linked Version </td><td class="v">1.2.7.3 </td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">zlib.output_compression</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">zlib.output_compression_level</td><td class="v">-1</td><td class="v">-1</td></tr>
+<tr><td class="e">zlib.output_handler</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+</table>
+<h2>Additional Modules</h2>
+<table>
+<tr class="h"><th>Module Name</th></tr>
+</table>
+</div>			</div>
+		</div></div>
+
+
+		<div class="panel">
+		<h2><a data-tracy-ref="^+" class="tracy-toggle tracy-collapsed">HTTP request</a></h2>
+
+		<div class="tracy-collapsed inner">
+						<h3>Headers</h3>
+			<div class="outer">
+			<table>
+			<tr><th>Host</th><td>localhost</td></tr>
+<tr><th>Connection</th><td>keep-alive</td></tr>
+<tr><th>Content-Length</th><td>60</td></tr>
+<tr><th>Cache-Control</th><td>max-age=0</td></tr>
+<tr><th>Origin</th><td>http://localhost</td></tr>
+<tr><th>Upgrade-Insecure-Requests</th><td>1</td></tr>
+<tr><th>User-Agent</th><td>Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36</td></tr>
+<tr><th>Content-Type</th><td>application/x-www-form-urlencoded</td></tr>
+<tr><th>Accept</th><td>text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</td></tr>
+<tr><th>Referer</th><td>http://localhost/pesek/www/order/summary</td></tr>
+<tr><th>Accept-Encoding</th><td>gzip, deflate, br</td></tr>
+<tr><th>Accept-Language</th><td>cs-CZ,cs;q=0.8</td></tr>
+<tr><th>Cookie</th><td>_ga=GA1.1.1648047881.1480599282; PHPSESSID=mi111pual7ce5uve22cikrgj82; nette-browser=06k5c00vyz</td></tr>
+			</table>
+			</div>
+			
+
+						<h3>$_GET</h3>
+						<p><i>empty</i></p>
+									<h3>$_POST</h3>
+						<div class="outer">
+			<table>
+			<tr><th>submit</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"Dokončit objednávku"</span> (21)
+</pre>
+</td></tr>
+<tr><th>_do</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"summaryOrder-submit"</span> (19)
+</pre>
+</td></tr>
+			</table>
+			</div>
+									<h3>$_COOKIE</h3>
+						<div class="outer">
+			<table>
+			<tr><th>_ga</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"GA1.1.1648047881.1480599282"</span> (27)
+</pre>
+</td></tr>
+<tr><th>PHPSESSID</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"mi111pual7ce5uve22cikrgj82"</span> (26)
+</pre>
+</td></tr>
+<tr><th>nette-browser</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"06k5c00vyz"</span> (10)
+</pre>
+</td></tr>
+			</table>
+			</div>
+								</div></div>
+
+
+		<div class="panel">
+		<h2><a data-tracy-ref="^+" class="tracy-toggle tracy-collapsed">HTTP response</a></h2>
+
+		<div class="tracy-collapsed inner">
+			<h3>Headers</h3>
+						<pre>X-Frame-Options: SAMEORIGIN<br>X-Powered-By: Nette Framework<br>Set-Cookie: PHPSESSID=mi111pual7ce5uve22cikrgj82; expires=Fri, 23-Dec-2016 09:31:27 GMT; Max-Age=1209600; path=/; httponly<br>Set-Cookie: nette-browser=06k5c00vyz; path=/; httponly<br>Vary: X-Requested-With<br>Content-Description: File Transfer<br>Content-Transfer-Encoding: binary<br>Cache-Control: public, must-revalidate, max-age=0<br>Pragma: public<br>Expires: Sat, 26 Jul 1997 05:00:00 GMT<br>Last-Modified: Fri, 09 Dec 2016 09:31:27 GMT<br>Content-Type: application/force-download<br>Content-Type: application/octet-stream<br>Content-Type: application/download<br>Content-Type: application/pdf<br>Content-disposition: attachment; filename=&quot;Faktura-143_09-12-2016.pdf&quot;<br></pre>
+					</div></div>
+
+
+		
+
+		<ul>
+			<li>Report generated at 2016/12/09 10:31:28</li>
+			<li><a href="http://localhost/pesek/www/order/summary">http://localhost/pesek/www/order/summary</a></li>
+			<li>PHP 5.6.21</li><li>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.21</li><li>Tracy 2.4.3</li>		</ul>
+
+		<div id="tracy-bs-logo"><a href="https://tracy.nette.org" rel="noreferrer"></a></div>
+	</div>
+</div>
+
+<script>
+(function() {
+	if (!document.documentElement.dataset) {
+		document.getElementById('tracy-bs-error').innerHTML += '<div id=tracy-bs-ie-warning>Warning: Tracy requires IE 11+<\/div>';
+		return;
+	}
+	/**
+ * This file is part of the Tracy (https://tracy.nette.org)
+ */
+
+(function() {
+	Tracy = window.Tracy || {};
+
+	Tracy.Toggle = Tracy.Toggle || {};
+
+	// enables <a class="tracy-toggle" href="#"> or <span data-tracy-ref="#"> toggling
+	Tracy.Toggle.init = function() {
+		document.body.addEventListener('click', function(e) {
+			var el = Tracy.closest(e.target, '.tracy-toggle');
+			if (el && !e.shiftKey && !e.altKey && !e.ctrlKey && !e.metaKey) {
+				Tracy.Toggle.toggle(el);
+			}
+		});
+		this.init = function() {};
+	};
+
+
+	// changes element visibility
+	Tracy.Toggle.toggle = function(el, show) {
+		var collapsed = el.classList.contains('tracy-collapsed'),
+			ref = el.getAttribute('data-tracy-ref') || el.getAttribute('href', 2),
+			dest = el;
+
+		if (typeof show === 'undefined') {
+			show = collapsed;
+		} else if (!show === collapsed) {
+			return;
+		}
+
+		if (!ref || ref === '#') {
+			ref = '+';
+		} else if (ref.substr(0, 1) === '#') {
+			dest = document;
+		}
+		ref = ref.match(/(\^\s*([^+\s]*)\s*)?(\+\s*(\S*)\s*)?(.*)/);
+		dest = ref[1] ? Tracy.closest(dest.parentNode, ref[2]) : dest;
+		dest = ref[3] ? Tracy.closest(dest.nextElementSibling, ref[4], 'nextElementSibling') : dest;
+		dest = ref[5] ? dest.querySelector(ref[5]) : dest;
+
+		el.classList.toggle('tracy-collapsed', !show);
+		dest.classList.toggle('tracy-collapsed', !show);
+
+		if (typeof window.Event === 'function') {
+			var toggleEvent = new Event('tracy-toggle', {bubbles: true});
+		} else {
+			var toggleEvent = document.createEvent('Event');
+			toggleEvent.initEvent('tracy-toggle', true, false);
+		}
+		el.dispatchEvent(toggleEvent);
+	};
+
+
+	// save & restore toggles
+	Tracy.Toggle.persist = function(baseEl, restore) {
+		var saved = [];
+		baseEl.addEventListener('tracy-toggle', function(e) {
+			if (saved.indexOf(e.target) < 0) {
+				saved.push(e.target);
+			}
+		});
+
+		var toggles = JSON.parse(sessionStorage.getItem('tracy-toggles-' + baseEl.id));
+		if (toggles && restore !== false) {
+			toggles.forEach(function(item) {
+				var el = baseEl;
+				for (var i in item.path) {
+					if (!(el = el.children[item.path[i]])) {
+						return;
+					}
+				}
+				if (el.textContent === item.text) {
+					Tracy.Toggle.toggle(el, item.show);
+				}
+			});
+		}
+
+		window.addEventListener('unload', function() {
+			toggles = [].map.call(saved, function(el) {
+				var item = {path: [], text: el.textContent, show: !el.classList.contains('tracy-collapsed')};
+				do {
+					item.path.unshift([].indexOf.call(el.parentNode.children, el));
+					el = el.parentNode;
+				} while (el && el !== baseEl);
+				return item;
+			});
+			sessionStorage.setItem('tracy-toggles-' + baseEl.id, JSON.stringify(toggles));
+		});
+	}
+
+
+	// finds closing maching element
+	Tracy.closest = function(el, selector, func) {
+		var matches = el.matches || el.matchesSelector || el.msMatchesSelector || el.mozMatchesSelector || el.webkitMatchesSelector || el.oMatchesSelector;
+		while (el && selector && !(el.nodeType === 1 && matches.call(el, selector))) {
+			el = el[func || 'parentNode'];
+		}
+		return el;
+	};
+
+})();
+	/**
+ * This file is part of the Tracy (https://tracy.nette.org)
+ */
+
+(function() {
+	var COLLAPSE_COUNT = 7,
+		COLLAPSE_COUNT_TOP = 14;
+
+	Tracy = window.Tracy || {};
+
+	Tracy.Dumper = Tracy.Dumper || {};
+
+	Tracy.Dumper.init = function(repository, context) {
+		if (repository) {
+			[].forEach.call((context || document).querySelectorAll('.tracy-dump[data-tracy-dump]'), function(el) {
+				try {
+					el.appendChild(build(JSON.parse(el.getAttribute('data-tracy-dump')), repository, el.classList.contains('tracy-collapsed')));
+					el.classList.remove('tracy-collapsed');
+					el.removeAttribute('data-tracy-dump');
+				} catch (e) {
+					if (!(e instanceof UnknownEntityException)) {
+						throw e;
+					}
+				}
+			});
+		}
+
+		if (this.inited) {
+			return;
+		}
+		this.inited = true;
+
+		// enables <span data-tracy-href=""> & ctrl key
+		document.body.addEventListener('click', function(e) {
+			var el;
+			if (e.ctrlKey && (el = Tracy.closest(e.target, '[data-tracy-href]'))) {
+				location.href = el.getAttribute('data-tracy-href');
+				return false;
+			}
+		});
+
+		Tracy.Toggle.init();
+	};
+
+
+	var build = function(data, repository, collapsed, parentIds) {
+		var type = data === null ? 'null' : typeof data,
+			collapseCount = typeof collapsed === 'undefined' ? COLLAPSE_COUNT_TOP : COLLAPSE_COUNT;
+
+		if (type === 'null' || type === 'string' || type === 'number' || type === 'boolean') {
+			data = type === 'string' ? '"' + data + '"' : (data + '').toUpperCase();
+			return createEl(null, null, [
+				createEl(
+					'span',
+					{'class': 'tracy-dump-' + type.replace('ean', '')},
+					[data + '\n']
+				)
+			]);
+
+		} else if (Array.isArray(data)) {
+			return buildStruct([
+					createEl('span', {'class': 'tracy-dump-array'}, ['array']),
+					' (' + (data[0] && data.length || '') + ')'
+				],
+				' [ ... ]',
+				data[0] === null ? null : data,
+				collapsed === true || data.length >= collapseCount,
+				repository,
+				parentIds
+			);
+
+		} else if (type === 'object' && data.number) {
+			return createEl(null, null, [
+				createEl('span', {'class': 'tracy-dump-number'}, [data.number + '\n'])
+			]);
+
+		} else if (type === 'object' && data.type) {
+			return createEl(null, null, [
+				createEl('span', null, [data.type + '\n'])
+			]);
+
+		} else if (type === 'object') {
+			var id = data.object || data.resource,
+				object = repository[id];
+
+			if (!object) {
+				throw new UnknownEntityException;
+			}
+			parentIds = parentIds || [];
+			recursive = parentIds.indexOf(id) > -1;
+			parentIds.push(id);
+
+			return buildStruct([
+					createEl('span', {
+						'class': data.object ? 'tracy-dump-object' : 'tracy-dump-resource',
+						title: object.editor ? 'Declared in file ' + object.editor.file + ' on line ' + object.editor.line : null,
+						'data-tracy-href': object.editor ? object.editor.url : null
+					}, [object.name]),
+					' ',
+					createEl('span', {'class': 'tracy-dump-hash'}, ['#' + id])
+				],
+				' { ... }',
+				object.items,
+				collapsed === true || recursive || (object.items && object.items.length >= collapseCount),
+				repository,
+				parentIds
+			);
+		}
+	};
+
+
+	var buildStruct = function(span, ellipsis, items, collapsed, repository, parentIds) {
+		var res, toggle, div, handler;
+
+		if (!items || !items.length) {
+			span.push(!items || items.length ? ellipsis + '\n' : '\n');
+			return createEl(null, null, span);
+		}
+
+		res = createEl(null, null, [
+			toggle = createEl('span', {'class': collapsed ? 'tracy-toggle tracy-collapsed' : 'tracy-toggle'}, span),
+			'\n',
+			div = createEl('div', {'class': collapsed ? 'tracy-collapsed' : ''})
+		]);
+
+		if (collapsed) {
+			toggle.addEventListener('tracy-toggle', handler = function() {
+				toggle.removeEventListener('tracy-toggle', handler);
+				createItems(div, items, repository, parentIds);
+			});
+		} else {
+			createItems(div, items, repository, parentIds);
+		}
+		return res;
+	};
+
+
+	var createEl = function(el, attrs, content) {
+		if (!(el instanceof Node)) {
+			el = el ? document.createElement(el) : document.createDocumentFragment();
+		}
+		for (var id in attrs || {}) {
+			if (attrs[id] !== null) {
+				el.setAttribute(id, attrs[id]);
+			}
+		}
+		content = content || [];
+		for (id = 0; id < content.length; id++) {
+			var child = content[id];
+			if (child !== null) {
+				el.appendChild(child instanceof Node ? child : document.createTextNode(child));
+			}
+		}
+		return el;
+	};
+
+
+	var createItems = function(el, items, repository, parentIds) {
+		for (var i = 0; i < items.length; i++) {
+			var vis = items[i][2];
+			createEl(el, null, [
+				createEl('span', {'class': 'tracy-dump-key'}, [items[i][0]]),
+				vis ? ' ' : null,
+				vis ? createEl('span', {'class': 'tracy-dump-visibility'}, [vis === 1 ? 'protected' : 'private']) : null,
+				' => ',
+				build(items[i][1], repository, null, parentIds)
+			]);
+		}
+	};
+
+	var UnknownEntityException = function() {};
+
+})();
+	/**
+ * This file is part of the Tracy (https://tracy.nette.org)
+ */
+
+(function(){
+	Tracy = window.Tracy || {};
+
+	var BlueScreen = Tracy.BlueScreen = {},
+		inited;
+
+	BlueScreen.init = function(ajax) {
+		var blueScreen = document.getElementById('tracy-bs');
+
+		for (var i = 0, styles = []; i < document.styleSheets.length; i++) {
+			var style = document.styleSheets[i];
+			if (!style.ownerNode.classList.contains('tracy-debug')) {
+				style.oldDisabled = style.disabled;
+				style.disabled = true;
+				styles.push(style);
+			}
+		}
+
+		document.getElementById('tracy-bs-toggle').addEventListener('tracy-toggle', function(e) {
+			var collapsed = this.classList.contains('tracy-collapsed');
+			for (i = 0; i < styles.length; i++) {
+				styles[i].disabled = collapsed ? styles[i].oldDisabled : true;
+			}
+		});
+
+		if (!ajax) {
+			document.body.appendChild(blueScreen);
+			var id = location.href + document.getElementById('tracy-bs-error').textContent;
+			Tracy.Toggle.persist(blueScreen, sessionStorage.getItem('tracy-toggles-bskey') === id);
+			sessionStorage.setItem('tracy-toggles-bskey', id);
+		}
+
+		if (inited) {
+			return;
+		}
+		inited = true;
+
+		// enables toggling via ESC
+		document.addEventListener('keyup', function(e) {
+			if (e.keyCode === 27 && !e.shiftKey && !e.altKey && !e.ctrlKey && !e.metaKey) { // ESC
+				Tracy.Toggle.toggle(document.getElementById('tracy-bs-toggle'));
+			}
+		});
+	}
+
+	BlueScreen.loadAjax = function(content, dumps) {
+		var ajaxBs = document.getElementById('tracy-bs');
+		if (ajaxBs) {
+			ajaxBs.parentNode.removeChild(ajaxBs);
+		}
+		document.body.insertAdjacentHTML('beforeend', content);
+		ajaxBs = document.getElementById('tracy-bs');
+		Tracy.Dumper.init(dumps, ajaxBs);
+		BlueScreen.init(true);
+		window.scrollTo(0, 0);
+	};
+
+})();
+})();
+</script>
+<script>
+Tracy && Tracy.Dumper.init({"01":{"name":"Nette\\Http\\Request","editor":{"file":"C:\\xampp\\htdocs\\Pesek\\vendor\\nette\\http\\src\\Http\\Request.php","line":30,"url":"editor:\/\/open\/?file=C%3A%5Cxampp%5Chtdocs%5CPesek%5Cvendor%5Cnette%5Chttp%5Csrc%5CHttp%5CRequest.php&line=30"},"items":[["method","POST",2],["url",{"object":"02"},2],["post",[["submit","Dokon\u010dit objedn\u00e1vku"],["_do","summaryOrder-submit"]],2],["files",[],2],["cookies",[["_ga","GA1.1.1648047881.1480599282"],["PHPSESSID","mi111pual7ce5uve22cikrgj82"],["\"nette-browser\"","06k5c00vyz"]],2],["headers",[["host","localhost"],["connection","keep-alive"],["\"content-length\"","60"],["\"cache-control\"","max-age=0"],["origin","http:\/\/localhost"],["\"upgrade-insecure-requests\"","1"],["\"user-agent\"","Mozilla\/5.0 (Windows NT 10.0; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/54.0.2840.99 Safari\/537.36"],["\"content-type\"","application\/x-www-form-urlencoded"],["accept","text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,*\/*;q=0.8"],["referer","http:\/\/localhost\/pesek\/www\/order\/summary"],["\"accept-encoding\"","gzip, deflate, br"],["\"accept-language\"","cs-CZ,cs;q=0.8"],["cookie","_ga=GA1.1.1648047881.1480599282; PHPSESSID=mi111pual7ce5uve22cikrgj82; nette-browser=06k5c00vyz"]],2],["remoteAddress","::1",2],["remoteHost",null,2],["rawBodyCallback",{"object":"03"},2]]},"02":{"name":"Nette\\Http\\UrlScript","editor":{"file":"C:\\xampp\\htdocs\\Pesek\\vendor\\nette\\http\\src\\Http\\UrlScript.php","line":27,"url":"editor:\/\/open\/?file=C%3A%5Cxampp%5Chtdocs%5CPesek%5Cvendor%5Cnette%5Chttp%5Csrc%5CHttp%5CUrlScript.php&line=27"},"items":[["scriptPath","\/pesek\/www\/",2],["scheme","http",2],["user","",2],["password","",2],["host","localhost",2],["port",80,2],["path","\/pesek\/www\/order\/summary",2],["query",[],2],["fragment","",2]]},"03":{"name":"Closure","editor":{"file":"C:\\xampp\\htdocs\\Pesek\\vendor\\nette\\http\\src\\Http\\RequestFactory.php","line":275,"url":"editor:\/\/open\/?file=C%3A%5Cxampp%5Chtdocs%5CPesek%5Cvendor%5Cnette%5Chttp%5Csrc%5CHttp%5CRequestFactory.php&line=275"},"items":[["file","C:\\xampp\\htdocs\\Pesek\\vendor\\nette\\http\\src\\Http\\RequestFactory.php",0],["line",275,0],["variables",[],0],["parameters","",0]]},"04":{"name":"Nette\\Http\\Response","editor":{"file":"C:\\xampp\\htdocs\\Pesek\\vendor\\nette\\http\\src\\Http\\Response.php","line":19,"url":"editor:\/\/open\/?file=C%3A%5Cxampp%5Chtdocs%5CPesek%5Cvendor%5Cnette%5Chttp%5Csrc%5CHttp%5CResponse.php&line=19"},"items":[["cookieDomain","",0],["cookiePath","\/",0],["cookieSecure",false,0],["cookieHttpOnly",true,0],["warnOnBuffer",true,0],["code",200,2]]},"05":{"name":"Nette\\Application\\Request","editor":{"file":"C:\\xampp\\htdocs\\Pesek\\vendor\\nette\\application\\src\\Application\\Request.php","line":22,"url":"editor:\/\/open\/?file=C%3A%5Cxampp%5Chtdocs%5CPesek%5Cvendor%5Cnette%5Capplication%5Csrc%5CApplication%5CRequest.php&line=22"},"items":[["method","POST",2],["flags",[["secured",false]],2],["name","Front:Order",2],["params",[["action","summary"],["id",null]],2],["post",[["submit","Dokon\u010dit objedn\u00e1vku"],["_do","summaryOrder-submit"]],2],["files",[],2]]},"06":{"name":"App\\FrontModule\\Presenters\\OrderPresenter","editor":null,"items":[["orderFormFactory",{"object":"07"},0],["summaryFormFactory",{"object":"018"},0],["cart",{"object":"014"},0],["database",{"object":"09"},0],["invalidLinkMode",5,0],["onShutdown",null,0],["request",{"object":"025"},2],["response",{"object":"026"},2],["autoCanonicalize",true,0],["absoluteUrls",false,0],["globalParams",[],2],["globalState",[],2],["globalStateSinces",[],2],["action","summary",2],["view","summary",2],["layout",null,2],["payload",{"object":"027"},2],["signalReceiver","summaryOrder",2],["signal","submit",2],["ajaxMode",false,2],["startupCheck",true,2],["lastCreatedRequest",{"object":"028"},2],["lastCreatedRequestFlag",[["current",false]],2],["context",{"object":"017"},2],["httpRequest",{"object":"01"},2],["httpResponse",{"object":"04"},2],["session",{"object":"019"},2],["presenterFactory",{"object":"033"},2],["router",{"object":"035"},2],["user",{"object":"040"},2],["templateFactory",{"object":"042"},2],["refUrlCache",{"object":"045"},2],["template",{"object":"046"},2],["invalidSnippets",[],2],["snippetMode",null,0],["onAnchor",null,0],["params",[["action","summary"],["id",null],["do","summaryOrder-submit"],["_fid","8qh4"]],1],["components",[["summaryOrder",{"object":"059"}]],2],["cloning",null,2],["parent",null,2],["name","Front:Order",2],["monitors",[],2],["templateFactory",null,2]]},"07":{"name":"App\\FrontModule\\Forms\\OrderFormFactory","editor":null,"items":[["database",null,2],["cartFacade",{"object":"08"},2],["baseFormFactory",{"object":"016"},2]]},"08":{"name":"App\\Model\\Facades\\CartFacade","editor":null,"items":[["database",{"object":"09"},2],["cart",{"object":"014"},2],["session",null,0],["sessionSection",null,0]]},"09":{"name":"Nette\\Database\\Context","editor":null,"items":[["connection",{"object":"010"},2],["structure",{"object":"011"},2],["conventions",{"object":"012"},2],["cacheStorage",{"object":"013"},2]]},"010":{"name":"Nette\\Database\\Connection","editor":null,"items":[["onConnect",null,0],["onQuery",[[0,[null]]],0],["params",[[0,"mysql:host=localhost;dbname=mvc_dbc"],[1,"root"],[2,null]],2],["options",[["lazy",true]],2],["driver",{"object":"020"},2],["preprocessor",{"object":"021"},2],["pdo",{"object":"022"},2]]},"011":{"name":"Nette\\Database\\Structure","editor":null,"items":[["connection",{"object":"010"},1],["cache",{"object":"023"},1],["structure",[["tables",[null]],["columns",[null]],["primary",[null]],["belongsTo",[null]],["hasMany",[null]]],1],["isRebuilt",false,1]]},"012":{"name":"Nette\\Database\\Conventions\\DiscoveredConventions","editor":null,"items":[["structure",{"object":"011"},1]]},"013":{"name":"Nette\\Caching\\Storages\\FileStorage","editor":null,"items":[["dir","C:\\xampp\\htdocs\\Pesek\\app\/..\/temp\/cache",2],["useDirs",true,2],["journal",{"object":"024"},2],["locks",null,2]]},"014":{"name":"Kasika\\ShopCart\\Cart","editor":null,"items":[["items",{"object":"015"},2]]},"015":{"name":"Nette\\Http\\SessionSection","editor":null,"items":[["session",{"object":"019"},2],["name","Kasika\\ShopCart\\DI\\Extension",2],["data",[],2],["meta",null,2],["warnOnUndefined",false,0]]},"016":{"name":"Container_b9d1c51268_Kasika_Main_IBaseFormFactoryImpl_35_Kasika_Main_IBaseFormFactory","editor":null,"items":[["container",{"object":"017"},2]]},"017":{"name":"Container_b9d1c51268","editor":null,"items":[["meta",[["types",[["\"Nette\\Application\\Application\"",[null]],["\"Nette\\Application\\IPresenterFactory\"",[null]],["\"Nette\\Application\\LinkGenerator\"",[null]],["\"Nette\\Caching\\Storages\\IJournal\"",[null]],["\"Nette\\Caching\\IStorage\"",[null]],["\"Nette\\Database\\Connection\"",[null]],["\"Nette\\Database\\IStructure\"",[null]],["\"Nette\\Database\\Structure\"",[null]],["\"Nette\\Database\\IConventions\"",[null]],["\"Nette\\Database\\Conventions\\DiscoveredConventions\"",[null]],["\"Nette\\Database\\Context\"",[null]],["\"Nette\\Http\\RequestFactory\"",[null]],["\"Nette\\Http\\IRequest\"",[null]],["\"Nette\\Http\\Request\"",[null]],["\"Nette\\Http\\IResponse\"",[null]],["\"Nette\\Http\\Response\"",[null]],["\"Nette\\Http\\Context\"",[null]],["\"Nette\\Bridges\\ApplicationLatte\\ILatteFactory\"",[null]],["\"Nette\\Application\\UI\\ITemplateFactory\"",[null]],["\"Nette\\Mail\\IMailer\"",[null]],["\"Nette\\Application\\IRouter\"",[null]],["\"Nette\\Security\\IUserStorage\"",[null]],["\"Nette\\Security\\User\"",[null]],["\"Nette\\Http\\Session\"",[null]],["\"Tracy\\ILogger\"",[null]],["\"Tracy\\BlueScreen\"",[null]],["\"Tracy\\Bar\"",[null]],["\"Nette\\Object\"",[null]],["\"Kasika\\ShopCart\\Cart\"",[null]],["\"Kasika\\ShopCart\\ICartControlFactory\"",[null]],["\"App\\AdminModule\\Forms\\BaseFormFactory\"",[null]],["\"App\\AdminModule\\Forms\\AlbumFormFactory\"",[null]],["\"App\\AdminModule\\Forms\\ContactFormFactory\"",[null]],["\"App\\AdminModule\\Forms\\PageFormFactory\"",[null]],["\"App\\AdminModule\\Forms\\ProductFormFactory\"",[null]],["\"App\\FrontModule\\Forms\\CartFormFactory\"",[null]],["\"App\\FrontModule\\Forms\\OrderFormFactory\"",[null]],["\"App\\FrontModule\\Forms\\SummaryFormFactory\"",[null]],["\"App\\Model\\Facades\\CartFacade\"",[null]],["\"Nette\\Security\\IAuthenticator\"",[null]],["\"App\\Model\\Security\\MyAuthenticate\"",[null]],["\"Kasika\\Main\\IBaseFormFactory\"",[null]],["\"Nette\\Security\\IAuthorizator\"",[null]],["\"Nette\\Security\\Permission\"",[null]],["\"App\\AdminModule\\Forms\\UploadManager\"",[null]],["\"App\\AdminModule\\Forms\\UserFormFactory\"",[null]],["\"App\\Model\\Security\\Crypter\"",[null]],["\"App\\Model\\Security\\Bcrypt\"",[null]],["\"Nette\\Application\\UI\\Presenter\"",[null]],["\"Nette\\Application\\UI\\Control\"",[null]],["\"Nette\\Application\\UI\\Component\"",[null]],["\"Nette\\ComponentModel\\Container\"",[null]],["\"Nette\\ComponentModel\\Component\"",[null]],["\"Nette\\Application\\IPresenter\"",[null]],["ArrayAccess",[null]],["\"Nette\\Application\\UI\\IStatePersistent\"",[null]],["\"Nette\\Application\\UI\\ISignalReceiver\"",[null]],["\"Nette\\ComponentModel\\IComponent\"",[null]],["\"Nette\\ComponentModel\\IContainer\"",[null]],["\"Nette\\Application\\UI\\IRenderable\"",[null]],["\"App\\AdminModule\\Presenters\\AuthPresenter\"",[null]],["\"App\\AdminModule\\Presenters\\BasePresenter\"",[null]],["\"App\\AdminModule\\Presenters\\GalleryPresenter\"",[null]],["\"App\\AdminModule\\Presenters\\HomepagePresenter\"",[null]],["\"App\\AdminModule\\Presenters\\OrderPresenter\"",[null]],["\"App\\AdminModule\\Presenters\\PagePresenter\"",[null]],["\"App\\AdminModule\\Presenters\\ProductPresenter\"",[null]],["\"App\\AdminModule\\Presenters\\SecuredPresenter\"",[null]],["\"App\\AdminModule\\Presenters\\SettingsPresenter\"",[null]],["\"App\\FrontModule\\Presenters\\BasePresenter\"",[null]],["\"App\\FrontModule\\Presenters\\AboutPresenter\"",[null]],["\"App\\FrontModule\\Presenters\\CartPresenter\"",[null]],["\"App\\FrontModule\\Presenters\\ContactPresenter\"",[null]],["\"App\\FrontModule\\Presenters\\Error4xxPresenter\"",[null]],["\"App\\FrontModule\\Presenters\\ErrorPresenter\"",[null]],["\"App\\FrontModule\\Presenters\\GalleryPresenter\"",[null]],["\"App\\FrontModule\\Presenters\\HomepagePresenter\"",[null]],["\"App\\FrontModule\\Presenters\\OrderPresenter\"",[null]],["\"App\\FrontModule\\Presenters\\ProductPresenter\"",[null]],["\"App\\Presenters\\BasePresenter\"",[null]],["\"App\\Presenters\\Error4xxPresenter\"",[null]],["\"App\\Presenters\\ErrorPresenter\"",[null]],["\"NetteModule\\ErrorPresenter\"",[null]],["\"NetteModule\\MicroPresenter\"",[null]],["\"Nette\\DI\\Container\"",[null]]]],["services",[["26_App_AdminModule_Forms_AlbumFormFactory","App\\AdminModule\\Forms\\AlbumFormFactory"],["27_App_AdminModule_Forms_ContactFormFactory","App\\AdminModule\\Forms\\ContactFormFactory"],["28_App_AdminModule_Forms_PageFormFactory","App\\AdminModule\\Forms\\PageFormFactory"],["29_App_AdminModule_Forms_ProductFormFactory","App\\AdminModule\\Forms\\ProductFormFactory"],["30_App_FrontModule_Forms_CartFormFactory","App\\FrontModule\\Forms\\CartFormFactory"],["31_App_FrontModule_Forms_OrderFormFactory","App\\FrontModule\\Forms\\OrderFormFactory"],["32_App_FrontModule_Forms_SummaryFormFactory","App\\FrontModule\\Forms\\SummaryFormFactory"],["33_App_Model_Facades_CartFacade","App\\Model\\Facades\\CartFacade"],["34_App_Model_Security_MyAuthenticate","App\\Model\\Security\\MyAuthenticate"],["35_Kasika_Main_IBaseFormFactory","Nette\\Application\\UI\\Form"],["37_App_AdminModule_Forms_UploadManager","App\\AdminModule\\Forms\\UploadManager"],["38_App_AdminModule_Forms_UserFormFactory","App\\AdminModule\\Forms\\UserFormFactory"],["\"application.1\"","App\\AdminModule\\Presenters\\AuthPresenter"],["\"application.10\"","App\\FrontModule\\Presenters\\CartPresenter"],["\"application.11\"","App\\FrontModule\\Presenters\\ContactPresenter"],["\"application.12\"","App\\FrontModule\\Presenters\\Error4xxPresenter"],["\"application.13\"","App\\FrontModule\\Presenters\\ErrorPresenter"],["\"application.14\"","App\\FrontModule\\Presenters\\GalleryPresenter"],["\"application.15\"","App\\FrontModule\\Presenters\\HomepagePresenter"],["\"application.16\"","App\\FrontModule\\Presenters\\OrderPresenter"],["\"application.17\"","App\\FrontModule\\Presenters\\ProductPresenter"],["\"application.18\"","App\\Presenters\\Error4xxPresenter"],["\"application.19\"","App\\Presenters\\ErrorPresenter"],["\"application.2\"","App\\AdminModule\\Presenters\\GalleryPresenter"],["\"application.20\"","NetteModule\\ErrorPresenter"],["\"application.21\"","NetteModule\\MicroPresenter"],["\"application.3\"","App\\AdminModule\\Presenters\\HomepagePresenter"],["\"application.4\"","App\\AdminModule\\Presenters\\OrderPresenter"],["\"application.5\"","App\\AdminModule\\Presenters\\PagePresenter"],["\"application.6\"","App\\AdminModule\\Presenters\\ProductPresenter"],["\"application.7\"","App\\AdminModule\\Presenters\\SecuredPresenter"],["\"application.8\"","App\\AdminModule\\Presenters\\SettingsPresenter"],["\"application.9\"","App\\FrontModule\\Presenters\\AboutPresenter"],["\"application.application\"","Nette\\Application\\Application"],["\"application.linkGenerator\"","Nette\\Application\\LinkGenerator"],["\"application.presenterFactory\"","Nette\\Application\\IPresenterFactory"],["authorizator","Nette\\Security\\Permission"],["\"cache.journal\"","Nette\\Caching\\Storages\\IJournal"],["\"cache.storage\"","Nette\\Caching\\IStorage"],["\"cart.cart\"","Kasika\\ShopCart\\Cart"],["\"cart.cartControlFactory\"","Kasika\\ShopCart\\CartControl"],["container","Nette\\DI\\Container"],["crypter","App\\Model\\Security\\Bcrypt"],["\"database.default.connection\"","Nette\\Database\\Connection"],["\"database.default.context\"","Nette\\Database\\Context"],["\"database.default.conventions\"","Nette\\Database\\Conventions\\DiscoveredConventions"],["\"database.default.structure\"","Nette\\Database\\Structure"],["\"http.context\"","Nette\\Http\\Context"],["\"http.request\"","Nette\\Http\\Request"],["\"http.requestFactory\"","Nette\\Http\\RequestFactory"],["\"http.response\"","Nette\\Http\\Response"],["\"latte.latteFactory\"","Latte\\Engine"],["\"latte.templateFactory\"","Nette\\Application\\UI\\ITemplateFactory"],["\"mail.mailer\"","Nette\\Mail\\IMailer"],["\"routing.router\"","Nette\\Application\\IRouter"],["\"security.user\"","Nette\\Security\\User"],["\"security.userStorage\"","Nette\\Security\\IUserStorage"],["\"session.session\"","Nette\\Http\\Session"],["\"tracy.bar\"","Tracy\\Bar"],["\"tracy.blueScreen\"","Tracy\\BlueScreen"],["\"tracy.logger\"","Tracy\\ILogger"]]],["tags",[["inject",[null]],["\"nette.presenter\"",[null]]]],["aliases",[["application","application.application"],["cacheStorage","cache.storage"],["\"database.default\"","database.default.connection"],["httpRequest","http.request"],["httpResponse","http.response"],["\"nette.cacheJournal\"","cache.journal"],["\"nette.database.default\"","database.default"],["\"nette.database.default.context\"","database.default.context"],["\"nette.httpContext\"","http.context"],["\"nette.httpRequestFactory\"","http.requestFactory"],["\"nette.latteFactory\"","latte.latteFactory"],["\"nette.mailer\"","mail.mailer"],["\"nette.presenterFactory\"","application.presenterFactory"],["\"nette.templateFactory\"","latte.templateFactory"],["\"nette.userStorage\"","security.userStorage"],["router","routing.router"],["session","session.session"],["user","security.user"]]]],1],["parameters",[["appDir","C:\\xampp\\htdocs\\Pesek\\app"],["wwwDir","C:\\xampp\\htdocs\\Pesek\\www"],["debugMode",true],["productionMode",false],["consoleMode",false],["tempDir","C:\\xampp\\htdocs\\Pesek\\app\/..\/temp"],["database",[["driver","mysql"],["host","localhost"],["dbname","mvc_dbc"],["user","root"],["password",null]]],["security",[["salt","3+91^H:WF%=BanQ@9@eKXMTz5'3MjQ1FhU.E\/k)5"],["workFactor",13],["hash","sha512"]]],["options",[["Color",[null]]]]],0],["registry",[["\"tracy.bar\"",{"object":"029"}],["\"http.requestFactory\"",{"object":"030"}],["\"http.request\"",{"object":"01"}],["\"http.response\"",{"object":"04"}],["\"session.session\"",{"object":"019"}],["\"tracy.logger\"",{"object":"031"}],["\"application.presenterFactory\"",{"object":"033"}],["\"routing.router\"",{"object":"035"}],["\"application.application\"",{"object":"036"}],["\"tracy.blueScreen\"",{"object":"032"}],["\"database.default.connection\"",{"object":"010"}],["\"cache.journal\"",{"object":"024"}],["\"cache.storage\"",{"object":"013"}],["\"database.default.structure\"",{"object":"011"}],["\"database.default.conventions\"",{"object":"012"}],["\"database.default.context\"",{"object":"09"}],["\"security.userStorage\"",{"object":"037"}],["34_App_Model_Security_MyAuthenticate",{"object":"038"}],["authorizator",{"object":"039"}],["\"security.user\"",{"object":"040"}],["\"latte.latteFactory\"",{"object":"041"}],["\"latte.templateFactory\"",{"object":"042"}],["\"cart.cart\"",{"object":"014"}],["33_App_Model_Facades_CartFacade",{"object":"08"}],["35_Kasika_Main_IBaseFormFactory",{"object":"016"}],["32_App_FrontModule_Forms_SummaryFormFactory",{"object":"018"}],["31_App_FrontModule_Forms_OrderFormFactory",{"object":"07"}]],2],["creating",[],2]]},"018":{"name":"App\\FrontModule\\Forms\\SummaryFormFactory","editor":null,"items":[["database",null,2],["baseFormFactory",{"object":"016"},2],["cartFacade",{"object":"08"},2]]},"019":{"name":"Nette\\Http\\Session","editor":null,"items":[["regenerated",false,2],["options",[["gc_maxlifetime",1209600],["cookie_lifetime",1209600],["referer_check",""],["use_cookies",1],["use_only_cookies",1],["use_trans_sid",0],["cookie_path","\/"],["cookie_domain",""],["cookie_secure",false],["cookie_httponly",true],["cache_limiter",null],["cache_expire",null],["hash_function",null],["hash_bits_per_character",null]],2],["request",{"object":"01"},2],["response",{"object":"04"},2],["handler",null,2]]},"020":{"name":"Nette\\Database\\Drivers\\MySqlDriver","editor":null,"items":[["connection",{"object":"010"},2]]},"021":{"name":"Nette\\Database\\SqlPreprocessor","editor":null,"items":[["connection",{"object":"010"},2],["driver",{"object":"020"},2],["params",[null],2],["remaining",[null],2],["counter",2,2],["arrayMode","values",2]]},"022":{"name":"PDO","editor":null,"items":[]},"023":{"name":"Nette\\Caching\\Cache","editor":null,"items":[["storage",{"object":"013"},2],["namespace","Nette.Database.Structure.7034cac83ce1f0b44967badd7b33a48c\\x00",2]]},"024":{"name":"Nette\\Caching\\Storages\\SQLiteJournal","editor":null,"items":[["path","C:\\xampp\\htdocs\\Pesek\\app\/..\/temp\/cache\/journal.s3db",2],["pdo",null,2]]},"025":{"name":"Nette\\Application\\Request","editor":null,"items":[["method","POST",2],["flags",[["secured",false]],2],["name","Front:Order",2],["params",[["action","summary"],["id",null]],2],["post",[["submit","Dokon\u010dit objedn\u00e1vku"],["_do","summaryOrder-submit"]],2],["files",[],2]]},"026":{"name":"Nette\\Application\\Responses\\RedirectResponse","editor":null,"items":[["url","http:\/\/localhost\/pesek\/www\/?_fid=8qh4",2],["code",303,2]]},"027":{"name":"stdClass","editor":null,"items":[]},"028":{"name":"Nette\\Application\\Request","editor":null,"items":[["method","FORWARD",2],["flags",[],2],["name","Front:Homepage",2],["params",[["action","default"],["_fid","8qh4"]],2],["post",[],2],["files",[],2]]},"029":{"name":"Tracy\\Bar","editor":null,"items":[["panels",[null],2],["dispatched",true,2]]},"030":{"name":"Nette\\Http\\RequestFactory","editor":null,"items":[["urlFilters",[null],0],["binary",false,2],["proxies",[null],2]]},"031":{"name":"Tracy\\Logger","editor":null,"items":[["directory","C:\\xampp\\htdocs\\Pesek\\app\/..\/log",0],["email",null,0],["fromEmail",null,0],["emailSnooze","2 days",0],["mailer",[null],0],["blueScreen",{"object":"032"},2]]},"032":{"name":"Tracy\\BlueScreen","editor":null,"items":[["info",[null],0],["panels",[null],2],["collapsePaths",[null],0],["maxDepth",3,0],["maxLength",150,0]]},"033":{"name":"Nette\\Application\\PresenterFactory","editor":null,"items":[["mapping",[["\"*\"",[[0,"App\\"],[1,"*Module\\"],[2,"Presenters\\*Presenter"]]],["Nette",[[0,"NetteModule\\"],[1,"*\\"],[2,"*Presenter"]]]],2],["cache",[["\"Front:Order\"","App\\FrontModule\\Presenters\\OrderPresenter"],["\"Front:Homepage\"","App\\FrontModule\\Presenters\\HomepagePresenter"]],2],["factory",{"object":"034"},2]]},"034":{"name":"Nette\\Bridges\\ApplicationDI\\PresenterFactoryCallback","editor":null,"items":[["container",{"object":"017"},2],["invalidLinkMode",5,2],["touchToRefresh","C:\\xampp\\htdocs\\Pesek\\app\/..\/temp\/cache\/Nette%5CBridges%5CApplicationDI%5CApplicationExtension",2]]},"035":{"name":"Nette\\Application\\Routers\\RouteList","editor":null,"items":[["cachedRoutes",[["\"*\"",[[0,{"object":"043"}],[1,{"object":"044"}]]]],2],["module","",2],["list",[[0,{"object":"043"}],[1,{"object":"044"}]],2]]},"036":{"name":"Nette\\Application\\Application","editor":null,"items":[["catchExceptions",false,0],["errorPresenter","Error",0],["onStartup",null,0],["onShutdown",null,0],["onRequest",null,0],["onPresenter",null,0],["onResponse",null,0],["onError",null,0],["requests",[null],2],["presenter",{"object":"06"},2],["httpRequest",{"object":"01"},2],["httpResponse",{"object":"04"},2],["presenterFactory",{"object":"033"},2],["router",{"object":"035"},2]]},"037":{"name":"Nette\\Http\\UserStorage","editor":null,"items":[["namespace","",2],["sessionHandler",{"object":"019"},2],["sessionSection",null,2]]},"038":{"name":"App\\Model\\Security\\MyAuthenticate","editor":null,"items":[["database",{"object":"09"},2]]},"039":{"name":"Nette\\Security\\Permission","editor":null,"items":[["roles",[["admin",[null]],["guest",[null]],["user",[null]]],2],["resources",[["admin",[null]],["user",[null]]],2],["rules",[["allResources",[null]],["byResource",[null]]],2],["queriedRole",null,2],["queriedResource",null,2]]},"040":{"name":"Nette\\Security\\User","editor":null,"items":[["guestRole","guest",0],["authenticatedRole","authenticated",0],["onLoggedIn",null,0],["onLoggedOut",null,0],["storage",{"object":"037"},2],["authenticator",{"object":"038"},2],["authorizator",{"object":"039"},2]]},"041":{"name":"Container_b9d1c51268_Nette_Bridges_ApplicationLatte_ILatteFactoryImpl_latte_latteFactory","editor":null,"items":[["container",{"object":"017"},2]]},"042":{"name":"Nette\\Bridges\\ApplicationLatte\\TemplateFactory","editor":null,"items":[["latteFactory",{"object":"041"},2],["httpRequest",{"object":"01"},2],["user",{"object":"040"},2],["cacheStorage",{"object":"013"},2]]},"043":{"name":"Nette\\Application\\Routers\\RouteList","editor":null,"items":[["cachedRoutes",[null],2],["module","Admin:",2],["list",[null],2]]},"044":{"name":"Nette\\Application\\Routers\\RouteList","editor":null,"items":[["cachedRoutes",[null],2],["module","Front:",2],["list",[null],2]]},"045":{"name":"Nette\\Http\\Url","editor":null,"items":[["scheme","http",2],["user","",2],["password","",2],["host","localhost",2],["port",80,2],["path","\/pesek\/www\/",2],["query",[],2],["fragment","",2]]},"046":{"name":"Nette\\Bridges\\ApplicationLatte\\Template","editor":null,"items":[["latte",{"object":"047"},2],["file",null,2],["params",[["user",{"object":"040"}],["baseUrl","http:\/\/localhost\/pesek\/www"],["baseUri","http:\/\/localhost\/pesek\/www"],["basePath","\/pesek\/www"],["flashes",[[0,{"object":"052"}]]],["control",{"object":"06"}],["presenter",{"object":"06"}],["_control",{"object":"06"}],["_presenter",{"object":"06"}],["netteCacheStorage",{"object":"013"}],["cart",{"object":"014"}],["order",{"object":"053"}],["carts",{"object":"014"}],["travel",{"object":"055"}],["payment",{"object":"057"}]],2]]},"047":{"name":"Latte\\Engine","editor":null,"items":[["onCompile",[[0,{"object":"048"}]],0],["parser",null,2],["compiler",null,2],["loader",{"object":"049"},2],["filters",{"object":"050"},2],["providers",[["uiControl",{"object":"06"}],["uiPresenter",{"object":"06"}],["snippetBridge",{"object":"051"}],["cacheStorage",{"object":"013"}]],2],["contentType","html",2],["tempDirectory","C:\\xampp\\htdocs\\Pesek\\app\/..\/temp\/cache\/latte",2],["autoRefresh",true,2]]},"048":{"name":"Closure","editor":null},"049":{"name":"Nette\\Bridges\\ApplicationLatte\\Loader","editor":null,"items":[["presenter",{"object":"06"},2],["baseDir",null,2]]},"050":{"name":"Latte\\Runtime\\FilterExecutor","editor":null,"items":[["_dynamic",[null],2],["_static",[null],2]]},"051":{"name":"Nette\\Bridges\\ApplicationLatte\\SnippetBridge","editor":null},"052":{"name":"stdClass","editor":null,"items":[["header","Operace prob\u011bhla \u00fasp\u011b\u0161n\u011b",0],["message","D\u011bkujeme za Va\u0161i objedn\u00e1vku",0],["type","alert-success",0]]},"053":{"name":"Nette\\Database\\Table\\ActiveRow","editor":null,"items":[["table",{"object":"054"},2],["data",[null],2],["dataRefreshed",false,2]]},"054":{"name":"Nette\\Database\\Table\\Selection","editor":null},"055":{"name":"Nette\\Database\\Table\\ActiveRow","editor":null,"items":[["table",{"object":"056"},2],["data",[null],2],["dataRefreshed",false,2]]},"056":{"name":"Nette\\Database\\Table\\Selection","editor":null},"057":{"name":"Nette\\Database\\Table\\ActiveRow","editor":null,"items":[["table",{"object":"058"},2],["data",[null],2],["dataRefreshed",false,2]]},"058":{"name":"Nette\\Database\\Table\\Selection","editor":null},"059":{"name":"Nette\\Application\\UI\\Form","editor":null,"items":[["onAnchor",null,0],["onSuccess",[[0,{"object":"060"}],[1,{"object":"061"}]],0],["onError",null,0],["onSubmit",null,0],["onRender",null,0],["submittedBy",true,2],["httpData",[["submit","Dokon\u010dit objedn\u00e1vku"],["_do","summaryOrder-submit"]],2],["element",{"object":"062"},2],["renderer",null,2],["translator",null,2],["groups",[],2],["errors",[],2],["httpRequest",null,0],["beforeRenderCalled",null,2],["onValidate",null,0],["currentGroup",null,1],["validated",true,2],["components",[["submit",{"object":"063"}]],2],["cloning",null,2],["parent",{"object":"06"},2],["name","summaryOrder",2],["monitors",[["\"Nette\\Application\\UI\\Presenter\"",[null]],["\"Nette\\Forms\\Form\"",[null]]],2]]},"060":{"name":"Closure","editor":null},"061":{"name":"Closure","editor":null},"062":{"name":"Nette\\Utils\\Html","editor":null,"items":[["name","form",2],["isEmpty",false,2],["attrs",[null],0],["children",[null],1]]},"063":{"name":"Nette\\Forms\\Controls\\SubmitButton","editor":null},"064":{"name":"Nette\\Security\\Identity","editor":{"file":"C:\\xampp\\htdocs\\Pesek\\vendor\\nette\\security\\src\\Security\\Identity.php","line":20,"url":"editor:\/\/open\/?file=C%3A%5Cxampp%5Chtdocs%5CPesek%5Cvendor%5Cnette%5Csecurity%5Csrc%5CSecurity%5CIdentity.php&line=20"},"items":[["id",9,2],["roles",[[0,"admin"]],2],["data",[["id",9],["name","Stanislav Kasika"],["email","master@irope.com"],["role","admin"]],2]]},"065":{"name":"stdClass","editor":null,"items":[["header","Zbo\u017e\u00ed p\u0159id\u00e1no",0],["message","Mno\u017e\u0161tv\u00ed p\u0159id\u00e1no",0],["type","alert-success",0]]},"066":{"name":"stdClass","editor":null,"items":[["header","Zbo\u017e\u00ed p\u0159id\u00e1no",0],["message","Mno\u017e\u0161tv\u00ed p\u0159id\u00e1no",0],["type","alert-success",0]]},"067":{"name":"stdClass","editor":null,"items":[["header","ERR",0],["message","Nejsi p\u0159ihl\u00e1\u0161en",0],["type","alert-danger",0]]},"068":{"name":"stdClass","editor":null,"items":[["header","ok",0],["message","ok",0],["type","alert-success",0]]},"069":{"name":"stdClass","editor":null,"items":[["header","ok",0],["message","ok",0],["type","alert-success",0]]},"070":{"name":"stdClass","editor":null,"items":[["header","ok",0],["message","ok",0],["type","alert-success",0]]},"071":{"name":"stdClass","editor":null,"items":[["header","Chyba p\u0159i zad\u00e1v\u00e1n\u00ed",0],["message","",0],["type","alert-danger",0]]},"072":{"name":"stdClass","editor":null,"items":[["header","Chyba p\u0159i zad\u00e1v\u00e1n\u00ed",0],["message","",0],["type","alert-danger",0]]},"073":{"name":"stdClass","editor":null,"items":[["header","Chyba p\u0159i zad\u00e1v\u00e1n\u00ed",0],["message","",0],["type","alert-danger",0]]},"074":{"name":"stdClass","editor":null,"items":[["header","Chyba p\u0159i zad\u00e1v\u00e1n\u00ed",0],["message","kk",0],["type","alert-danger",0]]},"075":{"name":"stdClass","editor":null,"items":[["header","Chyba p\u0159i zad\u00e1v\u00e1n\u00ed",0],["message","kk",0],["type","alert-danger",0]]},"076":{"name":"stdClass","editor":null,"items":[["header","Chyba p\u0159i zad\u00e1v\u00e1n\u00ed",0],["message","kk",0],["type","alert-danger",0]]},"077":{"name":"stdClass","editor":null,"items":[["header","Chyba p\u0159i zad\u00e1v\u00e1n\u00ed",0],["message","kk",0],["type","alert-danger",0]]}});
+</script>
+<script>
+Tracy && Tracy.BlueScreen.init();
+</script>
+</body>
+</html>

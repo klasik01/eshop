@@ -1,0 +1,56 @@
+{* Latte template *}
+
+{block content}
+<button class="btn btn-success btn-lg form-control" type="button" onclick="window.history.back();">Vrátit se zpět</button>
+
+<div class="col-md-6 col-md-offset-3">
+<div class="col-lg-6 col-md-6 col-md-push-6">
+    <h4 n:block="title">{$product->nazev}</h4>
+    <hr>
+
+    <p>{$product->kratky_popis}</p>
+    <div
+        class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr></tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{if $product->id === 13} Druh medu {else} Materiál{/if}</td>
+                    <td><span class="label label-danger">{$product->material}</span></td>
+                </tr>
+                <tr>
+                    <td>{if $product->id === 13} Množství {else}Pro typ úlu {/if}</td>
+                    <td><span class="label label-primary">{$product->typ_ulu}</span></td>
+                </tr>
+                <tr class="product-price main">
+                    <td>Cena výrobku</td>
+                    <td>{$product->cena} Kč</td>
+                </tr>
+            </tbody>
+        </table>
+        
+    </div>
+
+
+
+
+</div>
+<div class="col-lg-6 col-md-6 col-md-pull-6">
+    <div id="product-images"><img class="img-responsive" src="{$basePath}/{$product->fotografie}"></div>
+</div>
+<div class="col-md-12">
+    <div class="product-description">
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#tab-1" role="tab" data-toggle="tab">Popis Produktu</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane active" role="tabpanel" id="tab-1">
+                <p>{$product->dlouhy_popis} </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="clearfix"></div>
+</div>

@@ -1,0 +1,78 @@
+div.thumbnail.orders {
+    background:green;
+    color:white;
+    opacity:0.7;
+}
+
+div.thumbnail h1 {
+    color:white;
+    text-align:center;
+    text-decoration: none;
+}
+div.thumbnail h1 a {
+    text-decoration: none;
+    color:white;
+}
+
+div.thumbnail.orders h3.text-center {
+    color:gold;
+}
+
+div.thumbnail.products {
+    background:silver;
+    opacity:0.7;
+}
+
+div.thumbnail.articles {
+    background:navy;
+    opacity:0.7;
+}
+
+div.thumbnail:hover {
+    opacity:1;
+}
+
+div.thumbnail.articles h3.text-center {
+    color:orange;
+}
+
+.content h1{
+    text-align:center;
+}
+
+.content .content-footer p{
+    color:#6d6d6d;
+    font-size:12px;
+    text-align:center;
+}
+
+.content .content-footer p a{
+    color:inherit;
+    font-weight:bold;
+}
+
+.panel{
+    border:1px solid #ddd;
+    background-color:#fcfcfc;
+}
+
+.panel .btn-group{
+    margin:15px 0 30px;
+}
+
+a.navbar-brand.bg-primary.navbar-link{
+    color:white;
+}
+
+a.navbar-brand.bg-primary.navbar-link:hover{
+}
+
+.mujText {color: black;}
+
+.label-danger{padding: 2px 5px; border-radius: 0px; color:white;}
+.label-primary{padding: 2px 5px; border-radius: 0px; color:white;}
+
+.form-control {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}

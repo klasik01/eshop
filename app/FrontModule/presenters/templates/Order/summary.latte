@@ -1,0 +1,126 @@
+{* Latte template *}
+
+{block content}
+
+<div class="col-md-12">
+    <h2>Souhrn objednávky</h2>
+    <div class="col-md-6">
+        <h5>Kontaktní údaje</h5>
+        <table class="table table-responsive">
+            <tr>
+                <th>Jméno a Příjmení</th>
+                <td>{$order->name} {$order->surname}</td>
+            </tr>
+            <tr>
+                <th><abbr>Tel:</abbr></th>
+                <td>{$order->tel}</td>
+            </tr>
+            <tr>
+                <th><abbr>Email:</abbr></th>
+                <td>{$order->email}</td>
+            </tr>
+        </table>
+    </div>
+    <div class="col-md-6">
+        <h5>Fakturační adresa</h5>
+        <table class="table table-responsive">
+            <tr>
+                <th>Ulice, čp:</th>
+                <td>{$order->street}</td>
+            </tr>
+            <tr>
+                <th>Město:</th>
+                <td>{$order->city}</td>
+            </tr>
+            <tr>
+                <th>PSČ:</th>
+                <td>{$order->zip}</td>
+            </tr>
+        </table>
+    </div>
+    {if $order->onFirm == 1}
+        <div class="col-md-6">
+            <h5>Objednávka na firmu</h5>
+            <table class="table table-responsive">
+                <tr>
+                    <th>Název firmy</th>
+                    <td>{$order->f_name}</td>
+                </tr>
+                <tr>
+                    <th>IČ:</th>
+                    <td>{$order->ic}</td>
+                </tr>
+                <tr>
+                    <th>DIČ:</th>
+                    <td>{$order->dic}</td>
+                </tr>
+            </table>
+        </div>
+    {/if}
+    {if $order->dodaci == 1}
+        <div class="col-md-6">
+            <h5>Dodací adresa</h5>
+            <table class="table table-responsive">
+                <tr>
+                    <th>Ulice, čp:</th>
+                    <td>{$order->o_street}</td>
+                </tr>
+                <tr>
+                    <th>Město:</th>
+                    <td>{$order->o_city}</td>
+                </tr>
+                <tr>
+                    <th>PSČ:</th>
+                    <td>{$order->o_zip}</td>
+                </tr>
+            </table>
+        </div>
+    {/if}
+
+
+    <div class="col-md-12">
+        <h4>Nákupní košík</h4>
+        <table class="table table-responsive">
+            <thead>
+            <th colspan="2">Název produktu</th>
+            <th>KS</th>
+            <th>Cena za kus</th>
+            <th>Sleva za kus</th>
+            <th>Celková cena</th>
+            </thead>
+            <tbody>
+                <tr n:foreach="$carts->getItems() as $item">
+                    <td><img class="img-responsive" scr="{$basePath}/{$item->image}"</td>
+                    <td>{$item->name}</td>
+                    <td>{$item->quantity}</td>
+                    <td>{$item->price} Kč</td>
+                    <td>{$item->discount} Kč</td>
+                    <th>{($item->price - $item->discount)* $item->quantity} Kč</th>
+
+                </tr>
+            </tbody>
+        </table>
+        <div class="col-md-6 col-md-offset-6">
+            <table class="table table-responsive">
+                <tr>
+                    <th>Cena produktů (s DPH)</th>
+                    <td>{$carts->total} Kč</td>
+                </tr><tr>
+                    <th>Cena dopravy</th>
+                    <td>{$travel->cena} Kč</td>
+                </tr><tr>
+                    <th>Cena platby</th>
+                    <td>{$payment->cena} Kč</td>
+                </tr><tr style="font-size: 20px;">
+
+                    <th>Celková cena (s DPH)</th>
+                    <td style="font-weight: bold; color: red;">{$carts->total + $travel->cena + $payment->cena} Kč</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+{form summaryOrder }
+    <button type="button" class="btn btn-danger btn-lg pull-left" onclick="window.history.back();">Zpět k údajům</button>
+    <input type="submit" name="submit" class="btn btn-primary btn-lg pull-right" value="Dokončit objednávku" />
+{/form}

@@ -1,0 +1,30 @@
+{* Latte template *}
+
+{block content}
+
+<div class="photo-gallery">
+    <div class="">
+        <div class="intro">
+            <h2 class="text-center">Alba v Galerii</h2>
+        </div>
+        <div class="row photos">
+            <div class="col-lg-3 col-md-4 col-sm-6 item" n:foreach='$albums as $item'>
+                <a n:href="Gallery:Album $item->id" ><img class="img-responsive" src="{$basePath}/{$item->url}"></a>
+                <h4 class="text-center">{$item->nazev} / {if $item->aktivni === 1} Aktivní{else} Neaktivní{/if}</h4>
+                <h5 class='text-center'>
+                    <a n:href='Gallery:Editalbum $item->id'><span class='fa fa-pencil'> Editovat</span></a>
+                    <a
+                        data-confirm="Opravdu chcete album ' {$item->nazev} ' smazat?"
+                        data-confirm-title="Confirm"
+                        data-confirm-text="Opravdu chcete album ' {$item->nazev} ' smazat?"
+                        data-confirm-ok-class="btn-danger"
+                        data-confirm-ok-text="Delete"
+                        data-confirm-cancel-class="btn-success"
+                        data-confirm-cancel-text="Cancel"                      
+                        data-ajax="on"
+                        n:href="removealbum! $item->id"><span class="fa fa-trash-o" data-confirm="Opravdu chcete vybrané album odstranit?"> Smazat Album</span></a>
+                </h5>
+            </div>                
+        </div>
+    </div>
+</div>

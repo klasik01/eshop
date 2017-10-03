@@ -1,0 +1,41 @@
+{block content}
+
+<div class="col-md-12">
+    <div class="page-header">
+        <h1>Administrace webu IROPE <small>| celkový souhrn</small></h1></div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="thumbnail orders">
+                <div class="caption">
+                    <h1 class="text-nowrap"><a n:href="Order:Default">Objednávky</a> </h1>
+                    <h3 class="text-center"><i class="glyphicon glyphicon-ok"></i> {$order_count} aktuálních objednávek</h3>
+                    <h5></h5></div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="thumbnail products">
+                <div class="caption">
+                    <h1 class="text-nowrap"><a n:href="Product:Default">Produkty </a></h1>
+                    <h3 class="text-center"><i class="glyphicon glyphicon-plus"></i>{$product_count} aktivních produtků</h3>
+                    <h5></h5></div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="thumbnail articles">
+                <div class="caption">
+                    <h1 class="text-nowrap"><a n:href="Page:Default">Články </a></h1>
+                    <h3 class="text-center"><i class="glyphicon glyphicon-plus"></i>{$article_count} článků</h3>
+                    <h5></h5></div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="thumbnail articles">
+                <div class="caption">
+                    <h1 class="text-nowrap"><a n:href="Gallery:Default"> Alba</a> </h1>
+                    <h3 class="text-center"><i class="glyphicon glyphicon-plus"></i>{$albums_count} článků</h3>
+                    <h5></h5></div>
+            </div>
+        </div>
+    </div>
+
+

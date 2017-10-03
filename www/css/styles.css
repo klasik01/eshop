@@ -1,0 +1,84 @@
+body {
+    background:url(../img/meadow_forest_sunny_grass_flowers_3840x2160.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+    margin-bottom:30px;
+}
+
+div.col-md-12.header {
+    padding:0;
+}
+
+div.col-lg-3.col-lg-pull-9.col-md-3.col-md-pull-9.levy_menu {
+    padding:0;
+    /*margin-top:21px;*/
+}
+
+h1.header-styl {
+    padding:15px;
+    background:brown;
+    color:white;
+    /*margin-top:-22px;*/
+    border-radius:0px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.39) ;
+}
+
+.page {
+    background:white;
+    box-shadow:4px 4px 8px rgba(0,0,0,0.19);
+    margin-top:100px;
+    padding:0;
+}
+
+div.row {
+    margin-right:0;
+    margin-left:0;
+}
+
+.left-menu a {
+    color:rgb(1,1,1);
+    font-weight:bold;
+    /*opacity:0.6;*/
+    text-decoration:none;
+}
+
+.product-price.main{
+    font-size:140%;
+    color:black;
+    font-weight:bold;
+}
+
+.main-page{
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+
+}
+
+.form-control {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+.subMenuItem{
+    cursor: pointer;
+    opacity: 0.9;
+}
+.subMenuItem:hover {
+    opacity: 1;
+}
+.subMenuItemActive{
+    opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+    .product-image {
+        max-height: 119px;
+        height: 119px;
+    }
+}
+
+.cart-item-image {
+    height: 86px;
+    max-height: 86px;
+}
+
+

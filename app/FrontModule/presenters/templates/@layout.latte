@@ -1,0 +1,77 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{ifset title}{include title|stripHtml}{/ifset}</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="{$basePath}/apple-touch-icon.png">
+        <link rel="stylesheet" href="{$basePath}/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{$basePath}/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Autour+One">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700">
+        <link rel="stylesheet" href="{$basePath}/css/aguilaraldo1_section_contact.css">
+        <link rel="stylesheet" href="{$basePath}/css/dva-sloupce.css">
+        <link rel="stylesheet" href="{$basePath}/css/nav.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+        <link rel="stylesheet" href="{$basePath}/css/Lightbox-Gallery.css">
+        <link rel="stylesheet" href="{$basePath}/css/styles.css">
+        <script src="{$basePath}/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        {block head}{/block}
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <nav class="navbar navbar-default navbar-fixed-top navigation-clean-button">
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                </div>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav nav-right">
+                        <li class="{ifCurrent :Front:Homepage:Default}active{/ifCurrent}" role="presentation"><a n:href=":Front:Homepage:Default">úvod </a></li>
+                        <li class='{ifCurrent Product:Default}active{/ifCurrent}' role="presentation"><a n:href="Product:Default">e-shop </a></li>
+                        <li class='{ifCurrent About:Default}active{/ifCurrent}' role="presentation"><a n:href="About:Default">o nás</a></li>
+                        <li class='{ifCurrent Gallery:Default}active{/ifCurrent}' role="presentation"><a n:href="Gallery:Default">galerie </a></li>
+                            <li class='{ifCurrent :Front:Homepage:Conditions}active{/ifCurrent}' role="presentation"><a n:href=":Front:Homepage:Conditions">obchodní podmínky</a></li>
+                        <li class='{ifCurrent Contact:Default}active{/ifCurrent}' role="presentation"><a n:href="Contact:Default">Kontakt</a></li>
+                    </ul>
+                    <p class="navbar-text navbar-right actions"> <a class="btn btn-default action-button" role="button" n:href="Cart:default">Nákupní košík - {$cart->total} Kč</a></p>
+                </div>
+            </div>
+        </nav>
+        <div class="container page">
+            <div class="row">
+                <div class="col-md-12 header"><img class="img-responsive" src="{$basePath}/img/banner-pechy.png"></div>
+                <div class="col-lg-9 col-lg-offset-0 col-lg-push-3 col-md-9 col-md-push-3 main-page">
+                    <div id="main-content">
+                        <div n:foreach="$flashes as $flash" n:class="alert, alert-dismissable, $flash->type"  >
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                            <strong>{$flash->header}</strong> {$flash->message}.
+                        </div>
+                        {include content}
+                    </div>
+                </div>
+                {control menu}
+                <div class="col-md-12 footer-dark">
+                    {control footer}
+                </div>
+            </div>
+        </div> 
+        {block scripts}
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="https://nette.github.io/resources/js/netteForms.min.js"></script>
+        <script src="{$basePath}/js/main.js"></script>	
+        <script src="{$basePath}/js/vendor/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+        <script src="{$basePath}/js/main.js"></script>
+        {/block}
+    </body>
+</html>
+

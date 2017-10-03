@@ -1,0 +1,74 @@
+#
+# SECURITY WARNING: it is CRITICAL that this file & directory are NOT accessible directly via a web browser!
+#
+# If you don't protect this directory from direct web access, anybody will be able to see your passwords.
+# http://nette.org/security-warning
+#
+php:
+	date.timezone: Europe/Prague
+	# zlib.output_compression: yes
+
+includes:
+    - authorizator.neon
+# --- parameters -----------------------------------------------------------
+parameters:
+	database:
+		driver: mysql
+		host: localhost
+		dbname: mvc_dbc
+		user: root
+		password: 
+
+	security:
+		salt: "3+91^H:WF%=BanQ@9@eKXMTz5'3MjQ1FhU.E/k)5"		# generated using KeePass2
+		workFactor: 13																			# for bcrypt, see http://codahale.com/how-to-safely-store-a-password/
+		hash: sha512
+	options:
+		Color: [black: black, white: white]
+
+# --- nette config ---------------------------------------------------------
+
+application:
+	errorPresenter: Error
+	mapping:
+		*: App\*Module\Presenters\*Presenter
+
+session:
+	expiration: 14 days
+
+extensions:
+	cart: Kasika\ShopCart\DI\Extension
+
+cart:
+	columns:
+		price: yes
+
+# --- services -------------------------------------------------------------
+services:
+	router: App\RouterFactory::createRouter
+
+	- App\Model\Security\MyAuthenticate
+
+	- App\Model\Facades\CartFacade
+	- App\Model\HandleManager
+	- App\FrontModule\Forms\CartFormFactory
+	- App\FrontModule\Forms\OrderFormFactory
+	- App\FrontModule\Forms\SummaryFormFactory
+	- Kasika\Main\IBaseFormFactory
+	- App\AdminModule\Forms\ProductFormFactory
+	- App\AdminModule\Forms\PageFormFactory
+	- App\AdminModule\Forms\AlbumFormFactory
+	- App\AdminModule\Forms\UserFormFactory(@authorizator::getRoles())
+	- App\AdminModule\Forms\ContactFormFactory
+	- App\AdminModule\Forms\ImageFormFactory
+	- App\AdminModule\Forms\UploadManager(%wwwDir%, 'obrazky/produkty')
+
+
+
+
+
+
+
+        
+
+

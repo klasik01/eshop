@@ -1,0 +1,13 @@
+{block content}
+<div class="photo-gallery">
+    <div class="">
+        <div class="intro">
+            <h2 class="text-center">{$category->nazev}</h2>
+        </div>
+        <div class="row photos">
+            <div class="col-lg-3 col-md-4 col-sm-6 item" n:foreach="$album as $item">
+                <a href="{$basePath}/{$item->url}" data-lightbox="photos"><img class="img-responsive" src="{$basePath}/{$item->url}"></a>
+            </div>              
+        </div>
+    </div>
+</div>
